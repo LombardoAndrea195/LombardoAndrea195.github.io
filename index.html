@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Andrea Lombardo Site</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    
+
+    <script>
+    function setCookie(cname,cvalue,exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      var expires = "expires=" + d.toGMTString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    function absoluteCookie() {
+      
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      var array= Array();
+      array.push(ca.length); /* Array composto da global value, elementi di oggi*/
+      var d = new Date();
+      var expires = "expires=" + d.toGMTString();
+      var parole=expires.substring(0,expires.lenght-12);
+      
+      var today=0;
+      for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(parole) == 0) {
+            today++;
+        }
+      }
+      array.push(today);
+      return array;
+    }
+    
+    function checkCookie() {
+     
+      var user=getCookie("username");
+      if (user != "") {
+        alert("Welcome again " + user);
+      } else {
+         user = prompt("Please enter your email for recognize when access again into the site:","");
+         if (user != "" && user != null) {
+           setCookie("username", user, 30);
+         }
+      }
+    }
+    
+    var update=absoluteCookie();
+    </script>
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body onload="checkCookie()" id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+<!--
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">Home Page</a> 
+                
+        </div>-->
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
+                <li><a class="smoothscroll" href="#about" title="about" > About</a></li>
+                <li><a class="smoothscroll" href="#works" title="works">Projects</a></li>
+                <li><a class="smoothscroll" href="#Capabilities" title="Capabilities">Skills Aquired</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Contact me</a></li>	
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="https://www.facebook.com/andrea.lombardo.564"><i class="fab fa-facebook-f"style=" color: #3b5998;" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/LombardoAndrea195"><i class="fab fa-github" style="color:aliceblue" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/andrea-lombardo-/"><i class="fab fa-linkedin" style="color:#0e76a8;" aria-hidden="true"></i></a></li>
+                <li><a  href="https://instagram.com/lombi95?igshid=13y017bm1tun2"><i class="fab fa-instagram" style=" 
+                    color: transparent;
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+background-clip: text;
+-webkit-background-clip: text;
+                    "aria-hidden="true"></i></a></li>
+             
+                   
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+        <div class="row intro-content">
+
+            <div class="column large-9 mob-full intro-text">
+             <br>
+                <h5>
+                   Welcome to    <h3 style="color:rgb(49, 97, 240)">Andrea Lombardo Site</h3> 
+                    
+                </h5>
+            </div>
+
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll" >
+                   <strong style="color:rgb(49, 97, 240);"> Scroll and enjoy </strong>
+                </a>
+            </div>
+
+            <div class="intro-grid"></div>
+            <div class="intro-pic"></div>
+
+        </div> <!-- end row -->
+        <div class="row intro-content"> <div class="column large-9 mob-full intro-text">
+                <br>
+           
+        </div></div>
+    </section> <!-- end intro -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">About Me</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+       
+                            <img class="circular--square" src="images/portfolio/a.jpg"  width="450" height="450"
+                            alt="Not available" >            <br>       I'm a 24-year-old engineer,based in Rome. I'm a web enthusiast and I really love developing projects.<br>
+                        <br>  
+                     
+                     
+                    </p>
+
+               
+                    <p>
+                            I graduated from high school Liceo Scientifico Cavour in 2014 and then I enrolled to the university.
+                      I  received the Laurea degree in Computer Science Engineering in 2019 at University of Tor Vergata.Actually 
+                      I am a Master's degree Computer Science engineering student at the Sapienza University, placed in Rome.
+                      
+                        
+                       </p>
+
+                    <p>
+                            I'm a creative learner always desiring to figure out things which I've never seen like new technologies and tools.
+                        I'm a  determined, positive person focus on details with flexibility to adapt into several different environment
+                        with the ability to hear,interact and share informations and ideas with the team.
+                        I'm able to analyze problems, to solve solutions according the system's capabilities and to build algorithms for the occurence.
+                        
+                        I like discussing and comparing myself with other people about my ideas.I’m passionate about creating truly beautiful, efficient digital products like Web Site but also applications to make people’s experience with technology memorable </p>
+                    <p>I’m looking forward to growing my management skills to hopefully develop and inspire a team of my own
+                        In my spare time I really enjoy exploring the landscapes' beauty in place of the  world I 've never seen yet.
+                    
+                     </p>
+                </div>
+            </div>
+    
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="mailto:l.andrea195@live.it?subject = Information" class="btn btn--stroke full-width">Contact me</a>
+                </div>
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="document\CV.pdf" class="btn btn--primary full-width" download="">Download CV</a>
+                </div>
+            </div>
+
+        </div> <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <!--
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2018 - Present</p>
+                                <h3 class="item-title">Awesome Studio</h3>
+                                <h5>Lead Designer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2017 - June 2018</p>
+                                <h3 class="item-title">Super Cool Agency</h3>
+                                <h5>Frontend Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">March 2016 - June 2017</p>
+                                <h3 class="item-title">Epic Design Studio</h3>
+                                <h5>Frontend Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+-->
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe"> February 2019- ongoing</p>
+                                <h3 class="item-title">     <img class="circular--square" src="images/certification/Sapienza.png"  width="50" height="50"
+                                    alt="Not available" >
+                                  University of La Sapienza</h3>
+                                <h5>Master's Degree on Engineering in Computer Science</h5>
+                            </div>
+                            <div class="timeline__desc">
+                           <!--     <p>datat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                           --></div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">September 2014 - Februrary 2019</p>
+                                <h3 class="item-title">     <img class="circular--square" src="images/certification/torvergata.png"  width="50" height="50"
+                                    alt="Not available" >
+                                  University of TorVergata</h3>
+                                <h5>Bachelor's Degree on Engineering in Computer Science</h5>
+                                <h8>Address: Software & Web System</h8>
+                                                
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">September 2009 - July 2014</p>
+                                <h3 class="item-title">Liceo Scientifico Cavour  
+                                        </h3>
+                                <h5>Diploma Maturità scientifica</h5>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end about-experience -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== 
+    <section id="services" class="s-services ss-dark target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
+
+                <p class="section-desc">
+                    My passion and goal is to help you make your business standout.
+                </p>
+            </div>
+        </div> 
+
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Brand Identity</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Illustration</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Web Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Product Strategy</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">UI/UX Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Mobile Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+        </div> 
+
+    </section>  -->
+
+
+    <!-- CTA
+     <section class="s-cta ss-dark">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-desc">
+                    Need a great reliable web hosting?
+                </h2>
+            </div>
+        </div> 
+
+        <div class="row cta-content" data-aos="fade-up">
+                <div class="column large-full">
+                    <p>
+                    We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
+                    Powerful web and Wordpress hosting. Guaranteed.
+                    Starting at $2.95 per month.
+                    </p>
+    
+                    <a href="https://www.dreamhost.com/r.cgi?287326" class="btn full-width">Get Started</a>
+                </div>
+            </div> 
+    
+        </section>  end s-cta -->
+    
+   
+    <!-- works
+    ================================================== -->
+      
+    <section id="works" class="s-services ss-dark target-section">
+
+            <div class="shadow-overlay"></div>
+    <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom ">Portfolio</h2>
+            </div>
+    <div class=container  style="color: white; border-left: 10000cm">
+        <br>
+    <div class="header ;"><b  style=" color: rgb(249, 251, 252);">Workshop done during <mark style=" background:#0e76a8"> MASTER'S DEGREE:</mark></b></div>
+    
+    <br><br>
+     <ul class="collection">
+     
+          <li class="collection-item avatar">
+                <style>
+                        .collapsible {
+                         
+                          cursor: pointer;
+                          padding: 18px;
+                          width: 100%;
+                          border: none;
+                          text-align: left;
+                          outline: none;
+                          font-size: 10px;
+                          height:15%;
+                          
+                          background: rgb(65, 60, 60);
+                        }
+                        
+                        .active, .collapsible:hover {
+                        }
+                        
+                        .content {
+                          padding: 0 18px;
+                          display: none;
+                          overflow: hidden;
+                        }
+                        </style>
+           <button type="button" class="collapsible">Homeworks delivered for the course of <b style=" text-decoration: underline;">Machine Learning</b> <br><b style=" font-family:Arial-Black; 
+  font-size: 9px;">from october 2019 to February 2020 </b>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <a href="https://github.com/LombardoAndrea195/homeworkML" class="secondary-content"> repository<i class="material-icons " >send</i></a><br>
+           </button><div class="content"> <p ><em>
+               
+              <br>In the links below we can see there' re my elaborations written in <b>Latex</b> using Overleaf with the relative Python code where I used Pycharm for the first homework instead for the second I decide to use Google Colab. The code allows to me to estabilish how can I obtain my results, so from them I'm able to deal my results. <br>
+    Data sets contains information through which I can make experiments, these data sets are explained in seminars, instead blind set, if presented, let us to analyze our results in terms of accurancy , precision and recall.In first dataset we've only a set of pairs of labels instead in the second dataset we've a collection of picture that we should classify.
+    
+    <br>
+    <br><b style="color: white;">Project development of 1 homework</b><br>
+    Solve the two classification problems: A) optimization prediction, B) compiler prediction. For each classification problem, realize at least two variants (varying feature extraction, learning algorithm, learning hyper-parameters, etc.). Note: Use any method at your choice, except neural networks that will be subject of the second homework.
+    Evaluate each variant in a proper way. Find the best model and motivate the choice.
+    For each classification problem, apply the best model to predict output for the blind test set, comment all result with a report explaining all the work done: design and implementation choices, evaluation procedure and results.
+     </p>
+         
+    
+    <a href="https://drive.google.com/a/diag.uniroma1.it/file/d/14p_YtIWVqBNxvOMWRPp-qWEops0wAJ1F">Data set
+    </a>
+    <br>
+    <a href="https://drive.google.com/a/diag.uniroma1.it/file/d/1uCIIVNvQoa2fXdQQg2e5GHt_5bY3BgOd">
+    Blind test set </a>
+       <br>
+    <a href="https://github.com/LombardoAndrea195/homeworkML/blob/master/1Homework/homework_Machine_Learning.pdf">Report</a>
+    <br>
+    <a href="https://github.com/LombardoAndrea195/homeworkML/tree/master/1Homework/ML1-homework1%201893440">Code</a>
+    
+        <em>
+    <br><b style="color: white;"> Project development of 2 homework</b><br>
+    Solve the image classification problem in two modes: <br>A) define a CNN and train it from scratch,<br> B) apply transfer learning and fine tuning from a pre-trained model. For training you can use any subset of the MWI dataset.
+    <br>Evaluate the two models in a proper way. Discuss the best model and motivate the choice. Testing can be done either with cross-validation on MWI or with the SMART-I weather test set.
+    <br>Write a report explaining all the work done: design and implementation choices, evaluation procedure and results.<br>
+    Submit a set of images to be used to define a new test set
+    and your best model 
+              </p>
+              </em>
+        
+    <a href=" https://drive.google.com/drive/folders/1UzH28Q8xki8_DMYdDgHxi40-CJ800Kaq">Data set
+    </a>
+    
+    <br>
+              
+    <a href="https://github.com/LombardoAndrea195/homeworkML/blob/master/ML2/1893440.pdf">Report</a>
+    
+    <br>
+    <a href="https://github.com/LombardoAndrea195/homeworkML/blob/master/ML2/1893440_code.ipynb">Code</a>
+    </div></li>
+            <li class="collection-item avatar">
+                
+           <button type="button" class="collapsible">Homeworks delivered for the course of <b style=" text-decoration: underline;">Network Infrastructure</b><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>from october 2019 to February 2020</b>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   
+    <a href="https://github.com/LombardoAndrea195/Netkit" class="secondary-content"> repository<i class="material-icons">send</i></a></button><div class="content"> 
+          <p><em><br>In the links below we can see there' re my elaborations of the tree homeworks delivered in the format <b>.gz</b> 
+            with the respective requirments. The aim of the course is to give the necessary knowledge to configure and manage LANs & WANs under Unix-like OSs using <b>Netkit</b> framework,  developed by Uniroma3, which
+    allows to emulate a switching environment under Linux.  <br>
+          <br>The first homework deals different topics like :Netkit Round-Up, Physical interfaces and MAC addressing,Static IP addressing & DHCP and NAT
+    
+           </em>
+              </p>
+         
+    <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/homework_1A.pdf">Requirement of 1 homework</a>
+     &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+    <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/homework1.tar.gz">Solution </a>
+    <br>
+        <em>
+              The second homework deals same topics of the first homework but with the adding of new concepts like: Network debug tools, Static IP routing & OSPF<br>
+    iptables,
+    ,SSH and VPN
+    
+              </p>
+              </em>
+    <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/second_a.pdf">Requirement of 2 homework</a>
+    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+    <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/Homework2-1893440.tar.gz">Solution</a>
+    <br>
+            
+        <em>
+              The third homework deals same topics with different requirments but with the adding of new concept like: x509 & VPN and DNS.
+              </p>
+              </em>
+    <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/third_a.pdf">Requirement of 3 homework</a>
+    
+    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+    <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/lab_3.tar.gz">Solution</a>
+    <br>
+         <em>
+              In this part I would like to mention same notes which I had written during the course.
+              </p>
+              </em>
+    <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/ni.pdf">Question and Answer for written part</a>
+    
+    <br>
+    <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/NETKIT_LAB.pdf">Notes of pratical part</a>
+    <br>
+              <br>
+            </p></div> </li>  <li class="collection-item avatar">
+                  
+               <button type="button" class="collapsible">Homeworks delivered for the course of <b style=" text-decoration: underline;">Algorithm Design</b><br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>from october 2019 to February 2020</b>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;     
+     <a href="https://github.com/LombardoAndrea195/HomeworkAD" class="secondary-content"> repository<i class="material-icons">send</i></a>
+    </button><div class="content"> 
+          <p><em>In the links above we can see there' re my elaborations written in <b>Latex</b> using Overleaf. <br><br>The first homework deals following topics:
+              Dynamic Programming, Shortest Path, Network Flow, Unio-Find structure, Minum Spanning Tree with the algorithm as Kruskal that let me to find out the information required, diffference from a P, NP, NP hard and NP-complete problem.</em>
+              </p>
+         
+    <a href="https://github.com/LombardoAndrea195/HomeworkAD/blob/master/1hw/homework0120192020.pdf">Requirement of each exercise</a>
+    <br>
+    <a href="https://github.com/LombardoAndrea195/HomeworkAD/blob/master/1hw/hw1_1893440_AD.pdf">Solution of 1 homework</a>
+    <br>
+        <em>
+              The second homework, made with a colleague F.Di Spazio, deals different topics in comparison with first one, in fact we've seen applications of linear programming, approximation algorithm and randomized algorithm with the technique that let me to unrandomize the algorithm as (expected conditional vale), applications of game theory,
+              applications of Chernoff Bound in two variantes for the 4 and 5 exercises.
+              </p>
+              </em>
+    <a href="https://github.com/LombardoAndrea195/HomeworkAD/blob/master/hw2/2homework.pdf">Requirement of each exercise</a>
+    
+    <br>
+    <a href="https://github.com/LombardoAndrea195/HomeworkAD/blob/master/hw2/hw2_1893440_1876540_AD.pdf">Solution of 2 homework</a>
+    <br><br>
+              
+       </p> </div></li>
+       <li class="collection-item avatar">
+            
+       <button type="button" class="collapsible">Project made for the course of <b style=" text-decoration: underline;
+          ">Web Information Retrival<br></b>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>  from may 2019 to july 2019</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   <a href="https://github.com/danieledavoli/emergency_detection/" class="secondary-content">repository<i class="material-icons">send</i></a>
+        </button><div class="content"> <br>
+    <div class="header align=left"><b>Using Social Media to Enhance Emergency Situation Awareness</b></div>
+          <p><em>
+    The project wants to detect an emergency situation in real time through tweets flow scanning using machine learning algorithms and users as sensors.<br>
+    <br>
+    Link to the <a href="https://www.slideshare.net/DanieleDavoli/using-social-media-to-enhance-emergency-situation-awareness/DanieleDavoli/using-social-media-to-enhance-emergency-situation-awareness">Slideshare presentation</a> Scientific paper on the repository.
+    <br>
+    Authors:<em> Daniele Davoli, Danilo Marzilli, Andrea Lombardo </em><br><br>
+    Dataset:
+    For training and validating our machine learning system, we have used a <a href="http://socialsensing.it/en/datasets">dataset</a> of 5,642 manually annotated tweets in the Italian language. The tweets are related to 4 different natural disasters occurred in Italy between 2009 and 2014. <br>For each tweet is reported:
+    <br>
+    1)tweet ID;<br>
+    2)text;<br>
+    3)source;<br>
+    4)nickname of user;<br>
+    5)ID of author;<br>
+    6)latitude and longitude (if available);<br>
+    7)time;<br>
+    8)disaster ID (see below);<br>
+    9)class<br><br>
+    Tweets have been manually annotated by humans and divided among 3 classes according to the information they convey:
+    <br>
+    <b>damage class: </b>tweets related to the disaster and carrying information about damages to the infrastructures or on the population;
+    <b><br>no damage class:</b> tweets related to the disaster but not carrying relevant information for the assessment of damages;
+    <b><br>not relevant class:</b> tweets collected while building the dataset, but not related to any disaster (noise).
+    
+    We process our dataset in this order:
+    <br>
+    1)Import data from the .csv file;<br>
+    2)Preprocessing our tweets in order to remove punctuation, stop words and digits and to implement the stemming algorithm;<br>
+    3)Trasform the tweets in vectors in a space vector where the axis are the vocabulary terms and give to each vector a TF-IDF (Term Frequency and Inverted Document Frequency) weight;<br>
+    4)Cluster our tweets (now vectors) in main topics;<br>
+    5)Train a SVM classifier in order to distinguish the tweets in relevant and not relevant.
+    <br><br>
+    To the following <a href="Paper.pdf">link</a> is possible to download the paper wrote where we describes our experiment related on experiments ' paper that we were following.
+    <br></em><br>
+             
+          </p> </div></li>
+        
+     
+      </ul>
+       
+    <br>
+    <br>
+    </div>
+         
+    <div class=container  style="color: white; border-left: 10000cm">
+    <div class="header align=left"><b  style="color: rgb(249, 251, 252);">Workshop done during <mark style=" background:#0e76a8">BACHELOR'S DEGREE:</mark> </b></div>
+    
+    <br><br>
+     <ul class="collection">
+      
+            <li class="collection-item avatar">
+                    
+               <button type="button" class="collapsible">Project made for the course of <b style=" text-decoration: underline;">Sistemi Operativi</b><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <b>from october 2018 to February 2019</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href="https://github.com/LombardoAndrea195/Sistemi_Operativi_Project" class="secondary-content">repository<i class="material-icons">send</i></a>
+</button><div class="content"> <br>
+
+          <p><em><br>It's made with IDLE Clion into a Linux environment-the testing process is made by Ubuntu bash.<br>
+    The main goal of this project is to build an application client-server with program language C.
+    It is able to interchange secure information, through a reliable transfer which used the transfer protocol TCP. 
+    The communication of clients with the server takes place through API Berkeley's socket. 
+    In this application I should develop a system of booking of a cinema room. I've made a server multithread, which is able to respond to clients requests at the same time.
+    Here after establishing a stable connection:<br>
+    -I should return the map of avaiable place<br>
+    -send to the server place which I would like to book with a unique code of response which let me to cancel a reservation<br>
+    -cancel a reservation<br>
+    -lose of the connection<br>
+    The way to build the map is a linked list, which let me to reognised row and column.
+    The way to make persistent the system is to use of the file.</em><br>
+       <br></p></div> </li>  <li class="collection-item avatar">
+            
+       <button type="button" class="collapsible">Project made for the course of <b style=" text-decoration: underline;">Ingegneria di Internet e Web<br></b>
+   
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <b>from october 2018 to February 2019</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href="https://github.com/LombardoAndrea195/IIW_Project" class="secondary-content">repository<i class="material-icons">send</i></a>
+</button><div class="content"> <br>
+
+          <p><em><br>It's made with IDLE Clion into a Linux environment-the testing process is made by Ubuntu bash.<br>
+    The main goal of this project is to build an application client-server with program language C.
+    It is able to interchange secure information,more precisely a file, through a reliable transfer which used the transfer protocol UDP. 
+    The communication of clients with the server takes place through API Berkeley's socket. 
+    Furthermore, as required, the implementation of the reliable service,that is not guaranteed by UDP, is managed by the selective-repeat protocol with the condition probability that we could lose some packet 
+    The software should be managed to:<br>
+    -connect the two process client-server without login in, but with request and response messages,
+    -through "list" command: message sends by client to the server-The goal of it is to return the list of all available files from server's directory.<br>
+    -through "get" command: message sends by client to the server-It lets to the client to download the file according condition it is present into server's diretory.
+    <br>-through "put" command: message sends by client to server- It's able to upload a file present into the client's directiory to server's directory.</em> <br>
+             <br></p></div>   </li>  <li class="collection-item avatar">
+                   
+               <button type="button" class="collapsible">Project made for the course of <b style=" text-decoration: underline;"> Ingegneria del Software e Progettazione Web<br></b>
+    from june 2018 to september 2018</b>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href="https://github.com/LombardoAndrea195/ISPW" class="secondary-content">repository<i class="material-icons">send</i></a>
+</button><div class="content"> <br>
+          <p> 
+          <br>
+    <br>
+    <br>
+    <p><em>The main goal of this project is to build a web-application and a laptop application with an architecture pattern BCE.<br>
+    The task is to define the managment and maintenance of resourse, first booking of events(like Exams,Test , degree session or conference) then definition since the starting of academic year of the exams sessions.
+    <br>The application should allow to the user to loggin in with the profiles of users(Professor-Secretary).
+    The different of them is about the the type and number of operations(actions) they could do.
+    The communication between application client and database is made with a JDBC approach.
+    The patterns used into this project are: for the architecture BCE and for creation database and controller we use the pattern Singleton.
+    <br>I've done 4 use case : <br>
+    a) visualization of the active booking prenotazioni attive<br> 
+    b) booking an exam <br>
+    c) booking an event<br>
+    d) visualization of the historical booking <br>
+    Furthermore through Junit we've tested if everything works well.<br>
+    In this part I've developmented a thread which is able to use different class of this part but it's able to make a random reservation of one Exams or Event.
+    Here it's important the logic of the reservation of the room, a particular class with all the options and comfort that a professor would like for doing a lecture
+    I chose to make the web part of the Servlet programming technology, which uses Java for the development of the presentation logic,
+    according to the BCE pattern, of web applications while providing dynamic content in HTML format, markup language.
+    An additional tool used in the implementation was MATERIALIZE, a collection of templates for the design of websites .
+    this give to the system a way to touch of graphics and make the system not only able to respond and conform to specifications but also aesthetically beautiful.<br>
+        <br>     
+         </em></p>
+          </p></div>
+        </li>  <li class="collection-item avatar">
+               
+           <button type="button" class="collapsible">Project made for the course of <b style=" text-decoration: underline;">Mobile Programming<br></b>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <b>from june 2018 to july 2018</b> &nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+       <a href="https://github.com/LombardoAndrea195/Android_Projects/tree/master/Runner2%20Programming%20Mobile" class="secondary-content">repository<i class="material-icons">send</i></a>
+<br></button><div class="content"> 
+          <p> <em><br>
+          The main goal of this project during this cours is to develop a mobile application for Android made through Android Studio, 
+          the official Integrated Development Environment (IDE) for Android app development.<br>
+           This app is made for final mark, and we should develop only one part, that related to the description of races. <br>
+           At the beginning we should log in in the first activity only with username and password,recognized by the app.<br>
+            Then acording to Rest Api like post and get we are able to take or send information with JSON object to a server(WampServer) which is able to accept request by the app,this is doing with a php file.<br>
+           The task is to make a booking of a runner for a race.</em><br>
+            <br>
+          </p>
+          
+        </li>  <li class="collection-item avatar">
+               
+           <button type="button" class="collapsible">
+    Project made for the course of <b style=" text-decoration: underline;">Basi di dati<br></b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <b>from april 2018 to july 2018</b> &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+          <a href="https://github.com/LombardoAndrea195/Progetto_Basi_Project" class="secondary-content">repository<i class="material-icons">send</i></a>
+        </button><div class="content"> <br>
+          <p><em> <br>It' s made with Eclipse and SceneBuilder for the implementation, StarUML for the documentation, POSTGRES for the managment of the database,JUNIT fot the testing process:
+    <br>
+    The main goal of this Java project is to build a laptop stand alone application which let me import information from CSV files into a database.
+    The data collected into CSV files should come up from Istituto Nazionale di Astrofisica, infact we have information of different celestial bodies(more precisesly Stars and filaments) by more satellites.
+    The documentation is inside of this directory and there are:<br>
+    -the diagrams Entity-Relationship<br>
+    -the logic model(dictionary of data, business rules, class diagram, test case and database's dump made on PostgresSQL).<br>
+    The application should allow to the user to loggin in with the profiles of users(Administrator-User).<br>
+    The different of them is about the the type and number of operations(actions) they could do.<br>
+    The communication between application client and database is made with a JDBC approach.<br>
+    The patterns used into this project are: for the architecture MVC and for creation database and controller we use the pattern Singleton</em> <br>
+            
+          </p></div>
+        </li>
+     
+      </ul>
+       
+    <br>
+
+<span>Photo by <a href="https://unsplash.com/@omgitsyeshi">Yeshi Kangrang</a>
+      on Unsplash</span>
+    </div></div>
+
+    </section>
+    
+
+
+    <section id="Capabilities" class="s-works target-section">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Skills Aquired</h2>
+                <p class="section-desc">All ideas grow out of other ideas
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+        <div class="row half-bottom">
+
+            <div class="column large-6 tab-full">
+
+                <h5>Certification:</h5>
+                
+
+                
+
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <img class="circular--square" src="images/certification/coursera.jpg"  width="50" height="50"
+                   alt="Not available" >
+                        <span class="title"> Database and SQL for Data</span>
+                        <p><em>Authorized  by IBM and offered through Coursera</em> <br>
+                          <a href="
+                      
+                          https://www.youracclaim.com/badges/91dc7170-1dba-4bba-a8d1-d9143bbc2574/linked_in_profile">Certificate<i class="material-icons">assignment</i></a>
+                        </p>   </li> 
+                    <li class="collection-item avatar">
+                     <img class="circular--square" src="images/certification/coursera.jpg"  width="50" height="50"
+                alt="Not available" >
+                     <span class="title"> What is Data Science?</span>
+                     <p><em>Authorized  by IBM and offered through Coursera</em> <br>
+                       <a href="
+                   
+                       https://www.youracclaim.com/badges/1f1101ee-225d-44ed-88ba-5becab005788">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                    <li class="collection-item avatar">
+                        <img class="circular--square" src="images/certification/coursera.jpg" width="50" height="50"
+                        alt="Not available" >
+                     <span class="title"> Getting Started with AWS Machine Learning
+               </span>
+                     <p><em>Authorized  by Amazon Web Service and offered through Coursera</em> <br>
+                       <a href="
+                   
+                   https://www.coursera.org/account/accomplishments/certificate/YX9UEVJLVT6L">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                     <li class="collection-item avatar">   <img class="circular--square" src="images/certification/coursera.jpg" width="50" height="50"
+                        alt="Not available" >
+                     <span class="title"> Introduction to Cloud Identity</span>
+                     <p><em>Authorized  by Google Cloud and offered through Coursera</em> <br>
+                       <a href="
+                   
+                   https://www.coursera.org/account/accomplishments/certificate/5LYB5LTKGJ2W">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                      <li class="collection-item avatar">   <img class="circular--square" src="images/certification/coursera.jpg" width="50" height="50"
+                        alt="Not available" >
+                     <span class="title"> Industrial IoT on Google Cloud Platform</span>
+                     <p><em>Authorized  by Google Cloud and offered through Coursera</em> <br>
+                       <a href="
+                   
+                   https://www-origin.coursera.org/account/accomplishments/certificate/RKA7U7P66HRD">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                     <li class="collection-item avatar">   <img class="circular--square" src="images/certification/coursera.jpg" width="50" height="50"
+                        alt="Not available" >
+                     <span class="title"> Machine Learning for Business Professionals</span>
+                     <p><em>Authorized  by Google Cloud and offered through Coursera</em> <br>
+                       <a href="
+                   
+                   https://www-origin.coursera.org/account/accomplishments/certificate/4UXAH4PK3PHA
+               ">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                     <li class="collection-item avatar">   <img class="circular--square" src="images/certification/coursera.jpg" width="50" height="50"
+                        alt="Not available" >
+                     <span class="title">Cloud Computing Basics (Cloud 101)</span>
+                     <p><em>Authorized by LearnQuest and offered through Coursera </em> <br>
+                       <a href="
+                   https://www-origin.coursera.org/account/accomplishments/certificate/ZMFX2482MG76">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                    
+                   
+                    <li class="collection-item avatar">   <img class="circular--square" src="images/certification/customery.jpg" width="50" height="50"
+                        alt="Not available" >
+                     <span class="title">Agile Foundations for Microsoft Business Apps</span>
+                     <p><em>Release by Customery </em> <br>
+                       <a href="
+                   https://github.com/LombardoAndrea195/lombardoandrea/blob/master/certificate_Agile_Foundations_for_Microsoft_Business_Apps.pdf">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                    <li class="collection-item avatar">   <img class="circular--square" src="images/certification/peek.png" width="50" height="50"
+                        alt="Not available" >
+                     <span >Agile Software Development</span>
+                     <p><em>Release by Peekaboo Startup Community </em> <br>
+                       <a href="
+                   https://peekaboo.academy/certificates/68ca338ed42e315834dd253f3bf536c5/">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                     <li class="collection-item avatar">   <img class="circular--square" src="images/certification/peek.png" width="50" height="50"
+                        alt="Not available" >
+                     <span class="title">Coding & Web Design</span>
+                     <p><em>Released by Peekaboo Startup Community </em> <br>
+                       <a href="
+                   https://peekaboo.academy/certificates/6d32fb2c06b94c80462f6b77208f216b/">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                      <li class="collection-item avatar">   <img class="circular--square" src="images/certification/udemy.jpg"width="50" height="50"
+                        alt="Not available" >
+                     <span class="title">Machine Learning:Logistic Regression,LDA & K-NN in Python</span>
+                     <p><em>Release by Udemy & Start-Tech Academy </em> <br>
+                       <a href="
+                   
+                   https://www.udemy.com/certificate/UC-ee4db9bd-66df-4a7f-9b97-35b1cf12d155/">Certificate<i class="material-icons">assignment</i></a>
+                     </p>   </li>
+                    
+                    
+                       
+                   
+                 </ul>
+                  
+               <br>
+               <br>
+               
+
+              <!--  <ul class="disc">
+                    <li>Here is an example</li>
+                    <li>of an unordered list.</li>
+                </ul>
+            -->
+               
+            </div>
+
+            <div class="column large-6 tab-full">
+
+           <!--     <h3>Buttons</h3>
+
+                <p>
+                    <a class="btn btn--primary full-width" href="#0">Primary Button</a>
+                    <a class="btn full-width" href="#0">Default Button</a>
+                    <a class="btn btn--stroke full-width" href="#0">Stroke Button</a>
+                </p>
+            -->
+                <h3> Skills </h3>
+                
+             <!--  <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>HTML5</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>C</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>Java</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent65"><span>65%</span></div>
+                    <strong>Python</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>SQL</strong>
+                    </li>
+                </ul>
+                <h3>Definition Lists</h3>
+--> 
+                <dl>
+                    <dt><strong>Techinical skills</strong></dt>
+                        <dd><strong> Lifecycle of the software:</strong>Developing, managing software and the other skills need during the lifecycle of the developping software (analysis e specification of requirments, defining with testing ...),
+                        </dd><dd> Operating systems: <strong>Linux, Unix, Windows</strong>
+                               </dd><dd> -Knowledge of <strong> algorithm techinques</strong> and concepts obtained by the two courses of <strong>G. P. Italiano</strong> in TorVergata during the first degree and the second one of <strong>S. Leonardi</strong> in Sapienza during the Master in Sapienza
+                               </dd><dd> -Application Web: <strong> protocol TCP,IP , UDP, server HTTP (Apache, IIS)</strong>
+                               </dd><dd> -DBMS: <strong>postgres, MySQL</strong></dd>
+                            </dd><dd> -Router protocol: <strong>DHCP,NAT,RIP,OSPF</strong></dd>
+                              
+                               <dd> -Network Infrastructure concept: <strong>Access,telephone Core networks</strong></dd>
+                    <dt><strong>Programming language</strong></dt>
+
+                        <dd>     -C e programming using Posix
+                        </dd><dd>-Python, Jython
+                        </dd> <dd>-Java, JavaFx with usage of the JDBC pattern for connecting to relational DB, usage of Servlet for managing the request to a server
+                        </dd> <dd>-Knowledge of SOA and WebServices(REST and SOAP)
+                        </dd> <dd>-Knowledge of CMMI and SCRUM
+                        </dd> <dd>-Knowledge of microservices
+                        </dd> <dd>-Knowledge of some machine learning alghorithm(SVM,Rocchio,KNN)
+                        </dd> <dd>-Scripting language for Html (JavaScript)
+                        </dd> <dd>-Skills to create and manage the Web: XML, JSP, HTML
+                        </dd> <dd>-Query language: SQL
+                        </dd> <dd>-Assembler on architecture MIPS
+                        </dd> <dd>-Mobile Programming(Android)
+                        </dd> <dd>-UML, Design Pattern</dd>
+                       </dl>
+
+            </div>
+
+            
+        </div> <!-- end row -->
+           
+
+    </section> <!-- end s-work -->
+
+
+    <!-- testimonies
+    ================================================== 
+    <section class="s-testimonials">
+    
+        <div class="row testimonials" data-aos="fade-up">
+
+            <div class="column large-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                    Laudantium quia consequatur molestias delectus culpa.</p> -->
+            <!--       <div class="testimonials__info">
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Tim Cook</strong>
+                            <span>CEO, Apple</span>
+                        </cite>
+                    </div>
+                </div>  end testimonials__slide -->
+<!--
+                <div class="testimonials__slide">
+                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                        Quasi voluptas eius distinctio. Atque eos maxime.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Sundar Pichai</strong>
+                            <span>CEO, Google</span>
+                        </cite>
+                    </div>
+                </div>  end testimonials__slide -->
+<!--
+                <div class="testimonials__slide">
+                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                    Voluptatem dignissimos ut.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Satya Nadella</strong>
+                            <span>CEO, Microsoft</span>
+                        </cite>
+                    </div>
+                </div>  end testimonials__slide -->
+                
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </section> <!-- end s-testimonials -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section  id="contact" class="s-contact ss-dark target-section" >
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Get In Touch</h2>
+            </div>
+        </div>
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="column large-full">
+                <p class="contact-email">
+                    <a href="mailto:#0"style= " font-size: 39px;">l.andrea195@live.it</a>
+                </p>
+
+                <p class="section-desc "style= " font-size: 35px;">
+                I'm happy to connect, listen and help. Let's work together and build
+                something awesome. Let's turn your idea and work together.
+                <a href="mailto:#0">Email Me</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+
+      
+<!--
+      <div class="column large-5 medium-full contact-phone">
+                <h4>Call Me</h4>
+                <a href="tel:3381659398" style=  font-size:15px;>+39 3381659398</a>
+            </div>
+
+
+
+            <div class="column large-7 medium-full contact-social">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#0" title="Facebook">Facebook</a></li>
+                    <li><a href="#0" title="Twitter">Twitter</a></li>
+                    <li><a href="#0" title="Instagram">Instagram</a></li>
+                </ul>
+            </div>
+
+        </div> end contact-infos 
+
+     end s-contact -->
+<br><br>
+     <div class="column large -2 " style=" position: fixed !important;   "><br>
+         <h3 style="color: grey !important; font-size:24px !important;"> Stats of views  </h3>
+
+                <ul class="stats-tabs">
+                    <li><a style="color:green !important;"> <script> document.write(update.pop());</script><em>Today</em></a></li>
+                    <li><a style="color:green !important;"><script> document.write(update.pop());</script> <em>Global</em></a></li>
+                </ul>
+            
+            </div>
+    
+        </div>
+    </section>
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Epitome 2019</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            <span>Photo by <a href="https://unsplash.com/@worthyofelegance">Alex</a>
+                 on Unsplash
+
+
+
+
+
+
+            </span>
+            </div>            
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+            
+          
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      $(document).ready(function(){
+              $("a").mouseenter(function(){
+                $(this).css("color", "white");
+              });
+              $("a").mouseleave(function(){
+                $(this).css("color", "#cf1767");
+              });
+                
+            
+            });
+    } else {
+      content.style.display = "block";
+      
+    }
+  });
+}
+var coll = document.getElementsByClassName("smoothscroll");
+var i;
+
+
+     coll.ready(function(){
+              $("a").mouseenter(function(){
+                $(this).css("color", "white");
+              });
+              $("a").mouseleave(function(){
+                $(this).css("color", "blue");
+              });
+                
+            
+            });
+   
+      
+    
+  
+
+
+</script>
+</body></html>
