@@ -60,6 +60,6 @@ Javascript Files:
 -------------------------------------------------------------------------------------------------------
 
 
-Thanks for downloading from Styleshout :)
+Thanks for whatching it  :)
 
 
