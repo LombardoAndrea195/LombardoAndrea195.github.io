@@ -136,8 +136,16 @@ h5, .h5, h6, .h6 {
     margin-bottom: 0.8rem;
   }
 
+.circular--square{
+  width: 310;
+  height: 350;
+}
 }
 
+.circular--square{
+  width: 310;
+  height: 350;
+}
 h1, .h1 {
   font-size: 3.6rem;
   line-height: 1.222;
