@@ -880,6 +880,8 @@ input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
   background: white;
   border-color: #000000;
+  
+  color: #000000;
 }
 
 /* button modifiers
