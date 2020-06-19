@@ -1962,7 +1962,7 @@ input::-moz-focus-inner {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-image: url(../images/portfolio/d.jpg);
-  background-size: 79%;
+  background-size: cover;
 
   position: absolute;
   top:0;
