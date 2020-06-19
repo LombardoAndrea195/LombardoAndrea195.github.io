@@ -2059,10 +2059,71 @@ input::-moz-focus-inner {
   .intro-text h5 {
     font-size: 2.3rem;
   }
-
+  .intro-pic {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../images/portfolio/d.jpg);
+    background-size: 84%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
+    position: absolute;
+    top:0;
+  
+  }
+  
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1500px) {
+
+  .intro-pic {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../images/portfolio/d.jpg);
+    background-size: 89%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
+    position: absolute;
+    top:0;
+  
+  }
+  
+
+}
+@media screen and (min-width:1400px) {
+
+  .intro-pic {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../images/portfolio/d.jpg);
+    background-size: 1400px 920px !important;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
+    position: absolute;
+    top:0;
+  
+  }
+  
+}
+@media screen and (min-width:1200px) {
+
+  .intro-pic {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../images/portfolio/d.jpg);
+    background-size: 1200px 820px !important;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
+    position: absolute;
+    top:0;
+  
+  }
+  
+}
+@media screen and (max-width:1100px) {
   .intro-content {
     max-width: 1000px;
   }
@@ -2074,7 +2135,18 @@ input::-moz-focus-inner {
   .intro-text h5 {
     font-size: 2rem;
   }
-
+  .intro-pic {
+    background-position: bottom center;
+    background-image: url(../images/portfolio/d.jpg);
+    background-size: 79%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    
+    position: absolute;
+    top:0;
+    
+  
+  }
 }
 
 @media screen and (max-width:1024px) {
@@ -2105,13 +2177,18 @@ input::-moz-focus-inner {
     padding-top: 8rem;
   }
 
+  
   .intro-pic {
-    top: 12%;
-    left: 40%;
-  }
-
-  .intro-pic::before {
-    opacity: .4;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../images/portfolio/d.jpg);
+    background-size: 84%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
+    position: absolute;
+    top:0;
+  
   }
 
   .intro-grid {
@@ -2135,7 +2212,16 @@ input::-moz-focus-inner {
   }
 
   .intro-pic {
-    left: 30%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../images/portfolio/d.jpg);
+    background-size: 84%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
+    position: absolute;
+    top:0;
+  
   }
 
   .intro-grid {
@@ -2154,7 +2240,16 @@ input::-moz-focus-inner {
   }
 
   .intro-pic {
-    left: 20%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../images/portfolio/d.jpg);
+    background-size: 84%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
+    position: absolute;
+    top:0;
+  
   }
 
   .intro-grid {
@@ -2194,9 +2289,6 @@ input::-moz-focus-inner {
   }
 
 }
-
-
-
 /* ===================================================================
  * # about
  *
