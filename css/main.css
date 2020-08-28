@@ -3647,8 +3647,8 @@ footer a:visited {
   transition: all .3s;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../images/portfolio/street.jpg");
-  background-size: 90px 60px;
+  background-image: url("../images/portfolio/street.jpg");!important 
+  background-size: 90px 60px;!important
   position: relative;
 }
 
