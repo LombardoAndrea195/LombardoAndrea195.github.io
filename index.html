@@ -209,7 +209,7 @@ background-clip: text;
                     <p class="lead">
        
                             <img class="circular--square" src="images/portfolio/a.JPG"  width="450" height="450"
-                            alt="Not available" >            <br>       I'm a 24-year-old engineer,based in Rome. I'm a web enthusiast and I really love developing projects.<br>
+                            alt="Not available" >            <br>       I'm a 25-year-old engineer,based in Rome. I'm a web enthusiast and I really love developing projects.<br>
                         <br>  
                      
                      
@@ -230,7 +230,7 @@ background-clip: text;
                         with the ability to hear,interact and share informations and ideas with the team.
                         I'm able to analyze problems, to solve solutions according the system's capabilities and to build algorithms for the occurence.
                         
-                        I like discussing and comparing myself with other people about my ideas.I’m passionate about creating truly beautiful, efficient digital products like Web Site but also applications to make people’s experience with technology memorable </p>
+                        I like discussing and comparing myself with other people about my ideas.I’m passionate about creating truly beautiful, efficient digital products like Web Site, Machine Learning system but also applications to make people’s experience with technology memorable </p>
                     <p>I’m looking forward to growing my management skills to hopefully develop and inspire a team of my own
                         In my spare time I really enjoy exploring the landscapes' beauty in place of the  world I 've never seen yet.
                     
@@ -517,6 +517,74 @@ background-clip: text;
                           overflow: hidden;
                         }
                         </style>
+                  
+                  <button type="button" class="collapsible">Project delivered for the course of <b style=" text-decoration: underline;">Mobile Application and Cloud Computing</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>from  July 2020 to September 2020</b>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;     
+        <a href="https://github.com/LombardoAndrea195/LibraryApp/blob/master/LIBRARY%20APP.pdf" class="secondary-content"> repository<i class="material-icons">send</i></a>
+       </button><div class="content"> 
+             <p><em> In the link above there's the reference documentation of the tasks of the app. <br><br>
+                The idea is to create a Mobile app able to give a contribution to readers that join reading books and would like to save book sentences and woul like to sign the number of books have read until now in a way to compare with their friends.
+                There's also the possibility to set a preference list, the book genres you prefer and for each book you read which is the best according your opinon.
+                The app is developed using Android Studio. After making an authentication using Firebase for doing the most common login form (email and password and Google Login) the user enter into a new fragment, that belong into a set of fragment of navigation drawer,(HOME) where there's a ListView where you've all books in user's preference list.
+                Now you 've the possibility to click into hamburgher for having possibility to LOGOUT( come back into authentication form),SETTING( manage LIGHT SENSOR, MEDIA PLAYER and other information of books preference),PROFILE(resume of the user preference).
+                In the Home fragment we've the possibility to interact with an element of the book for insert new information of the user like sentences or if user 've already read the book, otherwise you can add a book using GOOGLE-BOOK-API based on TITLE and AUTHOR.
+                The communication with the database is done through a server developped using NODE which is able to implement the REST protocol and manage the request done by the app and let to respond making queries to a cloud db in MONGODB.
+                </em>
+                 </p>
+            
+       <a href="https://github.com/LombardoAndrea195/HomeworkAD/blob/master/1hw/homework0120192020.pdf">Backend NodeJS</a>
+       <br>
+       <a href="https://github.com/LombardoAndrea195/LibraryApp">Develop project</a>
+       <br><br>
+                 
+           </div></li>
+           <li class="collection-item avatar">
+            <button type="button" class="collapsible">Presentation made for the course of <b style=" text-decoration: underline;">Seminars</b> <br><b style=" font-family:Arial-Black; 
+   font-size: 9px;">from Februrary 2020 to June 2020 </b>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <a href="https://www.slideshare.net/AndreaLombardo17/remote-core-lockingandrea-lombardo" class="secondary-content"> repository<i class="material-icons " >send</i></a><br>
+            </button><div class="content"> <p ><em>
+                
+               <br>The idea is to focus to a Seminar topic and try to explain something new like in my case: recent paper based on that topic: Remote Core Locking: Migrating Critical-Section Execution to Improve the Performance of Multithreaded Applications Written by Jean-Pierre Lozi Florian David Gaël Thomas Julia Lawall Gilles Muller Presented 
+            <br>   Some applications that work well on a small number of cores do not scale to the number of cores available in today's multicore architectures. Performance in lock algorithms is influenced: 1. access contention • Solution: Reduce the number of threads that, simultaneously, require the access to the critical section 2. cache misses • Solution: improve locality
+           <br>     EXAMPLE OF THE PROBLEM MEMCACHE IS AN EXAMPLE OF APPLICATION WHICH HAS THIS PROBLEM WHERE WORKS IN BEST PERFORMANCE : •FOR A GET OPERATION WITH 10 CORES •FOR A SET OPERATION WITH 2 CORES ONE OF THE BOTTLENECK OF THIS APPLICATION ARE CRITICAL SECTIONS, WHICH THE INFORMATION SHOULD BE ACCESSED IN ATOMIC WAY AND THEY’RE PROTECTED BY LOCKS. HIGH CONTENTION MEANS MORE PROCESSING TIME AND SO IT ‘S MORE EXPENSIVE. IT’S A PROBLEM WHEN THE NUMBER OF CORES START INCREASING .. Test system: Opteron 6172 with 48-core running at 3.0.0 Linux kernel with glibc 2.13
+               1)Time spent in critical section 2)number of cache miss 3)Others measurements. RCL performance are better than other lock algorithms in the case of increasing number of clients Memcached application performance: -no Flat combining because it periodically blocks on condition variables, which Flat Combining does not support. 
+               Other studies for optimizing the execution of critical sections on multicore architectures Software solution where the server is an ordinary client thread and the role of server is distributed between client threads, approach produces overhead for the management of the server Hardware-based solution whose introduces new instructions to perform the transfer of control, and uses a special fast core to execute critical sections Insert a fast transfer of control from other client cores to the server, to reduce access contention Execution a succession of critical sections on a single server core to improve cache locality In the last 20 years, several approaches have been developped for optimizing critical sections execution on multi-core architectures: 
+               Real motivations of low performance of lock-based approaches: 1) Cache misses when execute critical section 2) Bus saturation caused by spinlock because induces frequent broadcast on bus. RCL is introduced to address both issues simultaneously Solution: Design better locks 
+               RCL key features: Goal: Improve performance execution of critical section into legacy applications that run on top of multicore architectures. 1 Developed entirely in software on x86 architecture 2 Works better than other kind of locks works better. -POSIX -CAS SPINLOCK -MCS -FLAT COMBINING 3 
+               Replace the management of critical section with an optimized remote procedure which call to a dedicated server core. Shared information in the server core’s cache No need to transfer data between a core to another core How it works 
+               Overview Transfer the execution and management of the critical section to a server core, choosen according through profiler, the client with the most frequent lock usage Client as an handler locks implemented as a remote procedure calls of critical sections 
+               Core algorithm • The remote call is transformed into a clients and server communicate done through an array of request structures of CL dimension which is unique for each server . • C is the max number of clients • L is the size of the hardware cache line and represents a request done by a client to the server • Each request is mapped into a single cache line Each request contain in order: 1. Address of the lock associated with the critical section 2. Address of the structure refered to the context 3. Address of the function that include critical section 1. Client has requested the access 2. NULL not request. 
+                <br><br>From Server side • A thread analyze all the request and wait those that have an address refers to a critical section. • Iterate for each entry: • If function value is an address and lock is free, server thread acquires the lock and executes the critical • server reset the element • resume the iteration. • After writing the entry cache line with all the informations • it waits that the address of the function is point to NULL. • In case the number of client is less than the number of cores available: it’s used SSE3 monitor/mwait routine for sleeping the client sleeps until the server answer. From Client side 
+                Profiler: it’s developed by authors to detect the information locks: Lock frequency usage Time spent in critical section These information are used for identify the core in which running the server and locks need replacing from POSIX to RCL A tool Coccinelle used for transforming critical section to remote procedure call. Critical section looks like separate functions: PROBLEMS: Shared variable Additional elements:
+            <br>   Implementation of the RCL Runtime(supported by Posix thread) The runtime ensure responsiveness and liveness respectively avoiding the block of thread at OS level or inversion priority and managing at run time a pool of threads for each server : -if the servicing thread is blocked/waited, replace it with another in the pool. The management thread used for management the pool of threads: - Highest priority - Check the progress threads every time is woken up 1) modify the priority 2) nothing change The backup thread used when all threads are blocked at OS so it woke up the management thread. 1) The runtime implement a POSIX FIFO scheduling policy to execute a thread until blocked by processor: 1.1) could induce priority inversion between threads 2)Reduce the delay minimizing the length FIFO queue 
+                There’re situations to avoid which generate a deadlock because the server is unable to execute critical section of other locks. Core algorithm is applied to a thread and it requires that the thread is never blocked at the OS level and never spin into a waitloop. Now we focus on runtime RCL liveness and responsiveness: different situation. The thread could be blocked at the OS level The thread could spin if the critical section try to acquire a spinlock The thread could be preempted at the OS level
+                Critical sections every time is executed in all cores, execept one that manages the lifecyle of the thread • Vary the degree of contention on the lock by varying the delay between the execution of the critical section • Locality of the critical section varying the number of shared cache lines each one accesses. • Cache access line are not pipelined: construct the address of the next memory access from the previously read value.Comparison when varying degree contention average of 30 runs
+                False serialization • For adapting Berkley DB application to the usage of RCL you need to allocate the 2 most used lock and then other 9. All 11 locks should be implemented as RCLs on the same server. Their critical sections (refer to 11 locks) are artificially serialized • Now we focus the impact of the serialization with two metrics: • Use rate: • The use rate measures the server workload. • False serialization rate: • The false serialization rate a ratio of the number of iterations over the request array • It’s important how change the rate between one or 2 different server: • High rate with 1 and elimination of false serialization and increasing throughput of an amount 50 % 
+               Analysis of performance • Execution time incurred when each critical section accesses 5 cache lines. • The average number of L2 cache misses(top) • The average execution time (bottom) • When a critical section over 5000 iterations when critical sections access one shared cache line 
+                Rcl is techinque focus on reducing lock acquisition time and improving execution speed of critical sections through increased data locality and the migration of execution to the server core. • RCL powerful is when an application relies on highly conteded locks 
+             <br>   Future work DESIGN NEW APPLICATION WITH THESE STRATEGIES CONSIDER THE DESIGN AND THE IMPLEMENTATION OF AN ADAPTIVE RCL RUNTIME. SYSTEM ABLE TO DYNAMICALLY SWITCH BETWEEN LOCKING STRATEGIES CAPABILITY TO MIGRATE LOCKS BETWEEN MULTIPLE SERVERS FOR BALANCING DYNAMICALLY THE LOAD AND AVOID FALSE SERIALIZATION.  <br>
+     <a href="document/Seminars.pdf">Resume of the paper</a>
+     <br><br>
+    </p>
+          
+     
+     </div></li>
+           <li class="collection-item avatar">
+            <button type="button" class="collapsible">Project delivered for the course of <b style=" text-decoration: underline;">Human computer Interaction</b> <br><b style=" font-family:Arial-Black; 
+   font-size: 9px;">from Februrary 2020 to June 2020 </b>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <a href="https://github.com/LombardoAndrea195/ShareYourSport/blob/master/Human_Computer_Interaction_Project%20(2).pdf" class="secondary-content"> repository<i class="material-icons " >send</i></a><br>
+            </button><div class="content"> <p ><em>
+                
+               <br>In the links below we can see there' re project elaborations written in <b>Latex</b> using Overleaf with a first attempt of the project that we modify during the development.
+              The app serves as a medium to connectt each other all the people who share the same passion for a sport and in general for physical activities. The main objective of the app is to give the possibility for the user to connect with others joining sport events or creating them. In addition to this we also thought to arrange the app in a wway to allow, also through future developments for other ativities like sharing their workout and their statistics make a public challenge with the possibility to take them diretly from their favourites sport app.
+     <br>
+     <a href="
+     https://github.com/LombardoAndrea195/ShareYourSport/blob/master/ShareYourSport.pdf">Presentation of the project</a>
+     <br><br>
+    </p>
+          
+     
+     </div></li>
+           
+           <li class="collection-item avatar">
            <button type="button" class="collapsible">Homeworks delivered for the course of <b style=" text-decoration: underline;">Machine Learning</b> <br><b style=" font-family:Arial-Black; 
   font-size: 9px;">from october 2019 to February 2020 </b>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <a href="https://github.com/LombardoAndrea195/homeworkML" class="secondary-content"> repository<i class="material-icons " >send</i></a><br>
            </button><div class="content"> <p ><em>
@@ -832,14 +900,32 @@ background-clip: text;
                 
 
                 
-
                 <ul class="collection">
-			<li class="collection-item avatar">
-                        <img class="circular--square" src="images/certification/coursera.jpg"  width="50" height="50"
-                   alt="Not available" >
-                        <span class="title">Data Science Methodology</span>
-                        <p><em>Data Science Methodology</em> <br>
-                          <a href="
+                    <li class="collection-item avatar">
+                                <img class="circular--square" src="images/certification/linkedin.jpg"  width="50" height="50"
+                           alt="Not available" >
+                                <span class="title">Applied Machine Learning: Algorithms</span>
+                                <p><em>Authorized  by Linkedin</em> <br>
+                                  <a href="
+                              
+                                https://www.linkedin.com/learning/applied-machine-learning-algorithms/">Certificate<i class="material-icons">assignment</i></a>
+                                </p>   </li>
+                    
+                    <li class="collection-item avatar">
+                                <img class="circular--square" src="images/certification/linkedin.jpg"  width="50" height="50"
+                           alt="Not available" >
+                                <span class="title">Deep Learning: Image Recognition</span>
+                                <p><em>Authorized  by Linkedin</em> <br>
+                                  <a href="https://www.linkedin.com/learning/deep-learning-image-recognition/">Certificate<i class="material-icons">assignment</i></a>
+                                </p>   </li>
+                    
+                    <li class="collection-item avatar">
+                                <img class="circular--square" src="images/certification/coursera.jpg"  width="50" height="50"
+                           alt="Not available" >
+                                <span class="title">Data Science Methodology</span>
+                                <p><em>Authorized  by IBM and offered through Coursera</em> <br>
+                                  <a href="
+                              
                       
                          https://www.youracclaim.com/badges/4768dd4f-9b9a-4444-a974-28af604a1a5d/linked_in_profile8">Certificate<i class="material-icons">assignment</i></a>
                         </p>   </li> 
@@ -1034,29 +1120,38 @@ background-clip: text;
 --> 
                 <dl>
                     <dt><strong>Techinical skills</strong></dt>
-                        <dd><strong> Lifecycle of the software:</strong>Developing, managing software and the other skills need during the lifecycle of the developping software (analysis e specification of requirments, defining with testing ...),
-                        </dd><dd> Operating systems: <strong>Linux, Unix, Windows</strong>
+                        <dd><strong>- Lifecycle of the software:</strong>(analysis and specification of
+                            requirments, design,implementation, testing..),
+                            
+                        </dd><dd> -Capability to design a <strong>Machine Learning </strong> and analize the solution based on occurence data deliver 
+                        </dd><dd>- Operating systems: <strong>Linux, Unix, Windows</strong>
                                </dd><dd> -Knowledge of <strong> algorithm techinques</strong> and concepts obtained by the two courses of <strong>G. P. Italiano</strong> in TorVergata during the first degree and the second one of <strong>S. Leonardi</strong> in Sapienza during the Master in Sapienza
                                </dd><dd> -Application Web: <strong> protocol TCP,IP , UDP, server HTTP (Apache, IIS)</strong>
-                               </dd><dd> -DBMS: <strong>postgres, MySQL</strong></dd>
+                               </dd><dd> -DBMS: <strong>(relational) postgres,MySQL (not relational) Firebase,Mongodb</strong></dd>
                             </dd><dd> -Router protocol: <strong>DHCP,NAT,RIP,OSPF</strong></dd>
+                        
                               
                                <dd> -Network Infrastructure concept: <strong>Access,telephone Core networks</strong></dd>
-                    <dt><strong>Programming language</strong></dt>
-
-                        <dd>     -C e programming using Posix
-                        </dd><dd>-Python, Jython
-                        </dd> <dd>-Java, JavaFx with usage of the JDBC pattern for connecting to relational DB, usage of Servlet for managing the request to a server
-                        </dd> <dd>-Knowledge of SOA and WebServices(REST and SOAP)
-                        </dd> <dd>-Knowledge of CMMI and SCRUM
+                    <dt><strong>Programming SKILLS</strong></dt>
+                </dd> <dd>-knowledge of Machine Learning technique <strong>(classification, regression, unsupervised
+                        algorithm, Reinforcment learning, basic concept of Neural Network)
+              </strong>
+                        </dd> <dd>-Knowledge of <strong>SOA and WebServices(REST and SOAP)</strong>
+                        </dd> <dd>-knowledge of different development approaches: <strong>CMMI, SCRUM,AGILE and
+                                waterfall and iterative</strong>
                         </dd> <dd>-Knowledge of microservices
-                        </dd> <dd>-Knowledge of some machine learning alghorithm(SVM,Rocchio,KNN)
-                        </dd> <dd>-Scripting language for Html (JavaScript)
-                        </dd> <dd>-Skills to create and manage the Web: XML, JSP, HTML
-                        </dd> <dd>-Query language: SQL
+                        </dd> <dd>-Knowledge of Web Information retrival alghorithm<strong>-NLP-</strong>(SVM,Rocchio,KNN)
+                            
+                                 
+                        </dd> <dd>-Skills to create and manage the Web page: XML, JSP, HTML
+                        </dd> <dd>-Query language: SQL,NOSQL
                         </dd> <dd>-Assembler on architecture MIPS
-                        </dd> <dd>-Mobile Programming(Android)
+                        </dd> <dd>-Mobile Programming(Android) with ANDROID STUDIO
                         </dd> <dd>-UML, Design Pattern</dd>
+                        <dd>     -C e programming using Posix
+                            </dd><dd>-Python, Jython
+                            </dd> <dd>-Java, JavaFx with usage of the JDBC pattern for connecting to relational DB, usage of Servlet for managing the request to a server
+                     
                        </dl>
 
             </div>
