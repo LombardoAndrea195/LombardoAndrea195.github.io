@@ -35,96 +35,22 @@
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
-    <script src="https://unpkg.com/feather-icons"></script>
     <!-- favicons
     ================================================== -->
     
 
-    <script>
-    function setCookie(cname,cvalue,exdays) {
-      var d = new Date();
-      d.setTime(d.getTime() + (exdays*24*60*60*1000));
-      var expires = "expires=" + d.toGMTString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
     
-    function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-    function absoluteCookie() {
-      
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      var array= Array();
-      array.push(ca.length); /* Array composto da global value, elementi di oggi*/
-      var d = new Date();
-      var expires = "expires=" + d.toGMTString();
-      var parole=expires.substring(0,expires.lenght-12);
-      
-      var today=0;
-      for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(parole) == 0) {
-            today++;
-        }
-      }
-      array.push(today);
-      return array;
-    }
-    
-    function checkCookie() {
-     
-      var user=getCookie("username");
-      if (user != "") {
-        alert("Welcome again " + user);
-      } else {
-         user = prompt("Please enter your email for recognize when access again into the site:","");
-         if (user != "" && user != null) {
-           setCookie("username", user, 30);
-         }
-      }
-    }
-    
-    var update=absoluteCookie();
-    </script>
     
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><script type="text/javascript" id="cookieinfo"
 	src="//cookieinfoscript.com/js/cookieinfo.min.js">
 </script>
     
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0B3W94WLJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-G0B3W94WLJ');
-</script>
 
 </head>
 
-<body onload="checkCookie()" id="top">
+<body  id="top">
 
     <div id="preloader">
         <div id="loader"></div>
@@ -219,7 +145,7 @@ background-clip: text;
        
                             <img class="circular--square" src="images/portfolio/a.JPG"  width="450" height="450"
                             alt="Not available" >            <br>     I'm a 26-year-old computer science engineer, based in Rome. I'm a IT enthusiast with a specific passion on data science fields(Machine learning, Neural network and Artificial intelligence subjects) that it's grown during the last two years of my accademical path. In the master's degree I've done several projects with
- with diverse teams to frame and solve problems mathematically in courses in the branches of Machine Learning. I'm self-motivated with strong analytical and problem-solving skills, as well as a firm background in engineering, programming, mathematics, and statistics. I can describe myself as a self-motivated, team player person with strong organizational and interpersonal skills.<br>
+ with several teams to frame and solve problems mathematically in courses in the branches of Machine Learning. I'm self-motivated with strong analytical and problem-solving skills, as well as a firm background in engineering, programming, mathematics, and statistics. I can describe myself as a self-motivated, team player person with strong organizational and interpersonal skills.<br>
                         <br>  
                      
                      
@@ -262,7 +188,7 @@ background-clip: text;
         <div class="about-experience">
 
             <div class="row heading-block" data-aos="fade-up">
-                <!--
+                
                 <div class="column large-full">
                     <h2 class="section-heading">Work & Education</h2>
                 </div>
@@ -280,16 +206,21 @@ background-clip: text;
                         <div class="timeline__block">
                             <div class="timeline__bullet"></div>
                             <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2018 - Present</p>
-                                <h3 class="item-title">Awesome Studio</h3>
-                                <h5>Lead Designer</h5>
+                                <p class="timeline__timeframe">December 2021- Present</p>
+                                <h3 class="item-title"> <img class="circular--square" src="images/icons/ey.png"  width="50" height="50"
+                                    alt="Not available" >  EY - ernst & young </h3>
+                                <h5>Junior Information Technology</h5>
                             </div>
                             <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                                <p>As <strong>Solution Developer</strong> I've supported the following activities:</p>
+                    
+                                <p><bold>Planning, development, maintance of cloud solution based on MS PowerPlatform</bold></p>
+                                <p><bold>Support of the Cloud Operating Model design and implementation roadmap definition, according to the EY framework.</bold></p>
+       
                             </div>
                         </div>
 
-                        <div class="timeline__block">
+<!--                     <div class="timeline__block">
                             <div class="timeline__bullet"></div>
                             <div class="timeline__header">
                                 <p class="timeline__timeframe">July 2017 - June 2018</p>
@@ -312,10 +243,10 @@ background-clip: text;
                                 <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
                             </div>
                         </div>
-
+-->   
                     </div>
                 </div>
--->
+
                 <div class="column large-half tab-full" data-aos="fade-up">
                     <div class="timeline">
 
@@ -521,8 +452,7 @@ The task of the project is to improve the line production of Ruag company using 
                           background: rgb(65, 60, 60);
                         }
                         
-                        .active, .collapsible:hover {
-                        }
+                   
                         
                         .content {
                           padding: 0 18px;
@@ -1407,16 +1337,7 @@ var coll = document.getElementsByClassName("smoothscroll");
 var i;
 
 
-     coll.ready(function(){
-              $("a").mouseenter(function(){
-                $(this).css("color", "white");
-              });
-              $("a").mouseleave(function(){
-                $(this).css("color", "blue");
-              });
-                
-            
-            });
+    
    
       
     
@@ -1426,6 +1347,5 @@ var i;
 </script>
 
 <script>
-    feather.replace()
     </script>
 </body></html>
