@@ -1961,7 +1961,7 @@ input::-moz-focus-inner {
 .intro-pic {
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-image: url(../images/portfolio/d.jpg);
+  background-image: url(../images/portfolio/home.jpg);
   background-size: cover;
 
   position: absolute;
@@ -2051,7 +2051,7 @@ input::-moz-focus-inner {
  * responsive:
  * intro
  * ------------------------------------------------------------------- */
-@media screen and (max-width:1400px) {
+@media (max-width:1400px) {
   .intro-text .h3 {
     font-size: 2.2rem;
   }
@@ -2060,65 +2060,59 @@ input::-moz-focus-inner {
     font-size: 2.3rem;
   }
   .intro-pic {
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-position: bottom center;
-    background-image: url(../images/portfolio/d.jpg);
-    background-size: 84%;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  
-    position: absolute;
-    top:0;
-  
+    */
+    background-image: url(../images/portfolio/home.jpg);
+    /*background-repeat: no-repeat;*/ /* Do not repeat the image */
+    /*background-size: cover;*/ /* Resize the background image to cover the entire container */
+    /*position: absolute;
+    top:0;*/
   }
   
 }
 
-@media screen and (max-width:1500px) {
+
+
+@media(min-width:1025px) {
 
   .intro-pic {
-    background-repeat: no-repeat;
+     /*background-repeat: no-repeat;
     background-position: bottom center;
-    background-image: url(../images/portfolio/d.jpg);
-    background-size: 89%;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  
-    position: absolute;
-    top:0;
-  
-  }
-  
-
-}
-@media screen and (min-width:1400px) {
-
-  .intro-pic {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-image: url(../images/portfolio/d.jpg);
-    background-size: 1400px 920px !important;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  
-    position: absolute;
-    top:0;
+    */
+    background-image: url(../images/portfolio/home.jpg);
+    /*background-repeat: no-repeat;*/ /* Do not repeat the image */
+    /*background-size: cover;*/ /* Resize the background image to cover the entire container */
+    /*position: absolute;
+    top:0;*/
   
   }
   
 }
-@media screen and (min-width:1200px) {
+@media (max-width: 480px) {
+  .intro-pic {
+    /*background-repeat: no-repeat;
+   background-position: bottom center;
+   */
+   background-image: url(../images/portfolio/home.jpg);
+   /*background-repeat: no-repeat;*/ /* Do not repeat the image */
+   /*background-size: cover;*/ /* Resize the background image to cover the entire container */
+   /*position: absolute;
+   top:0;*/
+ 
+ }
+}
+@media(min-width: 481px) and (max-width: 1024px) {
 
   .intro-pic {
-    background-repeat: no-repeat;
+     /*background-repeat: no-repeat;
     background-position: bottom center;
-    background-image: url(../images/portfolio/d.jpg);
-    background-size: 1200px 820px !important;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  
-    position: absolute;
-    top:0;
+    */
+    background-image: url(../images/portfolio/home.jpg);
+    /*background-repeat: no-repeat;*/ /* Do not repeat the image */
+    /*background-size: cover;*/ /* Resize the background image to cover the entire container */
+    /*position: absolute;
+    top:0;*/
   
   }
   
@@ -2135,18 +2129,10 @@ input::-moz-focus-inner {
   .intro-text h5 {
     font-size: 2rem;
   }
-  .intro-pic {
-    background-position: bottom center;
-    background-image: url(../images/portfolio/d.jpg);
-    background-size: 79%;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    
-    position: absolute;
-    top:0;
+  
     
   
-  }
+  
 }
 
 @media screen and (max-width:1024px) {
@@ -2178,18 +2164,8 @@ input::-moz-focus-inner {
   }
 
   
-  .intro-pic {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-image: url(../images/portfolio/d.jpg);
-    background-size: 84%;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
   
-    position: absolute;
-    top:0;
   
-  }
 
   .intro-grid {
     top: 20%;
@@ -2211,18 +2187,7 @@ input::-moz-focus-inner {
     font-size: 1.8rem;
   }
 
-  .intro-pic {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-image: url(../images/portfolio/d.jpg);
-    background-size: 84%;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
   
-    position: absolute;
-    top:0;
-  
-  }
 
   .intro-grid {
     left: 15%;
@@ -2239,16 +2204,7 @@ input::-moz-focus-inner {
     width: auto;
   }
 
-  .intro-pic {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-image: url(../images/portfolio/d.jpg);
-    background-size: 84%;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  
-    position: absolute;
-    top:0;
+
   
   }
 
@@ -2280,6 +2236,9 @@ input::-moz-focus-inner {
   .intro-text h5 {
     font-size: 1.3rem;
   }
+  
+  
+  
 
 }
 
@@ -2287,6 +2246,7 @@ input::-moz-focus-inner {
   .intro-text h5 {
     font-size: 2.2rem;
   }
+  
 
 }
 /* ===================================================================
