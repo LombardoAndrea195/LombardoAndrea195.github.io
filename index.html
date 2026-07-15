@@ -9,10 +9,14 @@
     <title>Andrea Lombardo | Data & DevOps Engineer Portfolio</title>
 
     <meta name="description"
-        content="Portfolio ufficiale di Andrea Lombardo, Data & DevOps Engineer. Progetti, competenze, pubblicazioni, certificazioni e contatti.">
+        content="Official portfolio of Andrea Lombardo, Data & DevOps Engineer. Projects, skills, publications, certifications and contacts.">
     <meta name="author" content="Andrea Lombardo">
+    <meta name="language" content="en">
+    <meta name="keywords"
+        content="Andrea Lombardo, Data Engineer, DevOps Engineer, Cloud Engineer, Portfolio, Kubernetes, Azure, Data Science, CI/CD">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://lombardoandrea195.github.io/">
+    <link rel="alternate" hreflang="en" href="https://lombardoandrea195.github.io/">
 
 
 
@@ -21,21 +25,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Andrea Lombardo">
     <meta property="og:title" content="Andrea Lombardo | Data & DevOps Engineer Portfolio">
-    <meta property="og:description" content="Scopri progetti, competenze e pubblicazioni di Andrea Lombardo.">
+    <meta property="og:description" content="Discover projects, skills and publications by Andrea Lombardo.">
     <meta property="og:url" content="https://lombardoandrea195.github.io/">
     <meta property="og:image" content="https://lombardoandrea195.github.io/android-chrome-512x512.png">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@LombardoAndrea95">
+    <meta name="twitter:creator" content="@LombardoAndrea95">
     <meta name="twitter:title" content="Andrea Lombardo | Data & DevOps Engineer Portfolio">
-    <meta name="twitter:description" content="Portfolio con progetti, certificazioni e contatti professionali.">
+    <meta name="twitter:description" content="Portfolio with projects, certifications and professional contacts.">
     <meta name="twitter:image" content="https://lombardoandrea195.github.io/android-chrome-512x512.png">
 
     <!-- CSS
     ================================================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="images/portfolio/c.jpeg" fetchpriority="high">
+    <link rel="preload" as="image" href="images/portfolio/d.jpg" media="(min-width: 1600px)">
     <link rel="dns-prefetch" href="//cookieinfoscript.com">
+    <link rel="dns-prefetch" href="//github.com">
+    <link rel="dns-prefetch" href="//www.linkedin.com">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
@@ -60,13 +71,49 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "name": "Andrea Lombardo",
-            "url": "https://lombardoandrea195.github.io/",
-            "jobTitle": "Data & DevOps Engineer",
-            "sameAs": [
-                "https://github.com/LombardoAndrea195",
-                "https://www.linkedin.com/in/andrea-lombardo-/",
-                "https://www.facebook.com/andrea.lombardo.564"
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "@id": "https://lombardoandrea195.github.io/#person",
+                    "name": "Andrea Lombardo",
+                    "url": "https://lombardoandrea195.github.io/",
+                    "jobTitle": "Data & DevOps Engineer",
+                    "description": "Data & DevOps Engineer focused on cloud, data platforms and software delivery.",
+                    "image": "https://lombardoandrea195.github.io/images/portfolio/a.jpg",
+                    "sameAs": [
+                        "https://github.com/LombardoAndrea195",
+                        "https://www.linkedin.com/in/andrea-lombardo-/",
+                        "https://www.facebook.com/andrea.lombardo.564"
+                    ],
+                    "knowsAbout": [
+                        "Data Engineering",
+                        "DevOps",
+                        "Cloud Architecture",
+                        "Kubernetes",
+                        "CI/CD",
+                        "Machine Learning"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://lombardoandrea195.github.io/#website",
+                    "url": "https://lombardoandrea195.github.io/",
+                    "name": "Andrea Lombardo Portfolio",
+                    "inLanguage": "en"
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://lombardoandrea195.github.io/#webpage",
+                    "url": "https://lombardoandrea195.github.io/",
+                    "name": "Andrea Lombardo | Data & DevOps Engineer Portfolio",
+                    "isPartOf": {
+                        "@id": "https://lombardoandrea195.github.io/#website"
+                    },
+                    "about": {
+                        "@id": "https://lombardoandrea195.github.io/#person"
+                    },
+                    "description": "Official portfolio of Andrea Lombardo with projects, skills and professional contacts."
+                }
             ]
         }
     </script>
@@ -84,6 +131,10 @@
     <!-- site header
     ================================================== -->
     <header class="s-header">
+        <button id="lang-toggle" class="header-lang-toggle" type="button" aria-label="Switch language">
+            <span class="lang-segment lang-segment--en" aria-hidden="true">EN</span>
+            <span class="lang-segment lang-segment--it" aria-hidden="true">IT</span>
+        </button>
         <!--
         <div class="header-logo">
             <a class="site-logo" href="index.html">Home Page</a>
@@ -93,15 +144,16 @@
         <nav class="header-nav-wrap" id="site-navigation">
             <ul class="header-main-nav">
 
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about"> About<i data-feather="book-open"
-                            style="float:left;"></i></a></li>
-                <li><a class="smoothscroll" href="#works" title="works">Projects<i data-feather="code"
-                            style="float:left;"></i></a></li>
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro"><span
+                            data-i18n="nav_intro">Intro</span></a></li>
+                <li><a class="smoothscroll" href="#about" title="about"> <span data-i18n="nav_about">About</span><i
+                            data-feather="book-open" style="float:left;"></i></a></li>
+                <li><a class="smoothscroll" href="#works" title="works"><span data-i18n="nav_projects">Projects</span><i
+                            data-feather="code" style="float:left;"></i></a></li>
                 <li><a class="smoothscroll" href="#Capabilities" title="Capabilities"><i data-feather="award"
-                            style="float:left;"></i>Skills Aquired</a></li>
+                            style="float:left;"></i><span data-i18n="nav_skills">Skills Acquired</span></a></li>
                 <li><a class="smoothscroll" href="#contact" title="contact us"><i data-feather="phone"
-                            style="float:left;"></i>Contact me</a></li>
+                            style="float:left;"></i><span data-i18n="nav_contact">Contact me</span></a></li>
             </ul>
 
             <ul class="header-social">
@@ -136,19 +188,20 @@ background-clip: text;
         <div class="row intro-content">
 
             <div class="column large-9 mob-full intro-text">
-                <p class="intro-kicker">Data & DevOps Engineer</p>
+                <p class="intro-kicker" data-i18n="intro_kicker">Data & DevOps Engineer</p>
                 <h1 class="signature-headline" data-split="letters">Andrea Lombardo Portfolio</h1>
-                <p class="intro-summary">Progetti software, data engineering, cloud architecture e automazione.
-                    Esplora i miei lavori e il percorso professionale.</p>
+                <p class="intro-summary" data-i18n="intro_summary">Software projects, data engineering, cloud
+                    architecture and automation. Explore my work and professional journey.</p>
                 <div class="intro-actions">
-                    <a href="#works" class="btn btn--primary smoothscroll">View Projects</a>
-                    <a href="#contact" class="btn btn--stroke smoothscroll">Contact Me</a>
+                    <a href="#works" class="btn btn--primary smoothscroll" data-i18n="intro_cta_projects">View
+                        Projects</a>
+                    <a href="#contact" class="btn btn--stroke smoothscroll" data-i18n="intro_cta_contact">Contact Me</a>
                 </div>
             </div>
 
             <div class="intro-scroll">
                 <a href="#about" class="intro-scroll-link smoothscroll">
-                    <strong>Scroll and enjoy</strong>
+                    <strong data-i18n="intro_scroll">Scroll and enjoy</strong>
                 </a>
             </div>
 
@@ -167,7 +220,7 @@ background-clip: text;
 
             <div class="row heading-block" data-aos="fade-up">
                 <div class="column large-full">
-                    <h2 class="section-heading">About Me</h2>
+                    <h2 class="section-heading" data-i18n="about_heading">About Me</h2>
                 </div>
             </div>
 
@@ -221,11 +274,12 @@ background-clip: text;
 
             <div class="row about-me__buttons">
                 <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="mailto:l.andrea195@live.it?subject = Information"
-                        class="btn btn--stroke full-width">Contact me</a>
+                    <a href="mailto:l.andrea195@live.it?subject = Information" class="btn btn--stroke full-width"
+                        data-i18n="about_cta_contact">Contact me</a>
                 </div>
                 <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="document/CV.pdf" class="btn btn--primary full-width" download="">Download CV</a>
+                    <a href="document/CV.pdf" class="btn btn--primary full-width" download=""
+                        data-i18n="about_cta_cv">Download CV</a>
                 </div>
             </div>
 
@@ -236,7 +290,7 @@ background-clip: text;
             <div class="row heading-block" data-aos="fade-up">
 
                 <div class="column large-full">
-                    <h2 class="section-heading">Work & Education</h2>
+                    <h2 class="section-heading" data-i18n="work_education_heading">Work & Education</h2>
                 </div>
             </div>
 
@@ -531,7 +585,7 @@ background-clip: text;
         <div class="shadow-overlay"></div>
         <div class="row heading-block heading-block--center" data-aos="fade-up">
             <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom ">Portfolio</h2>
+                <h2 class="section-heading section-heading--centerbottom " data-i18n="portfolio_heading">Portfolio</h2>
 
             </div>
 
@@ -1171,8 +1225,10 @@ background-clip: text;
         <div class="row heading-block heading-block--center" data-aos="fade-up">
             <div class="column large-full">
                 <h2 class="section-heading section-heading--centerbottom signature-headline" data-split="letters">
-                    Knowledge and Soft Skills</h2>
-                <p class="section-desc">Research output, communication strengths and delivery mindset.</p>
+                    <span data-i18n="skills_heading">Knowledge and Soft Skills</span>
+                </h2>
+                <p class="section-desc" data-i18n="skills_desc">Research output, communication strengths and delivery
+                    mindset.</p>
             </div>
         </div> <!-- end heading-block -->
         <div class="row half-bottom capabilities-grid">
@@ -1280,7 +1336,7 @@ background-clip: text;
 
                     <div class="knowledge-archive reveal-on-scroll">
                         <article class="knowledge-group">
-                            <h4>Technical Skills (Restored)</h4>
+                            <h4>Technical Skills</h4>
                             <ul class="knowledge-list">
                                 <li>Lifecycle of software: analysis, specification of requirements, design,
                                     implementation, testing.</li>
@@ -1297,7 +1353,7 @@ background-clip: text;
                         </article>
 
                         <article class="knowledge-group">
-                            <h4>Programming Skills (Restored)</h4>
+                            <h4>Programming Skills</h4>
                             <ul class="knowledge-list">
                                 <li>Machine Learning techniques: classification, regression, unsupervised learning,
                                     reinforcement learning, neural network fundamentals.</li>
@@ -1429,59 +1485,37 @@ background-clip: text;
     <section id="contact" class="s-contact ss-dark target-section">
         <div class="row heading-block heading-block--center" data-aos="fade-up">
             <div class="column large-full">
-                <h2 class="section-heading">Get In Touch</h2>
-                <p class="section-desc">Direct channel for focused collaborations.</p>
+                <h2 class="section-heading" data-i18n="contact_heading">Get In Touch</h2>
+                <p class="section-desc" data-i18n="contact_desc">Direct channel for focused collaborations.</p>
             </div>
         </div>
 
         <div class="row" data-aos="fade-up">
             <div class="column large-full">
                 <div class="contact-shell reveal-on-scroll">
-                    <div class="contact-shell__hud" aria-hidden="true">
-                        <span></span><span></span><span></span><span></span>
-                    </div>
                     <div class="contact-scanline" aria-hidden="true"></div>
                     <div class="contact-intro">
-                        <p class="contact-eyebrow">Transmission Channel: Online</p>
-                        <h3 class="contact-title" data-text="INITIATE CONTACT">INITIATE CONTACT</h3>
-                        <p class="contact-copy">
-                            Data, cloud and DevOps missions. Send a signal.
+                        <p class="contact-eyebrow" data-i18n="contact_eyebrow">Direct Channel Online</p>
+                        <h3 class="contact-title" data-i18n="contact_title">Build Something Bold</h3>
+                        <p class="contact-copy" data-i18n="contact_copy">
+                            Data, cloud and DevOps delivery with fast execution and clean architecture.
                         </p>
-                        <div class="contact-actions">
-                            <a class="contact-btn contact-btn--primary"
-                                href="mailto:l.andrea195@live.it?subject=Portfolio%20Contact&body=Hi%20Andrea%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20discuss%20a%20project.">
-                                Transmit
-                            </a>
-                            <a class="contact-btn contact-btn--ghost"
-                                href="mailto:l.andrea195@live.it?subject=Quick%20Call">
-                                Quick Sync
-                            </a>
+                        <div class="contact-primary-actions reveal-on-scroll">
+                            <a class="contact-mail-cta"
+                                href="mailto:l.andrea195@live.it?subject=Portfolio%20Contact&body=Hi%20Andrea%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20discuss%20a%20project."
+                                data-i18n="contact_cta_email">Open
+                                Email Channel</a>
+                            <p class="contact-mail-note" data-i18n="contact_response">Fast response window: ~24h</p>
                         </div>
-                    </div>
-
-                    <div class="contact-reels">
-                        <article class="contact-reel contact-reel--email reveal-on-scroll">
-                            <p class="contact-reel__label">Primary Channel</p>
-                            <a class="contact-reel__value"
-                                href="mailto:l.andrea195@live.it?subject=Portfolio%20Contact">l.andrea195@live.it</a>
-                            <p class="contact-reel__meta">Reply window: ~24h</p>
-                        </article>
-
-                        <article class="contact-reel contact-reel--location reveal-on-scroll">
-                            <p class="contact-reel__label">Node</p>
-                            <p class="contact-reel__value">Rome, Italy</p>
-                            <p class="contact-reel__meta">Remote + hybrid ready</p>
-                        </article>
-
-                        <article class="contact-reel contact-reel--profiles reveal-on-scroll">
-                            <p class="contact-reel__label">External Feeds</p>
-                            <div class="contact-links">
-                                <a href="https://github.com/LombardoAndrea195">GitHub</a>
-                                <a href="https://www.linkedin.com/in/andrea-lombardo-/">LinkedIn</a>
-                                <a href="https://www.facebook.com/andrea.lombardo.564">Facebook</a>
-                            </div>
-                            <p class="contact-reel__meta">Live profile streams</p>
-                        </article>
+                        <p class="contact-location reveal-on-scroll" data-i18n="contact_location">Rome, Italy · Remote +
+                            Hybrid</p>
+                        <div class="contact-inline-links reveal-on-scroll">
+                            <a href="mailto:l.andrea195@live.it?subject=Quick%20Call"
+                                data-i18n="contact_quick_sync">Quick Sync</a>
+                            <a href="https://github.com/LombardoAndrea195">GitHub</a>
+                            <a href="https://www.linkedin.com/in/andrea-lombardo-/">LinkedIn</a>
+                            <a href="https://www.facebook.com/andrea.lombardo.564">Facebook</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1556,90 +1590,120 @@ background-clip: text;
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js" defer></script>
     <script src="js/plugins.js" defer></script>
     <script src="js/main.js" defer></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var projectCards = document.querySelectorAll('#works .collection-item.avatar');
-            projectCards.forEach(function (card) {
-                if (card.querySelector('.project-header')) return;
+        (function () {
+            function runDeferredDomEnhancements() {
+                var projectCards = document.querySelectorAll('#works .collection-item.avatar');
+                projectCards.forEach(function (card) {
+                    if (card.querySelector('.project-header')) return;
 
-                var button = card.querySelector('button.collapsible');
-                if (!button) return;
+                    var button = card.querySelector('button.collapsible');
+                    if (!button) return;
 
-                var repoLink = button.querySelector('a.secondary-content, a.repo-link-top');
-                var projectHeader = document.createElement('div');
-                projectHeader.className = 'project-header';
+                    var repoLink = button.querySelector('a.secondary-content, a.repo-link-top');
+                    var projectHeader = document.createElement('div');
+                    projectHeader.className = 'project-header';
 
-                card.insertBefore(projectHeader, button);
-                projectHeader.appendChild(button);
+                    card.insertBefore(projectHeader, button);
+                    projectHeader.appendChild(button);
 
-                if (repoLink) {
-                    if (!repoLink.classList.contains('repo-link-top')) {
-                        repoLink.classList.add('repo-link-top');
+                    if (repoLink) {
+                        if (!repoLink.classList.contains('repo-link-top')) {
+                            repoLink.classList.add('repo-link-top');
+                        }
+                        repoLink.classList.add('secondary-content');
+                        repoLink.textContent = 'Repository';
+                        projectHeader.appendChild(repoLink);
                     }
-                    repoLink.classList.add('secondary-content');
-                    repoLink.textContent = 'Repository';
-                    projectHeader.appendChild(repoLink);
-                }
-            });
+                });
 
-            var projectTitles = document.querySelectorAll('#works .collapsible');
-            projectTitles.forEach(function (titleBtn) {
-                var normalized = titleBtn.innerHTML;
-                normalized = normalized.replace(/Project delivered for the course of/gi, 'Course Project:');
-                normalized = normalized.replace(/Project made for the course of/gi, 'Course Project:');
-                normalized = normalized.replace(/Homeworks delivered for the course of/gi, 'Course Work:');
-                normalized = normalized.replace(/Presentation made for the course of/gi, 'Seminar Presentation:');
-                titleBtn.innerHTML = normalized;
-            });
+                var projectTitles = document.querySelectorAll('#works .collapsible');
+                projectTitles.forEach(function (titleBtn) {
+                    var normalized = titleBtn.innerHTML;
+                    normalized = normalized.replace(/Project delivered for the course of/gi, 'Course Project:');
+                    normalized = normalized.replace(/Project made for the course of/gi, 'Course Project:');
+                    normalized = normalized.replace(/Homeworks delivered for the course of/gi, 'Course Work:');
+                    normalized = normalized.replace(/Presentation made for the course of/gi, 'Seminar Presentation:');
+                    normalized = normalized.replace(/<br\s*\/?>/gi, ' ');
+                    normalized = normalized.replace(/\s{2,}/g, ' ');
+                    titleBtn.innerHTML = normalized;
+                });
 
-            var coll = document.getElementsByClassName('collapsible');
-            for (var i = 0; i < coll.length; i++) {
-                var initialCard = coll[i].closest('.collection-item');
-                var initialContent = initialCard ? initialCard.querySelector('.content') : null;
-                if (initialContent && initialContent.classList.contains('content')) {
-                    initialContent.style.maxHeight = '0px';
-                    initialContent.style.opacity = '0';
+                if (window.refreshSiteLanguageNodes) {
+                    window.refreshSiteLanguageNodes();
                 }
 
-                coll[i].addEventListener('click', function (event) {
-                    if (event.target.closest('a')) return;
+                var coll = document.getElementsByClassName('collapsible');
+                for (var i = 0; i < coll.length; i++) {
+                    var initialCard = coll[i].closest('.collection-item');
+                    var initialContent = initialCard ? initialCard.querySelector('.content') : null;
+                    if (initialContent && initialContent.classList.contains('content')) {
+                        initialContent.style.maxHeight = '0px';
+                        initialContent.style.opacity = '0';
+                    }
 
-                    this.classList.toggle('active');
-                    var card = this.closest('.collection-item');
-                    var content = card ? card.querySelector('.content') : null;
-                    var isOpen = this.classList.contains('active');
+                    coll[i].addEventListener('click', function (event) {
+                        if (event.target.closest('a')) return;
 
-                    if (!content || !content.classList.contains('content')) return;
+                        this.classList.toggle('active');
+                        var card = this.closest('.collection-item');
+                        var content = card ? card.querySelector('.content') : null;
+                        var isOpen = this.classList.contains('active');
 
-                    if (isOpen) {
-                        if (card) card.classList.add('is-open');
-                        content.style.maxHeight = content.scrollHeight + 'px';
-                        content.style.opacity = '1';
-                    } else {
-                        if (card) card.classList.remove('is-open');
-                        content.style.maxHeight = '0px';
-                        content.style.opacity = '0';
+                        if (!content || !content.classList.contains('content')) return;
+
+                        if (isOpen) {
+                            if (card) card.classList.add('is-open');
+                            content.style.maxHeight = content.scrollHeight + 'px';
+                            content.style.opacity = '1';
+                        } else {
+                            if (card) card.classList.remove('is-open');
+                            content.style.maxHeight = '0px';
+                            content.style.opacity = '0';
+                        }
+
+                        if (window.applyCurrentSiteLanguage) {
+                            window.applyCurrentSiteLanguage();
+                        }
+                    });
+                }
+
+                var images = document.querySelectorAll('img:not([loading])');
+                images.forEach(function (img) {
+                    img.setAttribute('loading', 'lazy');
+                    img.setAttribute('decoding', 'async');
+                });
+
+                var externalLinks = document.querySelectorAll('a[href^="http"]');
+                externalLinks.forEach(function (link) {
+                    if (!link.rel) {
+                        link.rel = 'noopener noreferrer';
                     }
                 });
             }
 
-            var images = document.querySelectorAll('img:not([loading])');
-            images.forEach(function (img) {
-                img.setAttribute('loading', 'lazy');
-                img.setAttribute('decoding', 'async');
-            });
-
-            var externalLinks = document.querySelectorAll('a[href^="http"]');
-            externalLinks.forEach(function (link) {
-                if (!link.rel) {
-                    link.rel = 'noopener noreferrer';
+            function scheduleEnhancements() {
+                if ('requestIdleCallback' in window) {
+                    window.requestIdleCallback(runDeferredDomEnhancements, {
+                        timeout: 1200
+                    });
+                } else {
+                    window.setTimeout(runDeferredDomEnhancements, 100);
                 }
-            });
-        });
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', scheduleEnhancements, {
+                    once: true
+                });
+            } else {
+                scheduleEnhancements();
+            }
+        })();
     </script>
 </body>
 
