@@ -302,7 +302,7 @@ h1,
   position: relative;
   overflow: hidden;
   background-color: #050505;
-  background-image: linear-gradient(180deg, rgba(5, 5, 5, 0.72) 0%, rgba(5, 5, 5, 0.82) 55%, rgba(5, 5, 5, 0.9) 100%), url(../images/portfolio/b.jpg);
+  background-image: linear-gradient(180deg, rgba(5, 5, 5, 0.72) 0%, rgba(5, 5, 5, 0.82) 55%, rgba(5, 5, 5, 0.9) 100%), url(../images/portfolio/b.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1801,7 +1801,7 @@ input::-moz-focus-inner {
 
 .pgn__prev {
 
-  background-image: url("../images/portfolio/b.jpg");
+  background-image: url("../images/portfolio/b.webp");
   left: 0;
 }
 
@@ -2645,7 +2645,7 @@ body.menu-is-open {
 }
 
 .intro-pic {
-  background: url(../images/portfolio/c.jpeg) center 24% no-repeat;
+  background: url(../images/portfolio/c.webp) center 24% no-repeat;
   background-size: cover;
   position: absolute;
   inset: 0 0 0 42%;
@@ -3443,7 +3443,7 @@ html.motion-lite .reveal-on-scroll {
     /*background-repeat: no-repeat;
     background-position: bottom center;
     */
-    background-image: url(../images/portfolio/c.jpeg);
+    background-image: url(../images/portfolio/c.webp);
     background-position: 54% 24%;
     /*background-repeat: no-repeat;*/
     /* Do not repeat the image */
@@ -3463,7 +3463,7 @@ html.motion-lite .reveal-on-scroll {
     /*background-repeat: no-repeat;
     background-position: bottom center;
     */
-    background-image: url(../images/portfolio/c.jpeg);
+    background-image: url(../images/portfolio/c.webp);
     background-position: center 24%;
     /*background-repeat: no-repeat;*/
     /* Do not repeat the image */
@@ -3478,7 +3478,7 @@ html.motion-lite .reveal-on-scroll {
 
 @media screen and (min-width:1600px) {
   .intro-pic {
-    background-image: url(../images/portfolio/d.jpg);
+    background-image: url(../images/portfolio/d.webp);
     background-position: center 20%;
   }
 }
@@ -3544,7 +3544,7 @@ html.motion-lite .reveal-on-scroll {
   .intro-pic {
     inset: 0;
     border-bottom-left-radius: 0;
-    background-image: url(../images/portfolio/c.jpeg);
+    background-image: url(../images/portfolio/c.webp);
     background-position: 64% 18%;
     background-size: cover;
     opacity: .88;
