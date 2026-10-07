@@ -30,14 +30,14 @@
     <meta name="twitter:image" content="https://lombardoandrea195.github.io/android-chrome-512x512.png">
 
     <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f8f6f1" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#171512" media="(prefers-color-scheme: dark)">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-    <link rel="preload" as="image" href="images/portfolio/c.webp" fetchpriority="high" type="image/webp">
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+    <link rel="preload" as="image" href="images/portfolio/andrea-portrait.webp" fetchpriority="high" type="image/webp">
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -70,7 +70,7 @@
                     "url": "https://lombardoandrea195.github.io/",
                     "jobTitle": "Data & DevOps Engineer",
                     "description": "Data & DevOps Engineer focused on cloud, data platforms and software delivery.",
-                    "image": "https://lombardoandrea195.github.io/images/portfolio/c.webp",
+                    "image": "https://lombardoandrea195.github.io/images/portfolio/andrea-portrait.webp",
                     "worksFor": { "@type": "Organization", "name": "Enel Group" },
                     "alumniOf": [
                         { "@type": "CollegeOrUniversity", "name": "Sapienza University of Rome" },
@@ -95,7 +95,7 @@
     </script>
 </head>
 
-<body id="top">
+<body id="top" data-page="work">
 
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
@@ -109,7 +109,7 @@
 
             <nav class="site-nav" id="site-nav" aria-label="Primary" data-i18n-aria="aria_nav">
                 <ul class="site-nav__list">
-                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Background</a></li>
                     <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
                     <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
                     <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
@@ -119,6 +119,11 @@
             </nav>
 
             <div class="site-header__actions">
+                <nav class="mode-switch" data-mode="work" aria-label="Site" data-i18n-aria="aria_mode">
+                    <span class="mode-switch__thumb" aria-hidden="true"></span>
+                    <a href="index.html" aria-current="page" data-i18n="mode_work">Work</a>
+                    <a href="life.html" data-i18n="mode_life">Life</a>
+                </nav>
                 <button class="lang-toggle" type="button" data-lang-toggle aria-label="Passa in italiano">
                     <span class="lang-toggle__thumb" aria-hidden="true"></span>
                     <span class="lang-toggle__opt" aria-hidden="true">EN</span>
@@ -144,7 +149,7 @@
                         <span data-i18n="hero_status">Data &amp; DevOps Engineer at Enel Group</span>
                     </p>
                     <h1 class="hero__title hero__in" id="hero-title" style="--i:1">
-                        Andrea Lombardo
+                        Andrea <em>Lombardo</em>
                     </h1>
                     <p class="hero__lead hero__in" style="--i:2" data-i18n="hero_lead">I build data platforms, cloud
                         infrastructure and the delivery pipelines that connect them. Based in Rome.</p>
@@ -162,9 +167,9 @@
 
                 <figure class="hero__media">
                     <div class="hero__frame">
-                        <img src="images/portfolio/c.webp" width="1200" height="1600"
-                            alt="Portrait of Andrea Lombardo on a rooftop in Rome" fetchpriority="high"
-                            decoding="async">
+                        <img src="images/portfolio/andrea-portrait.webp" width="514" height="643"
+                            alt="Andrea Lombardo in a navy suit, mid-conversation at an outdoor event"
+                            fetchpriority="high" decoding="async">
                     </div>
                     <figcaption class="hero__caption">
                         <span data-i18n="hero_place">Rome, IT</span>
@@ -254,16 +259,19 @@
                 </div>
 
                 <div class="about__text">
-                    <h2 class="section-title" id="about-title" data-reveal data-i18n="about_title">About</h2>
+                    <h2 class="section-title" id="about-title" data-reveal data-i18n-html="about_title">My <em>background</em></h2>
                     <p class="about__lead" data-reveal style="--i:1" data-i18n="about_lead">I'm a computer science
                         engineer with a strong passion for data science, cloud systems and digital infrastructure.</p>
                     <div class="prose" data-reveal style="--i:2">
                         <p data-i18n="about_p1">I enjoy discussing ideas, comparing approaches with peers and building
                             efficient digital products: cyber-physical systems, data lakes, data warehouses, machine
                             learning solutions and software designed to make daily life easier.</p>
-                        <p data-i18n="about_p2">Today I'm growing on both the technical and the management side. In my
-                            spare time I love exploring new places around the world.</p>
+                        <p data-i18n="about_p2">Today I'm growing on both the technical and the management side.</p>
                     </div>
+                    <a class="link-arrow about__life" href="life.html" data-reveal style="--i:3">
+                        <span data-i18n="about_life">The other side: travel, food and running</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
 
                     <ol class="strengths">
                         <li class="strengths__item" data-reveal style="--i:0">
@@ -298,8 +306,7 @@
         <!-- experience ================================================== -->
         <section class="section experience" id="experience" aria-labelledby="experience-title">
             <div class="container">
-                <h2 class="section-title" id="experience-title" data-reveal data-i18n="exp_title">Experience &amp;
-                    education</h2>
+                <h2 class="section-title" id="experience-title" data-reveal data-i18n-html="exp_title">Experience &amp; <em>education</em></h2>
 
                 <div class="timeline-group">
                     <h3 class="timeline-group__label" data-reveal data-i18n="exp_work">Work</h3>
@@ -455,7 +462,7 @@
         <!-- skills ================================================== -->
         <section class="section skills" id="skills" aria-labelledby="skills-title">
             <div class="container">
-                <h2 class="section-title" id="skills-title" data-reveal data-i18n="skills_title">Skills</h2>
+                <h2 class="section-title" id="skills-title" data-reveal data-i18n-html="skills_title">Skills &amp; <em>stack</em></h2>
 
                 <div class="bento">
                     <article class="bento__cell bento__cell--stack" data-reveal style="--i:0">
@@ -613,11 +620,83 @@
         </section>
 
         <!-- projects ================================================== -->
-        <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <section class="section projects" id="projects" aria-labelledby="side-title">
             <div class="container">
                 <div class="projects__head">
-                    <h2 class="section-title" id="projects-title" data-reveal data-i18n="projects_title">University
-                        projects</h2>
+                    <h2 class="section-title" id="side-title" data-reveal data-i18n-html="side_title">Side <em>projects</em></h2>
+                    <p class="projects__lead" data-reveal style="--i:1" data-i18n="side_lead">What I build outside
+                        work, on evenings and weekends.</p>
+                </div>
+
+                <div class="side-grid">
+                    <article class="project project--feature" data-reveal>
+                        <p class="project__meta"><span class="project__level" data-i18n="personal">Personal</span><span
+                                data-i18n="ritmo_kind">Web app · PWA</span></p>
+                        <h3 class="project__title project__title--lg" data-i18n="ritmo_title">Ritmo, an adaptive
+                            running coach</h3>
+                        <p class="project__desc" data-i18n="ritmo_desc">A data-driven coach that builds a training plan
+                            around your next race and adjusts it as you run. Activities arrive from Strava in real
+                            time, and every change to the plan comes with its reason.</p>
+                        <ul class="highlights">
+                            <li data-i18n="ritmo_h1">Versioned, deterministic training engine: pace zones from 3K and
+                                7K tests or recent runs, plans from 5K to marathon with deload weeks and taper.</li>
+                            <li data-i18n="ritmo_h2">Adapts to feedback: high effort with poor sleep, stress or pain
+                                trims the next session, with a before/after audit trail.</li>
+                            <li data-i18n="ritmo_h3">Strava integration through webhooks only, no polling, with
+                                OAuth tokens encrypted at rest (AES-256-GCM).</li>
+                            <li data-i18n="ritmo_h4">An AI coach that explains plans from structured data and can
+                                never change them on its own.</li>
+                            <li data-i18n="ritmo_h5">Privacy by design: explicit consent, full data export and
+                                account deletion. Available in English and Italian.</li>
+                        </ul>
+                        <ul class="tech" aria-label="Tech stack" data-i18n-aria="aria_stack">
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#nextdotjs"></use></svg>Next.js</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#typescript"></use></svg>TypeScript</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#postgresql"></use></svg>PostgreSQL</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#prisma"></use></svg>Prisma</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#tailwindcss"></use></svg>Tailwind CSS</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#zod"></use></svg>Zod</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#vitest"></use></svg>Vitest</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#playwright"></use></svg>Playwright</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#strava"></use></svg>Strava API</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#openai"></use></svg>OpenAI</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#vercel"></use></svg>Vercel</li>
+                        </ul>
+                        <p class="project__cta">
+                            <span data-i18n="ritmo_cta">Private for now. Want a demo or more details?</span>
+                            <a href="mailto:l.andrea195@live.it?subject=Ritmo" data-i18n="email_me">Email me</a>
+                        </p>
+                    </article>
+
+                    <article class="project project--feature" data-reveal style="--i:1">
+                        <p class="project__meta"><span class="project__level" data-i18n="personal">Personal</span><span
+                                data-i18n="travel_kind">Website</span></p>
+                        <h3 class="project__title project__title--lg" data-i18n="travel_title">Travel blog, a diary
+                            of my trips</h3>
+                        <p class="project__desc" data-i18n="travel_desc">My travel blog: a digital diary of the trips
+                            I’ve made, with tips, photos and clips. A carousel home page, one slide per trip, draws
+                            you in.</p>
+                        <ul class="highlights">
+                            <li data-i18n="travel_h1">Six trips so far: the American West Coast, Thailand, Bolivia and
+                                Chile, China, Scotland and Sri Lanka.</li>
+                            <li data-i18n="travel_h2">Every trip has its own vlog page, plus a gallery and destination
+                                pages to explore.</li>
+                            <li data-i18n="travel_h3">Hand-written HTML, CSS and JavaScript, no framework.</li>
+                        </ul>
+                        <ul class="tech" aria-label="Tech stack" data-i18n-aria="aria_stack">
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#html5"></use></svg>HTML</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#css"></use></svg>CSS</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#javascript"></use></svg>JavaScript</li>
+                            <li><svg aria-hidden="true"><use href="images/icons/stack.svg#githubpages"></use></svg>GitHub Pages</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://lombardoandrea195.github.io/TravelWebSite/index.html" data-i18n="l_site">Visit the site</a></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="projects__head projects__head--uni">
+                    <h2 class="section-title" id="projects-title" data-reveal data-i18n-html="projects_title">University <em>projects</em></h2>
                     <div class="segmented" role="group" aria-label="Filter projects" data-i18n-aria="aria_filter" data-filter-group data-reveal>
                         <span class="segmented__thumb" aria-hidden="true"></span>
                         <button type="button" aria-pressed="true" data-filter="all"><span
@@ -875,8 +954,7 @@
         <!-- research ================================================== -->
         <section class="section research" id="research" aria-labelledby="research-title">
             <div class="container">
-                <h2 class="section-title" id="research-title" data-reveal data-i18n="research_title">Research &amp;
-                    publications</h2>
+                <h2 class="section-title" id="research-title" data-reveal data-i18n-html="research_title">Research &amp; <em>publications</em></h2>
 
                 <ol class="pubs">
                     <li class="pub" data-reveal>
@@ -1009,8 +1087,7 @@
         <section class="section contact" id="contact" aria-labelledby="contact-title">
             <div class="container contact__grid">
                 <div class="contact__copy">
-                    <h2 class="contact__title" id="contact-title" data-reveal data-i18n="contact_title">Let’s talk.
-                    </h2>
+                    <h2 class="contact__title" id="contact-title" data-reveal data-i18n-html="contact_title">Let’s <em>talk.</em></h2>
                     <p class="contact__text" data-reveal style="--i:1" data-i18n="contact_text">Open to conversations
                         about data platforms, cloud infrastructure and DevOps. I usually reply within a day.</p>
 
@@ -1032,6 +1109,8 @@
                         <li><a href="https://github.com/LombardoAndrea195">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li><a href="https://instagram.com/lombi95">Instagram <span aria-hidden="true">↗</span></a></li>
+                        <li><a href="https://open.spotify.com/user/21egco6ecq3cce2bydnghjyby">Spotify <span
+                                    aria-hidden="true">↗</span></a></li>
                         <li><a href="https://www.facebook.com/andrea.lombardo.564">Facebook <span
                                     aria-hidden="true">↗</span></a></li>
                     </ul>
@@ -1042,6 +1121,7 @@
     </main>
 
     <footer class="site-footer">
+        <p class="container footer-mark" aria-hidden="true">Andrea <em>Lombardo</em></p>
         <div class="container site-footer__inner">
             <p>© <span data-year>2026</span> Andrea Lombardo</p>
             <a class="link-arrow" href="#top"><span data-i18n="back_top">Back to top</span> <span
@@ -1049,7 +1129,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

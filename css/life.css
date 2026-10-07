@@ -1,0 +1,755 @@
+/* ==========================================================================
+   Life page · builds on main.css tokens and components
+   ========================================================================== */
+
+/* Hero
+   ========================================================================== */
+.life-hero {
+    position: relative;
+    padding-top: clamp(2.5rem, 6vw, 4.5rem);
+    padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
+    overflow: hidden;
+}
+
+/* Warm glow instead of the technical dot grid used on the Work page */
+.life-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0 -10% 0 35%;
+    z-index: -1;
+    background: radial-gradient(closest-side, color-mix(in oklch, var(--accent) 14%, transparent), transparent);
+    pointer-events: none;
+}
+
+.life-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: center;
+    gap: clamp(2.5rem, 6vw, 5rem);
+}
+
+.life-hero__title {
+    margin-top: 28px;
+    font-size: clamp(3rem, 7.4vw, 6.5rem);
+    letter-spacing: -0.055em;
+    line-height: 0.95;
+}
+
+.life-hero__title > span:not(.rotator) {
+    display: block;
+}
+
+/* Rotating word: every word sits in the same grid cell, so the line never
+   changes size; only transform and opacity move. */
+.rotator {
+    display: grid;
+    padding-bottom: 0.14em;
+    margin-bottom: -0.14em;
+    overflow: clip;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.12em;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+    color: var(--accent);
+}
+
+.rotator__word {
+    grid-area: 1 / 1;
+    opacity: 0;
+    transform: translateY(70%);
+    transition: transform 700ms var(--ease-out), opacity 500ms var(--ease-out);
+}
+
+.rotator__word.is-active {
+    opacity: 1;
+    transform: none;
+}
+
+.rotator__word.is-leaving {
+    opacity: 0;
+    transform: translateY(-70%);
+    transition-duration: 380ms, 260ms;
+    transition-timing-function: ease-in, ease-in;
+}
+
+/* Clip stack: three phone-shaped clips dealt like cards */
+.life-hero__media {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 560px;
+    justify-self: end;
+}
+
+.clips {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 10 / 9;
+}
+
+.clip {
+    --x: 0%;
+    --y: 0%;
+    --r: 0deg;
+    position: absolute;
+    top: 7%;
+    width: 44%;
+    aspect-ratio: 9 / 16;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 22px;
+    isolation: isolate;
+    background: var(--surface);
+    box-shadow: 0 2px 4px oklch(0.2 0.02 255 / 0.12), 0 24px 48px -20px oklch(0.2 0.02 255 / 0.45);
+    transform: translate(var(--x), var(--y)) rotate(var(--r));
+    scale: 1;
+    transition: transform 600ms var(--ease-out), scale 400ms var(--ease-out);
+    animation: deal 900ms var(--ease-out) backwards;
+    animation-delay: calc(240ms + var(--i, 0) * 120ms);
+}
+
+.clip--left {
+    left: 0;
+    --r: -7deg;
+}
+
+.clip--center {
+    left: 28%;
+    top: 0;
+    z-index: 2;
+    --r: 1.5deg;
+}
+
+.clip--right {
+    right: 0;
+    z-index: 1;
+    --r: 7deg;
+}
+
+.clip video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bottom scrim so the caption stays legible on any frame */
+.clip::after {
+    content: "";
+    position: absolute;
+    inset: 55% 0 0;
+    background: linear-gradient(transparent, oklch(0.15 0.01 255 / 0.55));
+    pointer-events: none;
+}
+
+.clip--right .clip__tag {
+    text-align: right;
+}
+
+.clip__tag {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 12px;
+    z-index: 1;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    line-height: 1.35;
+    color: oklch(0.98 0.005 255);
+}
+
+@keyframes deal {
+    from {
+        opacity: 0;
+        transform: translate(0, 18%) rotate(0deg);
+        scale: 0.9;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .clips:hover .clip--left {
+        --x: -8%;
+        --r: -10deg;
+    }
+
+    .clips:hover .clip--right {
+        --x: 8%;
+        --r: 10deg;
+    }
+
+    .clips .clip:hover {
+        z-index: 3;
+        --r: 0deg;
+        --y: -3%;
+        scale: 1.04;
+    }
+}
+
+.clips__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 34px;
+    padding-inline: 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-pill);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    transition: color 200ms ease, background-color 200ms ease, transform 140ms var(--ease-out);
+}
+
+.clips__toggle:active {
+    transform: scale(0.96);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .clips__toggle:hover {
+        color: var(--text);
+        background: var(--surface);
+    }
+}
+
+/* Pause icon: two bars. Play icon: a triangle. */
+.clips__icon {
+    width: 9px;
+    height: 10px;
+    border-inline: 3px solid currentColor;
+}
+
+[data-clips-toggle][data-paused] .clips__icon {
+    width: 0;
+    height: 0;
+    border-block: 5px solid transparent;
+    border-inline: 8px solid currentColor;
+    border-inline-end-width: 0;
+}
+
+@media (max-width: 860px) {
+    .life-hero__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .life-hero__media {
+        justify-self: center;
+        max-width: 480px;
+        margin-top: 8px;
+    }
+}
+
+/* Small phones: deal the clips side by side so no caption is covered */
+@media (max-width: 560px) {
+    .clips {
+        aspect-ratio: 10 / 6.6;
+    }
+
+    .clip {
+        top: 9%;
+        width: 31.5%;
+        border-radius: 16px;
+    }
+
+    .clip--left {
+        --r: -4deg;
+    }
+
+    .clip--center {
+        left: 34.25%;
+        top: 2%;
+        --r: 0deg;
+    }
+
+    .clip--right {
+        --r: 4deg;
+    }
+
+    .clip__tag,
+    .clip--right .clip__tag {
+        left: 8px;
+        right: 8px;
+        bottom: 9px;
+        font-size: 10.5px;
+        text-align: left;
+    }
+}
+
+/* Words marquee: louder than the stack marquee on the Work page */
+.marquee--life {
+    padding-block: 22px;
+}
+
+.marquee--life .marquee__track {
+    animation-duration: 36s;
+}
+
+.marquee--life .marquee__list li {
+    font-family: var(--font-sans);
+    font-size: clamp(1.375rem, 2.6vw, 2.125rem);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    color: var(--text);
+}
+
+.marquee--life .marquee__list li::after {
+    width: 8px;
+    height: 8px;
+    margin-inline: 32px;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+/* Running
+   ========================================================================== */
+/* Head and body share one grid, so the intro starts exactly where the
+   rituals column starts instead of floating to the right edge. */
+.run .projects__head,
+.run__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: clamp(2rem, 6vw, 5.5rem);
+}
+
+.run .projects__head {
+    align-items: end;
+    row-gap: 24px;
+}
+
+.run__grid {
+    align-items: start;
+}
+
+.run__photo {
+    position: sticky;
+    top: calc(var(--header-h) + 32px);
+}
+
+.run__frame {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius);
+    background: var(--surface);
+}
+
+.run__frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.run__badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 5px 12px;
+    border-radius: var(--radius-pill);
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.run__photo figcaption {
+    margin-top: 14px;
+    max-width: 48ch;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* The two rituals that matter most get the big type */
+.rituals {
+    display: grid;
+    gap: clamp(2rem, 4vw, 3rem);
+    padding-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.ritual {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 6px 16px;
+}
+
+.ritual__num,
+.perk__num {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.ritual__num {
+    grid-row: span 2;
+    padding-top: 0.9em;
+}
+
+.ritual__title {
+    font-size: clamp(2.5rem, 5.4vw, 4.5rem);
+    letter-spacing: -0.05em;
+    line-height: 0.98;
+}
+
+.ritual__title em,
+.perk__title em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.08em;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+}
+
+.ritual__text {
+    max-width: 46ch;
+    margin-top: 10px;
+    font-size: 1.0625rem;
+    color: var(--muted);
+}
+
+.perks {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--line-strong);
+}
+
+.perk {
+    display: grid;
+    align-content: start;
+    gap: 8px;
+    padding: 24px 24px 26px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.perk:nth-child(even) {
+    padding-left: 24px;
+    padding-right: 0;
+    border-left: 1px solid var(--line);
+}
+
+.perk__title {
+    font-size: 1.25rem;
+    letter-spacing: -0.03em;
+}
+
+.perk__text {
+    font-size: 15px;
+    color: var(--muted);
+}
+
+.run__links {
+    margin-top: 28px;
+}
+
+@media (max-width: 860px) {
+    .run .projects__head,
+    .run__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .run__photo {
+        position: static;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 560px) {
+    .ritual {
+        grid-template-columns: 1fr;
+    }
+
+    .ritual__num {
+        grid-row: auto;
+        padding-top: 0;
+    }
+
+    .perks {
+        grid-template-columns: 1fr;
+    }
+
+    .perk,
+    .perk:nth-child(even) {
+        padding: 22px 0;
+        border-left: 0;
+    }
+}
+
+/* About me: trait bento
+   ========================================================================== */
+.me-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.trait {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: clamp(22px, 2.6vw, 30px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-elev);
+    overflow: hidden;
+}
+
+.trait--wide {
+    grid-column: span 3;
+}
+
+.trait--accent {
+    justify-content: space-between;
+    background: color-mix(in srgb, var(--accent) 7%, var(--bg-elev));
+    border-color: color-mix(in srgb, var(--accent) 20%, var(--line));
+}
+
+.trait--accent .trait__num {
+    font-family: var(--font-sans);
+    font-size: clamp(4.5rem, 10vw, 8.5rem);
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    line-height: 0.85;
+    opacity: 0.9;
+}
+
+.trait--accent .trait__title {
+    margin-top: auto;
+    font-size: clamp(1.875rem, 3.4vw, 2.75rem);
+    letter-spacing: -0.045em;
+    line-height: 1.02;
+}
+
+.trait--accent .trait__text {
+    max-width: 44ch;
+    font-size: 1.0625rem;
+}
+
+/* Photo and clip cards sit side by side with their text: the clips are
+   portrait, so a tall frame shows them whole instead of a thin slice. */
+.trait--photo {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+    padding: 0;
+    gap: 0;
+}
+
+.trait__media {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: var(--surface);
+}
+
+.trait__media img,
+.trait__media video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 900ms var(--ease-out);
+}
+
+/* Small pause/play control on clip cards (shared state with the hero button) */
+.loop-toggle {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: oklch(0.15 0.01 60 / 0.5);
+    color: oklch(0.98 0.005 80);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: background-color 200ms ease, transform 140ms var(--ease-out);
+}
+
+.loop-toggle:active {
+    transform: scale(0.92);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .loop-toggle:hover {
+        background: oklch(0.15 0.01 60 / 0.72);
+    }
+}
+
+.trait--photo .trait__body {
+    justify-content: flex-end;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .trait--photo:hover .trait__media img {
+        scale: 1.04;
+    }
+}
+
+.trait__body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: clamp(22px, 2.6vw, 30px);
+}
+
+.trait__num {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.trait__title {
+    font-size: 1.375rem;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
+.trait__text {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1080px) {
+    .me-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .trait,
+    .trait--wide {
+        grid-column: span 1;
+    }
+}
+
+/* Two columns are too narrow for side-by-side media: stack it on top */
+@media (max-width: 900px) and (min-width: 681px) {
+    .trait--photo {
+        grid-template-columns: 1fr;
+    }
+
+    .trait__media {
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@media (max-width: 680px) {
+    .me-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trait--photo {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 440px) {
+    .trait--photo {
+        grid-template-columns: 1fr;
+    }
+
+    .trait__media {
+        aspect-ratio: 4 / 5;
+    }
+}
+
+/* Motto: the quote lights up word by word as it scrolls through the viewport
+   ========================================================================== */
+.motto {
+    padding-block: clamp(5.5rem, 13vw, 10rem);
+    border-top: 1px solid var(--line);
+}
+
+.motto__figure {
+    position: relative;
+    max-width: 20ch;
+    font-size: clamp(2rem, 5.2vw, 4.5rem);
+}
+
+.motto__figure::before {
+    content: "“";
+    position: absolute;
+    top: -0.42em;
+    left: -0.06em;
+    font-size: 2.4em;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--accent);
+    opacity: 0.25;
+}
+
+.motto blockquote {
+    margin: 0;
+}
+
+.motto__text {
+    position: relative;
+    font-family: var(--font-serif);
+    font-size: 1.18em;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+    text-wrap: balance;
+}
+
+.motto__cite {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px;
+    margin-top: 36px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.motto__cite .link-arrow {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--text);
+}
+
+@supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+        .motto {
+            view-timeline-name: --motto;
+        }
+
+        .motto__text .w {
+            opacity: 0.16;
+            animation: word-in linear both;
+            animation-timeline: --motto;
+            animation-range: cover calc(22% + var(--w) * 34%) cover calc(26% + var(--w) * 34%);
+        }
+    }
+}
+
+@keyframes word-in {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Motion preferences
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    .clip {
+        animation: fade 400ms ease both;
+        transition: none;
+    }
+
+    .rotator__word {
+        transition: none;
+    }
+}
+
+html:not(.js) .rotator__word:not(.is-active) {
+    display: none;
+}

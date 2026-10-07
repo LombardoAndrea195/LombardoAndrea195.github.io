@@ -1,0 +1,4 @@
+# Original phone clips (heavy). The web-ready versions live in media/.
+video/
+.DS_Store
+.playwright-cli/
