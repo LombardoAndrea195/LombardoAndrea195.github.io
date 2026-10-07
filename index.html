@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Andrea Lombardo | Data & DevOps Engineer Portfolio</title>
 
     <meta name="description"
         content="Official portfolio of Andrea Lombardo, Data & DevOps Engineer. Projects, skills, publications, certifications and contacts.">
     <meta name="author" content="Andrea Lombardo">
-    <meta name="language" content="en">
     <meta name="keywords"
         content="Andrea Lombardo, Data Engineer, DevOps Engineer, Cloud Engineer, Portfolio, Kubernetes, Azure, Data Science, CI/CD">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://lombardoandrea195.github.io/">
     <link rel="alternate" hreflang="en" href="https://lombardoandrea195.github.io/">
-
-
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
@@ -38,35 +29,35 @@
     <meta name="twitter:description" content="Portfolio with projects, certifications and professional contacts.">
     <meta name="twitter:image" content="https://lombardoandrea195.github.io/android-chrome-512x512.png">
 
-    <!-- CSS
-    ================================================== -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
     <link rel="preload" as="image" href="images/portfolio/c.webp" fetchpriority="high" type="image/webp">
-    <link rel="preload" as="image" href="images/portfolio/d.webp" media="(min-width: 1600px)" type="image/webp">
-    <link rel="dns-prefetch" href="//cookieinfoscript.com">
-    <link rel="dns-prefetch" href="//github.com">
-    <link rel="dns-prefetch" href="//www.linkedin.com">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
-    <!-- Favicon element added-->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://lombardoandrea195.github.io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://lombardoandrea195.github.io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="https://lombardoandrea195.github.io/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://lombardoandrea195.github.io/favicon-16x16.png">
-    <link rel="manifest" href="https://lombardoandrea195.github.io/site.webmanifest">
-    <link rel="mask-icon" href="https://lombardoandrea195.github.io/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="https://lombardoandrea195.github.io/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="https://lombardoandrea195.github.io/mstile-144x144.png">
-    <meta name="msapplication-config" content="https://lombardoandrea195.github.io/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#c4501f">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-TileColor" content="#14161a">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <script>
+        // Apply stored language before first paint to avoid a flash of the wrong copy.
+        try {
+            if (localStorage.getItem('site-language') === 'it') document.documentElement.lang = 'it';
+        } catch (e) { }
+        document.documentElement.classList.add('js');
+    </script>
 
     <script type="application/ld+json">
         {
@@ -79,20 +70,18 @@
                     "url": "https://lombardoandrea195.github.io/",
                     "jobTitle": "Data & DevOps Engineer",
                     "description": "Data & DevOps Engineer focused on cloud, data platforms and software delivery.",
-                    "image": "https://lombardoandrea195.github.io/images/portfolio/a.webp",
+                    "image": "https://lombardoandrea195.github.io/images/portfolio/c.webp",
+                    "worksFor": { "@type": "Organization", "name": "Enel Group" },
+                    "alumniOf": [
+                        { "@type": "CollegeOrUniversity", "name": "Sapienza University of Rome" },
+                        { "@type": "CollegeOrUniversity", "name": "University of Rome Tor Vergata" }
+                    ],
                     "sameAs": [
                         "https://github.com/LombardoAndrea195",
                         "https://www.linkedin.com/in/andrea-lombardo-/",
                         "https://www.facebook.com/andrea.lombardo.564"
                     ],
-                    "knowsAbout": [
-                        "Data Engineering",
-                        "DevOps",
-                        "Cloud Architecture",
-                        "Kubernetes",
-                        "CI/CD",
-                        "Machine Learning"
-                    ]
+                    "knowsAbout": ["Data Engineering", "DevOps", "Cloud Architecture", "Kubernetes", "CI/CD", "Machine Learning"]
                 },
                 {
                     "@type": "WebSite",
@@ -100,1611 +89,967 @@
                     "url": "https://lombardoandrea195.github.io/",
                     "name": "Andrea Lombardo Portfolio",
                     "inLanguage": "en"
-                },
-                {
-                    "@type": "WebPage",
-                    "@id": "https://lombardoandrea195.github.io/#webpage",
-                    "url": "https://lombardoandrea195.github.io/",
-                    "name": "Andrea Lombardo | Data & DevOps Engineer Portfolio",
-                    "isPartOf": {
-                        "@id": "https://lombardoandrea195.github.io/#website"
-                    },
-                    "about": {
-                        "@id": "https://lombardoandrea195.github.io/#person"
-                    },
-                    "description": "Official portfolio of Andrea Lombardo with projects, skills and professional contacts."
                 }
             ]
         }
     </script>
-
-
-
 </head>
 
 <body id="top">
 
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
-        <button id="lang-toggle" class="header-lang-toggle" type="button" aria-label="Switch language">
-            <span class="lang-segment lang-segment--en" aria-hidden="true">EN</span>
-            <span class="lang-segment lang-segment--it" aria-hidden="true">IT</span>
-        </button>
-        <!--
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">Home Page</a>
+    <!-- header ================================================== -->
+    <header class="site-header" data-header>
+        <div class="container site-header__inner">
+            <a class="brand" href="#top" aria-label="Andrea Lombardo, back to top" data-i18n-aria="aria_brand">
+                <span class="brand__mark" aria-hidden="true">AL</span>
+                <span class="brand__name">Andrea Lombardo</span>
+            </a>
 
-        </div>-->
+            <nav class="site-nav" id="site-nav" aria-label="Primary" data-i18n-aria="aria_nav">
+                <ul class="site-nav__list">
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                    <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="#research" data-i18n="nav_research">Research</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
 
-        <nav class="header-nav-wrap" id="site-navigation">
-            <ul class="header-main-nav">
-
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro"><span
-                            data-i18n="nav_intro">Intro</span></a></li>
-                <li><a class="smoothscroll" href="#about" title="about"> <span data-i18n="nav_about">About</span><i
-                            data-feather="book-open" style="float:left;"></i></a></li>
-                <li><a class="smoothscroll" href="#works" title="works"><span data-i18n="nav_projects">Projects</span><i
-                            data-feather="code" style="float:left;"></i></a></li>
-                <li><a class="smoothscroll" href="#Capabilities" title="Capabilities"><i data-feather="award"
-                            style="float:left;"></i><span data-i18n="nav_skills">Skills Acquired</span></a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us"><i data-feather="phone"
-                            style="float:left;"></i><span data-i18n="nav_contact">Contact me</span></a></li>
-            </ul>
-
-            <ul class="header-social">
-                <li><a href="https://www.facebook.com/andrea.lombardo.564"><i class="fab fa-facebook-f"
-                            style=" color: #3b5998;" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/LombardoAndrea195"><i class="fab fa-github" style="color:aliceblue"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/andrea-lombardo-/"><i class="fab fa-linkedin"
-                            style="color:#0e76a8;" aria-hidden="true"></i></a></li>
-                <li><a href="https://instagram.com/lombi95?igshid=13y017bm1tun2"><i class="fab fa-instagram" style="
-                    color: transparent;
-background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-background-clip: text;
--webkit-background-clip: text;
-                    " aria-hidden="true"></i></a></li>
-
-
-            </ul>
-        </nav>
-
-        <a class="header-menu-toggle" href="#" aria-label="Apri menu di navigazione" aria-controls="site-navigation"
-            aria-expanded="false"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro target-section">
-
-        <div class="row intro-content">
-
-            <div class="column large-9 mob-full intro-text">
-                <p class="intro-kicker" data-i18n="intro_kicker">Data & DevOps Engineer</p>
-                <h1 class="signature-headline" data-split="letters">Andrea Lombardo Portfolio</h1>
-                <p class="intro-summary" data-i18n="intro_summary">Software projects, data engineering, cloud
-                    architecture and automation. Explore my work and professional journey.</p>
-                <div class="intro-actions">
-                    <a href="#works" class="btn btn--primary smoothscroll" data-i18n="intro_cta_projects">View
-                        Projects</a>
-                    <a href="#contact" class="btn btn--stroke smoothscroll" data-i18n="intro_cta_contact">Contact Me</a>
-                </div>
+            <div class="site-header__actions">
+                <button class="lang-toggle" type="button" data-lang-toggle aria-label="Passa in italiano">
+                    <span class="lang-toggle__thumb" aria-hidden="true"></span>
+                    <span class="lang-toggle__opt" aria-hidden="true">EN</span>
+                    <span class="lang-toggle__opt" aria-hidden="true">IT</span>
+                </button>
+                <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false"
+                    aria-controls="site-nav">
+                    <span class="menu-toggle__label" data-i18n="menu">Menu</span>
+                    <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+                </button>
             </div>
-
-            <div class="intro-scroll">
-                <a href="#about" class="intro-scroll-link smoothscroll">
-                    <strong data-i18n="intro_scroll">Scroll and enjoy</strong>
-                </a>
-            </div>
-
-            <div class="intro-grid"></div>
-            <div class="intro-pic"></div>
-
         </div>
-    </section> <!-- end intro -->
+    </header>
 
+    <main id="main">
 
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="about-me">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading" data-i18n="about_heading">About Me</h2>
-                </div>
-            </div>
-
-            <div class="row about-me__content about-me__content--split" data-aos="fade-up">
-                <div class="column large-4 tab-full about-me__media reveal-on-scroll">
-                    <div class="about-me__portrait-card">
-                        <img class="circular--square" src="images/portfolio/a.webp" width="450" height="450"
-                            alt="Andrea Lombardo portrait" loading="lazy" decoding="async">
-                        <ul class="about-me__quickfacts">
-                            <li>Based in Rome</li>
-                            <li>Data & DevOps Engineer</li>
-                            <li>Computer Science Engineering</li>
-                        </ul>
+        <!-- hero ================================================== -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__grid">
+                <div class="hero__copy">
+                    <p class="status hero__in" style="--i:0">
+                        <span class="status__dot" aria-hidden="true"></span>
+                        <span data-i18n="hero_status">Data &amp; DevOps Engineer at Enel Group</span>
+                    </p>
+                    <h1 class="hero__title hero__in" id="hero-title" style="--i:1">
+                        Andrea Lombardo
+                    </h1>
+                    <p class="hero__lead hero__in" style="--i:2" data-i18n="hero_lead">I build data platforms, cloud
+                        infrastructure and the delivery pipelines that connect them. Based in Rome.</p>
+                    <div class="hero__actions hero__in" style="--i:3">
+                        <a class="btn btn--primary" href="#projects">
+                            <span data-i18n="hero_cta_projects">View projects</span>
+                            <span class="btn__arrow" aria-hidden="true">→</span>
+                        </a>
+                        <a class="btn btn--ghost" href="document/CV.pdf" download>
+                            <span data-i18n="hero_cta_cv">Download CV</span>
+                            <span class="btn__arrow btn__arrow--down" aria-hidden="true">↓</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="column large-8 tab-full about-me__text">
-                    <p class="lead">I'm a 30-year-old computer science engineer with a strong passion for data science,
-                        cloud systems and digital infrastructure.</p>
+                <figure class="hero__media">
+                    <div class="hero__frame">
+                        <img src="images/portfolio/c.webp" width="1200" height="1600"
+                            alt="Portrait of Andrea Lombardo on a rooftop in Rome" fetchpriority="high"
+                            decoding="async">
+                    </div>
+                    <figcaption class="hero__caption">
+                        <span data-i18n="hero_place">Rome, IT</span>
+                        <span data-i18n="hero_caption">Remote &amp; hybrid</span>
+                    </figcaption>
+                </figure>
+            </div>
 
-                    <div class="about-me__highlights reveal-on-scroll">
-                        <article class="about-chip">
-                            <span class="about-chip__icon" aria-hidden="true">AI</span>
-                            <h4>Analytical Mindset</h4>
-                            <p>Strong background in engineering, mathematics, statistics and algorithmic thinking.</p>
-                        </article>
-                        <article class="about-chip">
-                            <span class="about-chip__icon" aria-hidden="true">TC</span>
-                            <h4>Team Collaboration</h4>
-                            <p>Self-motivated team player with clear communication and organizational skills.</p>
-                        </article>
-                        <article class="about-chip">
-                            <span class="about-chip__icon" aria-hidden="true">CL</span>
-                            <h4>Continuous Learning</h4>
-                            <p>Constantly exploring new technologies and patterns to improve delivery quality.</p>
-                        </article>
+            <div class="container">
+                <dl class="facts">
+                    <div class="facts__item hero__in" style="--i:4">
+                        <dt data-i18n="fact1_label">Joined Enel Group</dt>
+                        <dd>2022</dd>
+                    </div>
+                    <div class="facts__item hero__in" style="--i:5">
+                        <dt data-i18n="fact2_label">Peer-reviewed papers</dt>
+                        <dd>2</dd>
+                    </div>
+                    <div class="facts__item hero__in" style="--i:6">
+                        <dt data-i18n="fact3_label">MSc Computer Engineering</dt>
+                        <dd>110/110</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- stack marquee ================================================== -->
+        <div class="marquee" role="region" aria-label="Technologies I work with" data-i18n-aria="aria_marquee">
+            <div class="marquee__track">
+                <ul class="marquee__list">
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>Apache Spark</li>
+                    <li>Kubernetes</li>
+                    <li>AWS CDK</li>
+                    <li>Docker</li>
+                    <li>Kafka</li>
+                    <li>RabbitMQ</li>
+                    <li>Elasticsearch</li>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>SQLAlchemy</li>
+                    <li>Azure</li>
+                    <li>Google Cloud</li>
+                    <li>Prometheus</li>
+                    <li>Power BI</li>
+                    <li>Power Platform</li>
+                    <li>LLM &amp; RAG</li>
+                    <li>Apache Flink</li>
+                    <li>Linux</li>
+                </ul>
+                <ul class="marquee__list" aria-hidden="true">
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>Apache Spark</li>
+                    <li>Kubernetes</li>
+                    <li>AWS CDK</li>
+                    <li>Docker</li>
+                    <li>Kafka</li>
+                    <li>RabbitMQ</li>
+                    <li>Elasticsearch</li>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>SQLAlchemy</li>
+                    <li>Azure</li>
+                    <li>Google Cloud</li>
+                    <li>Prometheus</li>
+                    <li>Power BI</li>
+                    <li>Power Platform</li>
+                    <li>LLM &amp; RAG</li>
+                    <li>Apache Flink</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- about ================================================== -->
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="container about__grid">
+                <div class="about__media" data-reveal>
+                    <figure class="photo">
+                        <img src="images/portfolio/a.webp" width="900" height="600"
+                            alt="Andrea sitting by a mountain lake" loading="lazy" decoding="async">
+                        <figcaption data-i18n="about_caption">Off the clock: chasing new places and landscapes.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="about__text">
+                    <h2 class="section-title" id="about-title" data-reveal data-i18n="about_title">About</h2>
+                    <p class="about__lead" data-reveal style="--i:1" data-i18n="about_lead">I'm a computer science
+                        engineer with a strong passion for data science, cloud systems and digital infrastructure.</p>
+                    <div class="prose" data-reveal style="--i:2">
+                        <p data-i18n="about_p1">I enjoy discussing ideas, comparing approaches with peers and building
+                            efficient digital products: cyber-physical systems, data lakes, data warehouses, machine
+                            learning solutions and software designed to make daily life easier.</p>
+                        <p data-i18n="about_p2">Today I'm growing on both the technical and the management side. In my
+                            spare time I love exploring new places around the world.</p>
                     </div>
 
-                    <div class="about-me__story reveal-on-scroll">
-                        <p>I graduated from Liceo Scientifico Cavour in 2014, then earned my Bachelor's degree in
-                            Computer Science Engineering at University of Tor Vergata (2019), followed by my Master's
-                            degree in Computer Science Engineering at La Sapienza University (20 October 2021).</p>
-                        <p>I enjoy discussing ideas, comparing approaches with peers and building efficient digital
-                            products: cyber-physical systems, data lakes, data warehouses, machine learning solutions
-                            and software applications designed to improve daily life through technology.</p>
-                        <p>I'm focused on growing both technical and management capabilities. In my spare time I love
-                            exploring new places and landscapes around the world.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row about-me__buttons">
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="mailto:l.andrea195@live.it?subject = Information" class="btn btn--stroke full-width"
-                        data-i18n="about_cta_contact">Contact me</a>
-                </div>
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="document/CV.pdf" class="btn btn--primary full-width" download=""
-                        data-i18n="about_cta_cv">Download CV</a>
-                </div>
-            </div>
-
-        </div> <!-- end about-me -->
-
-        <div class="about-experience">
-
-            <div class="row heading-block" data-aos="fade-up">
-
-                <div class="column large-full">
-                    <h2 class="section-heading" data-i18n="work_education_heading">Work & Education</h2>
-                </div>
-            </div>
-
-            <div class="row about-experience__timeline">
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline timeline--modern">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block reveal-on-scroll">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">November 2022- Present</p>
-                                <span class="timeline__pill">Current role</span>
-                                <h3 class="item-title"> <img class="circular--square" src="images/icons/enel.png"
-                                        width="50" height="50" alt="Not available"> Enel Group </h3>
-                                <h5>Data & Devops Engineer</h5>
+                    <ol class="strengths">
+                        <li class="strengths__item" data-reveal style="--i:0">
+                            <span class="strengths__num" aria-hidden="true">01</span>
+                            <div>
+                                <h3 data-i18n="s1_title">Analytical mindset</h3>
+                                <p data-i18n="s1_desc">Solid grounding in engineering, mathematics, statistics and
+                                    algorithmic thinking.</p>
                             </div>
-                            <div class="timeline__desc">
-                                <p>As <strong>Data Engineer</strong>, I support teams across application, platform and
-                                    delivery streams:</p>
-                                <ul>
-                                    <li>Full stack projects with focus on latency metrics and AWS solution maintenance.
+                        </li>
+                        <li class="strengths__item" data-reveal style="--i:1">
+                            <span class="strengths__num" aria-hidden="true">02</span>
+                            <div>
+                                <h3 data-i18n="s2_title">Team collaboration</h3>
+                                <p data-i18n="s2_desc">Self-motivated team player with clear communication and solid
+                                    organisational skills.</p>
+                            </div>
+                        </li>
+                        <li class="strengths__item" data-reveal style="--i:2">
+                            <span class="strengths__num" aria-hidden="true">03</span>
+                            <div>
+                                <h3 data-i18n="s3_title">Continuous learning</h3>
+                                <p data-i18n="s3_desc">Always exploring new technologies and patterns to raise delivery
+                                    quality.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- experience ================================================== -->
+        <section class="section experience" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <h2 class="section-title" id="experience-title" data-reveal data-i18n="exp_title">Experience &amp;
+                    education</h2>
+
+                <div class="timeline-group">
+                    <h3 class="timeline-group__label" data-reveal data-i18n="exp_work">Work</h3>
+                    <ol class="timeline">
+                        <li class="timeline__item" data-reveal>
+                            <p class="timeline__date"><span data-i18n="d_enel">Nov 2022 – Present</span></p>
+                            <div class="timeline__body">
+                                <div class="timeline__head">
+                                    <img class="timeline__logo" src="images/icons/enel.webp" width="44" height="44"
+                                        alt="" loading="lazy" decoding="async">
+                                    <div>
+                                        <h4 class="timeline__org">Enel Group <span class="badge"
+                                                data-i18n="current">Current</span></h4>
+                                        <p class="timeline__role">Data Engineer &amp; Solution Architect · Global Data
+                                            Hub</p>
+                                    </div>
+                                </div>
+                                <p data-i18n="enel_intro">I build business solutions for the Enel company hubs and
+                                    support teams across application, platform and delivery streams:</p>
+                                <ul class="bullets">
+                                    <li data-i18n="enel_b1">Python backend microservices with FastAPI, SQLAlchemy (ORM)
+                                        and Beanie (ODM), built on Repository and Factory patterns.</li>
+                                    <li data-i18n="enel_b2">ETL pipelines on Apache Spark for several group projects.
                                     </li>
-                                    <li>Creation of reusable libraries for project acceleration.</li>
-                                    <li>Custom container development with FastAPI to expose REST functionalities.</li>
-                                    <li>Maintenance and monitoring of Kubernetes-hosted applications and pipeline flows.
+                                    <li data-i18n="enel_b3">An LLM-powered data access layer combining RAG, OpenAPI and a
+                                        DSL for enterprise analytics.</li>
+                                    <li data-i18n="enel_b4">AWS API Gateway defined as code with CDK stacks, plus latency
+                                        monitoring and maintenance of AWS solutions.</li>
+                                    <li data-i18n="enel_b5">Kubernetes cluster management and database migrations with
+                                        Alembic.</li>
+                                    <li data-i18n="enel_b6">Shared libraries and modules used across Enel Group, and
+                                        support on end-to-end solution design.</li>
+                                </ul>
+                                <ul class="tags timeline__tags">
+                                    <li>Python</li>
+                                    <li>FastAPI</li>
+                                    <li>Spark</li>
+                                    <li>AWS</li>
+                                    <li>Kubernetes</li>
+                                    <li>Docker</li>
+                                    <li>Elasticsearch</li>
+                                    <li>MongoDB</li>
+                                    <li>Bitbucket</li>
+                                    <li>Bamboo</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="timeline__item" data-reveal>
+                            <p class="timeline__date"><span data-i18n="d_ey">Dec 2021 – Nov 2022</span></p>
+                            <div class="timeline__body">
+                                <div class="timeline__head">
+                                    <img class="timeline__logo" src="images/icons/ey.webp" width="44" height="44"
+                                        alt="" loading="lazy" decoding="async">
+                                    <div>
+                                        <h4 class="timeline__org">EY, Ernst &amp; Young</h4>
+                                        <p class="timeline__role">Junior IT Consultant · Staff 2</p>
+                                    </div>
+                                </div>
+                                <p data-i18n="ey_intro">I maintained existing solutions and built new ones around client
+                                    needs:</p>
+                                <ul class="bullets">
+                                    <li data-i18n="ey_b1">Python microservices that read Azure and Prometheus APIs to
+                                        manage costs and billing, surfaced in Power BI dashboards.</li>
+                                    <li data-i18n="ey_b2">Custom Power Apps on Microsoft Power Platform.</li>
+                                    <li data-i18n="ey_b3">Data architect for kappa and lambda architectures on Google
+                                        Cloud, connecting data lake, data warehouse and AI models.</li>
+                                    <li data-i18n="ey_b4">Cloud Operating Model design and implementation roadmap,
+                                        following the EY framework.</li>
+                                    <li data-i18n="ey_b5">Metaverse experiences on AltspaceVR, Roblox and Decentraland.
                                     </li>
                                 </ul>
-
-                            </div>
-                        </div>
-                        <div class="timeline__block reveal-on-scroll">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">December 2021- November 2022</p>
-                                <h3 class="item-title"> <img class="circular--square" src="images/icons/ey.png"
-                                        width="50" height="50" alt="Not available"> EY - Ernst & Young </h3>
-                                <h5>Junior Information Technology</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>As <strong>Solution Developer</strong>, I contributed to:</p>
-                                <ul>
-                                    <li>Planning, development and maintenance of cloud solutions based on Microsoft
-                                        Power Platform.</li>
-                                    <li>Cloud Operating Model design support and implementation roadmap definition
-                                        according to EY framework.</li>
+                                <ul class="tags timeline__tags">
+                                    <li>Python</li>
+                                    <li>Azure</li>
+                                    <li>Prometheus</li>
+                                    <li>Power BI</li>
+                                    <li>Power Platform</li>
+                                    <li>Google Cloud</li>
                                 </ul>
-
                             </div>
-                        </div>
-
-                        <!--                     <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2017 - June 2018</p>
-                                <h3 class="item-title">Super Cool Agency</h3>
-                                <h5>Frontend Developer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">March 2016 - June 2017</p>
-                                <h3 class="item-title">Epic Design Studio</h3>
-                                <h5>Frontend Developer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
--->
-                    </div>
+                        </li>
+                    </ol>
                 </div>
 
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline timeline--modern">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--education"></span>
-                        </div>
-
-                        <div class="timeline__block reveal-on-scroll">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe"> February 2019- October 2021</p>
-                                <h4 class="item-title"> <img class="circular--square"
-                                        src="images/certification/Sapienza.png" width="50" height="50"
-                                        alt="Not available">
-                                    University of La Sapienza</h4>
-                                <h5>Master's Degree on Engineering in Computer Science</h5>
-                            </div>
-                            <p class="timeline__meta">Master's thesis: <strong>Smart manufacturing in aerospace
-                                    industries: analysis and prediction in Ruag case study</strong><br>Time range:
-                                02/2021 - 05/11/2021</p>
-                            <div class="timeline__desc">
-                                <details class="timeline__details">
-                                    <summary>Read thesis overview</summary>
-                                    <p>
-                                        The task of the project is to improve the line production of Ruag company using
-                                        Smart manufacturing approach. ESA tries to find out new experimental project for
-                                        increasing the production of small satellites production for launching
-                                        constellation
-                                        as done by billioners like E.Mask and J.Bezos. The architecture let to
-                                        digitalzie
-                                        the system inserting a system able to control an huge amount of data through
-                                        Flink
-                                        and inspect it through data analytics methodologies. In particular Kibana is
-                                        used
-                                        for generating dashboards and with eland altair libraries installed with pip we
-                                        are
-                                        able to create single lucene json visualization. According to them we can make
-                                        filtering of the single panels with comboboxs. At the same time we have create a
-                                        Markov decision process able to predict the next step of the automatic machine
-                                        paneling created bu RUAG in order to guess if there is the need of human
-                                        intervation
-                                        or not in production line. The idea is to help analyzing what are the critical
-                                        point
-                                        but at the same time have the possibility to predict some issue errors and have
-                                        the
-                                        possibility to correct in line production some errors or some miss of resourse.
-                                        The
-                                        idea starts because ESA would like to launch a costellation of satellites and
-                                        RUAG
-                                        has got the contect to product these panels.
-                                    </p>
+                <div class="timeline-group">
+                    <h3 class="timeline-group__label" data-reveal data-i18n="exp_edu">Education</h3>
+                    <ol class="timeline">
+                        <li class="timeline__item" data-reveal>
+                            <p class="timeline__date"><span data-i18n="d_msc">Feb 2019 – Oct 2021</span></p>
+                            <div class="timeline__body">
+                                <div class="timeline__head">
+                                    <img class="timeline__logo" src="images/certification/Sapienza.webp" width="44"
+                                        height="44" alt="" loading="lazy" decoding="async">
+                                    <div>
+                                        <h4 class="timeline__org" data-i18n="sapienza">Sapienza University of Rome</h4>
+                                        <p class="timeline__role"><span data-i18n="msc_degree">MSc in Computer Engineering</span> · 110/110</p>
+                                    </div>
+                                </div>
+                                <p class="timeline__note"><span data-i18n="thesis">Thesis</span>: <strong>Smart
+                                        manufacturing in aerospace industries: analysis and prediction in the RUAG case
+                                        study</strong></p>
+                                <details class="disclosure">
+                                    <summary>
+                                        <span data-i18n="thesis_more">Read the thesis overview</span>
+                                        <span class="disclosure__icon" aria-hidden="true"></span>
+                                    </summary>
+                                    <div class="disclosure__content">
+                                        <p data-i18n="thesis_body">The goal was to improve RUAG's production line for
+                                            satellite panels with a smart-manufacturing approach, supporting ESA's push
+                                            to mass-produce small satellites for constellations. The architecture
+                                            digitalises the line: Apache Flink processes large volumes of machine data,
+                                            Kibana dashboards (built with eland and Altair) let engineers filter and
+                                            inspect each panel, and a Markov decision process predicts the next step of
+                                            the automated paneling machine to flag when human intervention is needed.
+                                        </p>
+                                    </div>
                                 </details>
                             </div>
-                        </div>
+                        </li>
+                        <li class="timeline__item" data-reveal>
+                            <p class="timeline__date"><span data-i18n="d_bsc">Sep 2014 – Feb 2019</span></p>
+                            <div class="timeline__body">
+                                <div class="timeline__head">
+                                    <img class="timeline__logo" src="images/certification/torvergata.webp" width="44"
+                                        height="44" alt="" loading="lazy" decoding="async">
+                                    <div>
+                                        <h4 class="timeline__org" data-i18n="torvergata">University of Rome Tor Vergata
+                                        </h4>
+                                        <p class="timeline__role" data-i18n="bsc_degree">BSc in Computer Engineering</p>
+                                    </div>
+                                </div>
+                                <p class="timeline__note" data-i18n="bsc_track">Track: Software &amp; Web Systems</p>
+                            </div>
+                        </li>
+                        <li class="timeline__item" data-reveal>
+                            <p class="timeline__date"><span data-i18n="d_hs">Sep 2009 – Jul 2014</span></p>
+                            <div class="timeline__body">
+                                <div class="timeline__head">
+                                    <span class="timeline__logo timeline__logo--mono" aria-hidden="true">LC</span>
+                                    <div>
+                                        <h4 class="timeline__org">Liceo Scientifico Cavour</h4>
+                                        <p class="timeline__role" data-i18n="hs_degree">Scientific high school diploma
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
 
-                        <div class="timeline__block reveal-on-scroll">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">September 2014 - Februrary 2019</p>
-                                <h3 class="item-title"> <img class="circular--square"
-                                        src="images/certification/torvergata.png" width="50" height="50"
-                                        alt="Not available">
-                                    University of TorVergata</h3>
-                                <h5>Bachelor's Degree on Engineering in Computer Science</h5>
-                                <p class="timeline__meta">Address: Software & Web System</p>
+        <!-- skills ================================================== -->
+        <section class="section skills" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 class="section-title" id="skills-title" data-reveal data-i18n="skills_title">Skills</h2>
 
+                <div class="bento">
+                    <article class="bento__cell bento__cell--stack" data-reveal style="--i:0">
+                        <h3 class="bento__title" data-i18n="sk_stack">Current stack</h3>
+                        <div class="stack">
+                            <div class="stack__group">
+                                <h4 class="stack__label">Backend</h4>
+                                <ul class="chips">
+                                    <li>Python</li>
+                                    <li>FastAPI</li>
+                                    <li>SQLAlchemy</li>
+                                    <li>Beanie ODM</li>
+                                    <li>Alembic</li>
+                                    <li>OpenAPI</li>
+                                    <li>REST / SOAP</li>
+                                </ul>
+                            </div>
+                            <div class="stack__group">
+                                <h4 class="stack__label" data-i18n="sk_g_data">Data &amp; messaging</h4>
+                                <ul class="chips">
+                                    <li>Apache Spark</li>
+                                    <li>Apache Flink</li>
+                                    <li>Kafka</li>
+                                    <li>RabbitMQ</li>
+                                    <li>JMS</li>
+                                    <li>Elasticsearch</li>
+                                    <li>Kibana</li>
+                                    <li>MongoDB</li>
+                                    <li>PostgreSQL</li>
+                                    <li>MySQL</li>
+                                    <li>Firebase</li>
+                                    <li>Power BI</li>
+                                </ul>
+                            </div>
+                            <div class="stack__group">
+                                <h4 class="stack__label">Cloud &amp; DevOps</h4>
+                                <ul class="chips">
+                                    <li>AWS API Gateway</li>
+                                    <li>AWS CDK</li>
+                                    <li>Kubernetes</li>
+                                    <li>Docker</li>
+                                    <li>Azure</li>
+                                    <li>Google Cloud</li>
+                                    <li>Prometheus</li>
+                                    <li>Power Platform</li>
+                                    <li>Bitbucket</li>
+                                    <li>Bamboo</li>
+                                    <li>Atlassian suite</li>
+                                    <li>Linux</li>
+                                </ul>
+                            </div>
+                            <div class="stack__group">
+                                <h4 class="stack__label">AI &amp; ML</h4>
+                                <ul class="chips">
+                                    <li>LLM</li>
+                                    <li>RAG</li>
+                                    <li>NLP</li>
+                                    <li>CNN</li>
+                                    <li>Transfer learning</li>
+                                    <li>Pandas</li>
+                                    <li>Markov models</li>
+                                </ul>
                             </div>
                         </div>
+                    </article>
 
-                        <div class="timeline__block reveal-on-scroll">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">September 2009 - July 2014</p>
-                                <h3 class="item-title">Liceo Scientifico Cavour
-                                </h3>
-                                <h5>Diploma Maturità scientifica</h5>
+                    <article class="bento__cell bento__cell--arch" data-reveal style="--i:1">
+                        <h3 class="bento__title" data-i18n="sk_arch">Architecture &amp; patterns</h3>
+                        <ul class="checklist">
+                            <li data-i18n="sk_a1">End-to-end solution design alongside product teams</li>
+                            <li data-i18n="sk_a2">Python microservices on Repository and Factory patterns</li>
+                            <li data-i18n="sk_a3">Spark ETL pipelines, kappa and lambda architectures</li>
+                            <li data-i18n="sk_a4">Data lakes and data warehouses that feed AI models</li>
+                            <li data-i18n="sk_a5">LLM data access layers combining RAG, OpenAPI and a DSL</li>
+                            <li data-i18n="sk_a6">Messaging and RPC over Kafka, RabbitMQ and JMS</li>
+                            <li data-i18n="sk_a7">Infrastructure as code with AWS CDK</li>
+                        </ul>
+                    </article>
+
+                    <article class="bento__cell bento__cell--lang" data-reveal style="--i:2">
+                        <h3 class="bento__title" data-i18n="sk_lang">Languages</h3>
+                        <ul class="chips">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C / POSIX</li>
+                            <li>SQL</li>
+                            <li>NoSQL</li>
+                            <li>JavaScript</li>
+                            <li>HTML / CSS</li>
+                            <li>JavaFX</li>
+                            <li>Servlets / JSP</li>
+                            <li>Jython</li>
+                            <li>XML</li>
+                            <li>MIPS assembly</li>
+                            <li>Android</li>
+                        </ul>
+                    </article>
+
+                    <article class="bento__cell bento__cell--tech" data-reveal style="--i:0">
+                        <h3 class="bento__title" data-i18n="sk_tech">Engineering foundations</h3>
+                        <ul class="checklist">
+                            <li data-i18n="sk_t1">Full software lifecycle: requirements, design, implementation and
+                                testing</li>
+                            <li data-i18n="sk_t2">Machine learning: classification, regression, unsupervised and
+                                reinforcement learning, neural networks</li>
+                            <li data-i18n="sk_t8">Markov chains, Markov decision processes and random walks</li>
+                            <li data-i18n="sk_t3">Microservices, SOA and web services</li>
+                            <li data-i18n="sk_t9">Algorithms and data structures</li>
+                            <li data-i18n="sk_t4">Networking: TCP/IP, UDP, DHCP, NAT, RIP, OSPF; access, telephone and
+                                core networks</li>
+                            <li data-i18n="sk_t10">Operating systems: Linux, Unix, Windows; Apache and IIS web servers
+                            </li>
+                            <li data-i18n="sk_t5">Information retrieval and NLP: SVM, Rocchio, KNN</li>
+                            <li data-i18n="sk_t6">Methods: Scrum, Agile, CMMI, iterative and waterfall</li>
+                            <li data-i18n="sk_t7">UML and design patterns</li>
+                        </ul>
+                    </article>
+
+                    <article class="bento__cell bento__cell--soft" data-reveal style="--i:1">
+                        <h3 class="bento__title" data-i18n="sk_soft">How I work with teams</h3>
+                        <dl class="soft">
+                            <div>
+                                <dt data-i18n="soft1_t">Lead by example</dt>
+                                <dd data-i18n="soft1_d">Drive initiatives through execution, mentoring and transparent
+                                    decisions.</dd>
                             </div>
+                            <div>
+                                <dt data-i18n="soft2_t">Clear communication</dt>
+                                <dd data-i18n="soft2_d">Listen, share ideas openly and translate engineering topics into
+                                    language the business can act on.</dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="soft3_t">Problem solving</dt>
+                                <dd data-i18n="soft3_d">Break problems down and pick the algorithm that fits the
+                                    system’s constraints.</dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="soft4_t">Collaboration</dt>
+                                <dd data-i18n="soft4_d">Align cross-functional teams on shared milestones.</dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="soft5_t">Adaptability</dt>
+                                <dd data-i18n="soft5_d">Settle quickly into new environments, teams and tech stacks.
+                                </dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="soft6_t">Detail and curiosity</dt>
+                                <dd data-i18n="soft6_d">A creative learner, drawn to tools and technologies I haven’t
+                                    tried yet.</dd>
+                            </div>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                        </div>
-
+        <!-- projects ================================================== -->
+        <section class="section projects" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="projects__head">
+                    <h2 class="section-title" id="projects-title" data-reveal data-i18n="projects_title">University
+                        projects</h2>
+                    <div class="segmented" role="group" aria-label="Filter projects" data-i18n-aria="aria_filter" data-filter-group data-reveal>
+                        <span class="segmented__thumb" aria-hidden="true"></span>
+                        <button type="button" aria-pressed="true" data-filter="all"><span
+                                data-i18n="filter_all">All</span> <span class="segmented__count">12</span></button>
+                        <button type="button" aria-pressed="false" data-filter="msc"><span
+                                data-i18n="filter_msc">Master's</span> <span class="segmented__count">7</span></button>
+                        <button type="button" aria-pressed="false" data-filter="bsc"><span
+                                data-i18n="filter_bsc">Bachelor's</span> <span
+                                class="segmented__count">5</span></button>
                     </div>
                 </div>
-            </div>
 
-        </div> <!-- end about-experience -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ==================================================
-    <section id="services" class="s-services ss-dark target-section">
-
-        <div class="shadow-overlay"></div>
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
-
-                <p class="section-desc">
-                    My passion and goal is to help you make your business standout.
-                </p>
-            </div>
-        </div>
-
-        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Brand Identity</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Illustration</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Web Design</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Product Strategy</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">UI/UX Design</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Mobile Design</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>  -->
-
-
-    <!-- CTA
-     <section class="s-cta ss-dark">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-desc">
-                    Need a great reliable web hosting?
-                </h2>
-            </div>
-        </div>
-
-        <div class="row cta-content" data-aos="fade-up">
-                <div class="column large-full">
-                    <p>
-                    We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
-                    Powerful web and Wordpress hosting. Guaranteed.
-                    Starting at $2.95 per month.
-                    </p>
-
-                    <a href="https://www.dreamhost.com/r.cgi?287326" class="btn full-width">Get Started</a>
-                </div>
-            </div>
-
-        </section>  end s-cta -->
-
-
-    <!-- works
-    ================================================== -->
-
-    <section id="works" class="s-services ss-dark target-section">
-
-        <div class="shadow-overlay"></div>
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom " data-i18n="portfolio_heading">Portfolio</h2>
-
-            </div>
-
-
-
-
-
-
-
-
-
-            <div class="container workshop-container" style="color: white;">
-
-                <br>
-                <div class="header projects-group-title"><b>Master's Degree Projects</b></div>
-
-                <br><br>
-                <ul class="collection">
-
-                    <li class="collection-item avatar">
-                        <div class="project-header">
-                            <button type="button" class="collapsible">Project delivered for the course of <b
-                                    style=" text-decoration: underline;">Neural Network</b></button>
-                            <a href="https://github.com/LucaTomei/NN-Project" class="secondary-content repo-link-top">
-                                Repository</a>
-                        </div>
-                        <div class="content">
-                            <p><em> The task of the project is to create S-shaped Rectified Linear Units(SReLU) from
-                                    scratch and make a comparison with others activation functions, analyzing
-                                    performance and behaviour of defferent convolutional neural network. The comparison
-                                    is done between different non saturated activation function like ReLU
-                                    and others Leaky ReLU, PReLU and SReLU, in addition to this also exponential
-                                    activation functions have been tested.
-                                </em>
-                            </p>
-
-                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:6773544620665176064/">Presentation
-                            </a>
-                            <br> <a
-                                href="https://github.com/LucaTomei/NN-Project/blob/main/Neural_Network_Report.pdf">Paper</a>
-                            <br>
-
-                            <br>
-
-                        </div>
-                    </li>
-                    <li class="collection-item avatar">
-                        <div class="project-header">
-                            <button type="button" class="collapsible">Project delivered for the course of <b
-                                    style=" text-decoration: underline;">Mobile & Cloud</b></button>
-                            <a href="https://github.com/LombardoAndrea195/LibraryApp/blob/master/LIBRARY%20APP.pdf"
-                                class="secondary-content"> Repository</a>
-                        </div>
-                        <div class="content">
-                            <p><em> In the link above there's the reference documentation of the tasks of the app.
-                                    <br><br>
-                                    The idea is to create a Mobile app able to give a contribution to readers that join
-                                    reading books and would like to save book sentences and woul like to sign the number
-                                    of books have read until now in a way to compare with their friends.
-                                    There's also the possibility to set a preference list, the book genres you prefer
-                                    and for each book you read which is the best according your opinon.
-                                    The app is developed using Android Studio. After making an authentication using
-                                    Firebase for doing the most common login form (email and password and Google Login)
-                                    the user enter into a new fragment, that belong into a set of fragment of navigation
-                                    drawer,(HOME) where there's a ListView where you've all books in user's preference
-                                    list.
-                                    Now you 've the possibility to click into hamburgher for having possibility to
-                                    LOGOUT( come back into authentication form),SETTING( manage LIGHT SENSOR, MEDIA
-                                    PLAYER and other information of books preference),PROFILE(resume of the user
-                                    preference).
-                                    In the Home fragment we've the possibility to interact with an element of the book
-                                    for insert new information of the user like sentences or if user 've already read
-                                    the book, otherwise you can add a book using GOOGLE-BOOK-API based on TITLE and
-                                    AUTHOR.
-                                    The communication with the database is done through a server developped using NODE
-                                    which is able to implement the REST protocol and manage the request done by the app
-                                    and let to respond making queries to a cloud db in MONGODB.
-                                </em>
-                            </p>
-
-                            <a href="https://github.com/LombardoAndrea195/NodejsLibraryApp">Backend NodeJS</a>
-                            <br>
-                            <a href="https://github.com/LombardoAndrea195/LibraryApp">Develop project</a>
-                            <br><br>
-
-                        </div>
-                    </li>
-                    <li class="collection-item avatar">
-                        <div class="project-header">
-                            <button type="button" class="collapsible">Presentation made for the course of <b
-                                    style=" text-decoration: underline;">Seminars</b></button>
-                            <a href="https://github.com/LombardoAndrea195?tab=repositories" class="secondary-content">
-                                Repository</a>
-                        </div>
-                        <div class="content">
-                            <p><em>
-
-                                    <br>The idea is to focus to a Seminar topic and try to explain something new like in
-                                    my case: recent paper based on that topic: Remote Core Locking: Migrating
-                                    Critical-Section Execution to Improve the Performance of Multithreaded Applications
-                                    Written by Jean-Pierre Lozi Florian David Gaël Thomas Julia Lawall Gilles Muller
-                                    Presented
-                                    <br> Some applications that work well on a small number of cores do not scale to the
-                                    number of cores available in today's multicore architectures. Performance in lock
-                                    algorithms is influenced: 1. access contention • Solution: Reduce the number of
-                                    threads that, simultaneously, require the access to the critical section 2. cache
-                                    misses • Solution: improve locality
-                                    <br> EXAMPLE OF THE PROBLEM MEMCACHE IS AN EXAMPLE OF APPLICATION WHICH HAS THIS
-                                    PROBLEM WHERE WORKS IN BEST PERFORMANCE : •FOR A GET OPERATION WITH 10 CORES •FOR A
-                                    SET OPERATION WITH 2 CORES ONE OF THE BOTTLENECK OF THIS APPLICATION ARE CRITICAL
-                                    SECTIONS, WHICH THE INFORMATION SHOULD BE ACCESSED IN ATOMIC WAY AND THEY’RE
-                                    PROTECTED BY LOCKS. HIGH CONTENTION MEANS MORE PROCESSING TIME AND SO IT ‘S MORE
-                                    EXPENSIVE. IT’S A PROBLEM WHEN THE NUMBER OF CORES START INCREASING .. Test system:
-                                    Opteron 6172 with 48-core running at 3.0.0 Linux kernel with glibc 2.13
-                                    1)Time spent in critical section 2)number of cache miss 3)Others measurements. RCL
-                                    performance are better than other lock algorithms in the case of increasing number
-                                    of clients Memcached application performance: -no Flat combining because it
-                                    periodically blocks on condition variables, which Flat Combining does not support.
-                                    Other studies for optimizing the execution of critical sections on multicore
-                                    architectures Software solution where the server is an ordinary client thread and
-                                    the role of server is distributed between client threads, approach produces overhead
-                                    for the management of the server Hardware-based solution whose introduces new
-                                    instructions to perform the transfer of control, and uses a special fast core to
-                                    execute critical sections Insert a fast transfer of control from other client cores
-                                    to the server, to reduce access contention Execution a succession of critical
-                                    sections on a single server core to improve cache locality In the last 20 years,
-                                    several approaches have been developped for optimizing critical sections execution
-                                    on multi-core architectures:
-                                    Real motivations of low performance of lock-based approaches: 1) Cache misses when
-                                    execute critical section 2) Bus saturation caused by spinlock because induces
-                                    frequent broadcast on bus. RCL is introduced to address both issues simultaneously
-                                    Solution: Design better locks
-                                    RCL key features: Goal: Improve performance execution of critical section into
-                                    legacy applications that run on top of multicore architectures. 1 Developed entirely
-                                    in software on x86 architecture 2 Works better than other kind of locks works
-                                    better. -POSIX -CAS SPINLOCK -MCS -FLAT COMBINING 3
-                                    Replace the management of critical section with an optimized remote procedure which
-                                    call to a dedicated server core. Shared information in the server core’s cache No
-                                    need to transfer data between a core to another core How it works
-                                    Overview Transfer the execution and management of the critical section to a server
-                                    core, choosen according through profiler, the client with the most frequent lock
-                                    usage Client as an handler locks implemented as a remote procedure calls of critical
-                                    sections
-                                    Core algorithm • The remote call is transformed into a clients and server
-                                    communicate done through an array of request structures of CL dimension which is
-                                    unique for each server . • C is the max number of clients • L is the size of the
-                                    hardware cache line and represents a request done by a client to the server • Each
-                                    request is mapped into a single cache line Each request contain in order: 1. Address
-                                    of the lock associated with the critical section 2. Address of the structure refered
-                                    to the context 3. Address of the function that include critical section 1. Client
-                                    has requested the access 2. NULL not request.
-                                    <br><br>From Server side • A thread analyze all the request and wait those that have
-                                    an address refers to a critical section. • Iterate for each entry: • If function
-                                    value is an address and lock is free, server thread acquires the lock and executes
-                                    the critical • server reset the element • resume the iteration. • After writing the
-                                    entry cache line with all the informations • it waits that the address of the
-                                    function is point to NULL. • In case the number of client is less than the number of
-                                    cores available: it’s used SSE3 monitor/mwait routine for sleeping the client sleeps
-                                    until the server answer. From Client side
-                                    Profiler: it’s developed by authors to detect the information locks: Lock frequency
-                                    usage Time spent in critical section These information are used for identify the
-                                    core in which running the server and locks need replacing from POSIX to RCL A tool
-                                    Coccinelle used for transforming critical section to remote procedure call. Critical
-                                    section looks like separate functions: PROBLEMS: Shared variable Additional
-                                    elements:
-                                    <br> Implementation of the RCL Runtime(supported by Posix thread) The runtime ensure
-                                    responsiveness and liveness respectively avoiding the block of thread at OS level or
-                                    inversion priority and managing at run time a pool of threads for each server : -if
-                                    the servicing thread is blocked/waited, replace it with another in the pool. The
-                                    management thread used for management the pool of threads: - Highest priority -
-                                    Check the progress threads every time is woken up 1) modify the priority 2) nothing
-                                    change The backup thread used when all threads are blocked at OS so it woke up the
-                                    management thread. 1) The runtime implement a POSIX FIFO scheduling policy to
-                                    execute a thread until blocked by processor: 1.1) could induce priority inversion
-                                    between threads 2)Reduce the delay minimizing the length FIFO queue
-                                    There’re situations to avoid which generate a deadlock because the server is unable
-                                    to execute critical section of other locks. Core algorithm is applied to a thread
-                                    and it requires that the thread is never blocked at the OS level and never spin into
-                                    a waitloop. Now we focus on runtime RCL liveness and responsiveness: different
-                                    situation. The thread could be blocked at the OS level The thread could spin if the
-                                    critical section try to acquire a spinlock The thread could be preempted at the OS
-                                    level
-                                    Critical sections every time is executed in all cores, execept one that manages the
-                                    lifecyle of the thread • Vary the degree of contention on the lock by varying the
-                                    delay between the execution of the critical section • Locality of the critical
-                                    section varying the number of shared cache lines each one accesses. • Cache access
-                                    line are not pipelined: construct the address of the next memory access from the
-                                    previously read value.Comparison when varying degree contention average of 30 runs
-                                    False serialization • For adapting Berkley DB application to the usage of RCL you
-                                    need to allocate the 2 most used lock and then other 9. All 11 locks should be
-                                    implemented as RCLs on the same server. Their critical sections (refer to 11 locks)
-                                    are artificially serialized • Now we focus the impact of the serialization with two
-                                    metrics: • Use rate: • The use rate measures the server workload. • False
-                                    serialization rate: • The false serialization rate a ratio of the number of
-                                    iterations over the request array • It’s important how change the rate between one
-                                    or 2 different server: • High rate with 1 and elimination of false serialization and
-                                    increasing throughput of an amount 50 %
-                                    Analysis of performance • Execution time incurred when each critical section
-                                    accesses 5 cache lines. • The average number of L2 cache misses(top) • The average
-                                    execution time (bottom) • When a critical section over 5000 iterations when critical
-                                    sections access one shared cache line
-                                    Rcl is techinque focus on reducing lock acquisition time and improving execution
-                                    speed of critical sections through increased data locality and the migration of
-                                    execution to the server core. • RCL powerful is when an application relies on highly
-                                    conteded locks
-                                    <br> Future work DESIGN NEW APPLICATION WITH THESE STRATEGIES CONSIDER THE DESIGN
-                                    AND THE IMPLEMENTATION OF AN ADAPTIVE RCL RUNTIME. SYSTEM ABLE TO DYNAMICALLY SWITCH
-                                    BETWEEN LOCKING STRATEGIES CAPABILITY TO MIGRATE LOCKS BETWEEN MULTIPLE SERVERS FOR
-                                    BALANCING DYNAMICALLY THE LOAD AND AVOID FALSE SERIALIZATION. <br>
-
-                                    <br><br>
-                            </p>
-
-
-                        </div>
-                    </li>
-                    <li class="collection-item avatar">
-                        <button type="button" class="collapsible">Project delivered for the course of <b
-                                style=" text-decoration: underline;">HCI</b> <br> <a
-                                href="https://github.com/LombardoAndrea195/ShareYourSport/blob/master/Human_Computer_Interaction_Project%20(2).pdf"
-                                class="secondary-content"> Repository</a><br>
-                        </button>
-                        <div class="content">
-                            <p><em>
-
-                                    <br>In the links below we can see there' re project elaborations written in
-                                    <b>Latex</b> using Overleaf with a first attempt of the project that we modify
-                                    during the development.
-                                    The app serves as a medium to connectt each other all the people who share the same
-                                    passion for a sport and in general for physical activities. The main objective of
-                                    the app is to give the possibility for the user to connect with others joining sport
-                                    events or creating them. In addition to this we also thought to arrange the app in a
-                                    wway to allow, also through future developments for other ativities like sharing
-                                    their workout and their statistics make a public challenge with the possibility to
-                                    take them diretly from their favourites sport app.
-                                    <br>
-                                    <a href="
-     https://github.com/LombardoAndrea195/ShareYourSport/blob/master/ShareYourSport.pdf">Presentation of the
-                                        project</a>
-                                    <br><br>
-                            </p>
-
-
-                        </div>
-                    </li>
-
-                    <li class="collection-item avatar">
-                        <button type="button" class="collapsible">Homeworks delivered for the course of <b
-                                style=" text-decoration: underline;">ML</b> <br> <a
-                                href="https://github.com/LombardoAndrea195/homeworkML" class="secondary-content">
-                                Repository</a><br>
-                        </button>
-                        <div class="content">
-                            <p><em>
-
-                                    <br>In the links below we can see there' re my elaborations written in <b>Latex</b>
-                                    using Overleaf with the relative Python code where I used Pycharm for the first
-                                    homework instead for the second I decide to use Google Colab. The code allows to me
-                                    to estabilish how can I obtain my results, so from them I'm able to deal my results.
-                                    <br>
-                                    Data sets contains information through which I can make experiments, these data sets
-                                    are explained in seminars, instead blind set, if presented, let us to analyze our
-                                    results in terms of accurancy , precision and recall.In first dataset we've only a
-                                    set of pairs of labels instead in the second dataset we've a collection of picture
-                                    that we should classify.
-
-                                    <br>
-                                    <br><b style="color: white;">Project development of 1 homework</b><br>
-                                    Solve the two classification problems: A) optimization prediction, B) compiler
-                                    prediction. For each classification problem, realize at least two variants (varying
-                                    feature extraction, learning algorithm, learning hyper-parameters, etc.). Note: Use
-                                    any method at your choice, except neural networks that will be subject of the second
-                                    homework.
-                                    Evaluate each variant in a proper way. Find the best model and motivate the choice.
-                                    For each classification problem, apply the best model to predict output for the
-                                    blind test set, comment all result with a report explaining all the work done:
-                                    design and implementation choices, evaluation procedure and results.
-                            </p>
-
-
-                            <a
-                                href="https://drive.google.com/a/diag.uniroma1.it/file/d/14p_YtIWVqBNxvOMWRPp-qWEops0wAJ1F">Data
-                                set
-                            </a>
-                            <br>
-                            <a
-                                href="https://drive.google.com/a/diag.uniroma1.it/file/d/1uCIIVNvQoa2fXdQQg2e5GHt_5bY3BgOd">
-                                Blind test set </a>
-                            <br>
-                            <a
-                                href="https://github.com/LombardoAndrea195/homeworkML/blob/master/1Homework/homework_Machine_Learning.pdf">Report</a>
-                            <br>
-                            <a
-                                href="https://github.com/LombardoAndrea195/homeworkML/tree/master/1Homework/ML1-homework1%201893440">Code</a>
-
-                            <em>
-                                <br><b style="color: white;"> Project development of 2 homework</b><br>
-                                Solve the image classification problem in two modes: <br>A) define a CNN and train it
-                                from scratch,<br> B) apply transfer learning and fine tuning from a pre-trained model.
-                                For training you can use any subset of the MWI dataset.
-                                <br>Evaluate the two models in a proper way. Discuss the best model and motivate the
-                                choice. Testing can be done either with cross-validation on MWI or with the SMART-I
-                                weather test set.
-                                <br>Write a report explaining all the work done: design and implementation choices,
-                                evaluation procedure and results.<br>
-                                Submit a set of images to be used to define a new test set
-                                and your best model
-                                </p>
-                            </em>
-
-                            <a href=" https://drive.google.com/drive/folders/1UzH28Q8xki8_DMYdDgHxi40-CJ800Kaq">Data set
-                            </a>
-
-                            <br>
-
-                            <a
-                                href="https://github.com/LombardoAndrea195/homeworkML/blob/master/ML2/1893440.pdf">Report</a>
-
-                            <br>
-                            <a
-                                href="https://github.com/LombardoAndrea195/homeworkML/blob/master/ML2/1893440_code.ipynb">Code</a>
-                        </div>
-                    </li>
-                    <li class="collection-item avatar">
-
-                        <button type="button" class="collapsible">Homeworks delivered for the course of <b
-                                style=" text-decoration: underline;">NI</b><br>
-                            <a href="https://github.com/LombardoAndrea195/Netkit" class="secondary-content">
-                                Repository</a></button>
-                        <div class="content">
-                            <p><em><br>In the links below we can see there' re my elaborations of the tree homeworks
-                                    delivered in the format <b>.gz</b>
-                                    with the respective requirments. The aim of the course is to give the necessary
-                                    knowledge to configure and manage LANs & WANs under Unix-like OSs using
-                                    <b>Netkit</b> framework, developed by Uniroma3, which
-                                    allows to emulate a switching environment under Linux. <br>
-                                    <br>The first homework deals different topics like :Netkit Round-Up, Physical
-                                    interfaces and MAC addressing,Static IP addressing & DHCP and NAT
-
-                                </em>
-                            </p>
-
-                            <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/homework_1A.pdf">Requirement
-                                of 1 homework</a>
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/homework1.tar.gz">Solution
-                            </a>
-                            <br>
-                            <em>
-                                The second homework deals same topics of the first homework but with the adding of new
-                                concepts like: Network debug tools, Static IP routing & OSPF<br>
-                                iptables,
-                                ,SSH and VPN
-
-                                </p>
-                            </em>
-                            <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/second_a.pdf">Requirement
-                                of 2 homework</a>
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            <a
-                                href="https://github.com/LombardoAndrea195/Netkit/blob/master/Homework2-1893440.tar.gz">Solution</a>
-                            <br>
-
-                            <em>
-                                The third homework deals same topics with different requirments but with the adding of
-                                new concept like: x509 & VPN and DNS.
-                                </p>
-                            </em>
-                            <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/third_a.pdf">Requirement of
-                                3 homework</a>
-
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/lab_3.tar.gz">Solution</a>
-                            <br>
-                            <em>
-                                In this part I would like to mention same notes which I had written during the course.
-                                </p>
-                            </em>
-                            <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/ni.pdf">Question and Answer
-                                for written part</a>
-
-                            <br>
-                            <a href="https://github.com/LombardoAndrea195/Netkit/blob/master/NETKIT_LAB.pdf">Notes of
-                                NetKit + written exam's Question and answer</a>
-                            <a href="https://github.com/LombardoAndrea195/HomeworkAD/blob/master/hw2/2homework.pdf">Requirement
-                                of each exercise</a>
-
-                            <br>
-                            <a
-                                href="https://github.com/LombardoAndrea195/HomeworkAD/blob/master/hw2/hw2_1893440_1876540_AD.pdf">Solution
-                                of 2 homework</a>
-                            <br><br>
-
-                            </p>
-                        </div>
-                    </li>
-                    <li class="collection-item avatar">
-
-                        <button type="button" class="collapsible">Project made for the course of <b style=" text-decoration: underline;
-          ">Web Information Retrival</b><br>
-                            <a href="https://github.com/danieledavoli/emergency_detection/"
-                                class="secondary-content">Repository</a>
-                        </button>
-                        <div class="content"> <br>
-                            <div class="header align=left"><b>Using Social Media to Enhance Emergency Situation
-                                    Awareness</b></div>
-                            <p><em>
-                                    The project wants to detect an emergency situation in real time through tweets flow
-                                    scanning using machine learning algorithms and users as sensors.<br>
-                                    <br>
-                                    terms and give to each vector a TF-IDF (Term Frequency and Inverted Document
-                                    Frequency) weight;<br>
-                                    4)Cluster our tweets (now vectors) in main topics;<br>
-                                    5)Train a SVM classifier in order to distinguish the tweets in relevant and not
-                                    relevant.
-                                    <br><br>
-                                    To the following <a href="document/Paper.pdf">link</a> is possible to download the
-                                    paper wrote where we describes our experiment related on experiments ' paper that we
-                                    were following.
-                                    <br></em><br>
-
-                            </p>
-                        </div>
-                    </li>
-
-
-                </ul>
-
-                <br>
-                <br>
-            </div>
-
-            <div class="container workshop-container" style="color: white;">
-                <div class="header projects-group-title"><b>Bachelor's Degree Projects</b></div>
-
-                <br><br>
-                <ul class="collection">
-
-                    <li class="collection-item avatar">
-
-                        <button type="button" class="collapsible">Project made for the course of <b
-                                style=" text-decoration: underline;">Sistemi Operativi</b><br>
-                            <a href="https://github.com/LombardoAndrea195/Sistemi_Operativi_Project"
-                                class="secondary-content">Repository</a>
-                        </button>
-                        <div class="content"> <br>
-
-                            <p><em><br>It's made with IDLE Clion into a Linux environment-the testing process is made by
-                                    Ubuntu bash.<br>
-                                    The main goal of this project is to build an application client-server with program
-                                    language C.
-                                    It is able to interchange secure information, through a reliable transfer which used
-                                    the transfer protocol TCP.
-                                    The communication of clients with the server takes place through API Berkeley's
-                                    socket.
-                                    In this application I should develop a system of booking of a cinema room. I've made
-                                    a server multithread, which is able to respond to clients requests at the same time.
-                                    Here after establishing a stable connection:<br>
-                                    -I should return the map of avaiable place<br>
-                                    -send to the server place which I would like to book with a unique code of response
-                                    which let me to cancel a reservation<br>
-                                    -cancel a reservation<br>
-                                    -lose of the connection<br>
-                                    The way to build the map is a linked list, which let me to reognised row and column.
-                                    The way to make persistent the system is to use of the file.</em><br>
-                                <br>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="collection-item avatar">
-
-                        <button type="button" class="collapsible">Project made for the course of <b
-                                style=" text-decoration: underline;">Ing. Internet, Web<br></b>
-
-
-                            <a href="https://github.com/LombardoAndrea195/IIW_Project"
-                                class="secondary-content">Repository</a>
-                        </button>
-                        <div class="content"> <br>
-
-                            <p><em><br>It's made with IDLE Clion into a Linux environment-the testing process is made by
-                                    Ubuntu bash.<br>
-                                    The main goal of this project is to build an application client-server with program
-                                    language C.
-                                    It is able to interchange secure information,more precisely a file, through a
-                                    reliable transfer which used the transfer protocol UDP.
-                                    The communication of clients with the server takes place through API Berkeley's
-                                    socket.
-                                    Furthermore, as required, the implementation of the reliable service,that is not
-                                    guaranteed by UDP, is managed by the selective-repeat protocol with the condition
-                                    probability that we could lose some packet
-                                    The software should be managed to:<br>
-                                    -connect the two process client-server without login in, but with request and
-                                    response messages,
-                                    -through "list" command: message sends by client to the server-The goal of it is to
-                                    return the list of all available files from server's directory.<br>
-                                    -through "get" command: message sends by client to the server-It lets to the client
-                                    to download the file according condition it is present into server's diretory.
-                                    <br>-through "put" command: message sends by client to server- It's able to upload a
-                                    file present into the client's directiory to server's directory.</em> <br>
-                                <br>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="collection-item avatar">
-
-                        <button type="button" class="collapsible">Project made for the course of <b
-                                style=" text-decoration: underline;"> Ing Software Web</b><br>
-                            <a href="https://github.com/LombardoAndrea195/ISPW" class="secondary-content">Repository</a>
-                        </button>
-                        <div class="content"> <br>
-                            <p>
-                                <br>
-                                <br>
-                                <br>
-                            <p><em>The main goal of this project is to build a web-application and a laptop application
-                                    with an architecture pattern BCE.<br>
-                                    The task is to define the managment and maintenance of resourse, first booking of
-                                    events(like Exams,Test , degree session or conference) then definition since the
-                                    starting of academic year of the exams sessions.
-                                    <br>The application should allow to the user to loggin in with the profiles of
-                                    users(Professor-Secretary).
-                                    The different of them is about the the type and number of operations(actions) they
-                                    could do.
-                                    The communication between application client and database is made with a JDBC
-                                    approach.
-                                    The patterns used into this project are: for the architecture BCE and for creation
-                                    database and controller we use the pattern Singleton.
-                                    <br>I've done 4 use case : <br>
-                                    a) visualization of the active booking prenotazioni attive<br>
-                                    b) booking an exam <br>
-                                    c) booking an event<br>
-                                    d) visualization of the historical booking <br>
-                                    Furthermore through Junit we've tested if everything works well.<br>
-                                    In this part I've developmented a thread which is able to use different class of
-                                    this part but it's able to make a random reservation of one Exams or Event.
-                                    Here it's important the logic of the reservation of the room, a particular class
-                                    with all the options and comfort that a professor would like for doing a lecture
-                                    I chose to make the web part of the Servlet programming technology, which uses Java
-                                    for the development of the presentation logic,
-                                    according to the BCE pattern, of web applications while providing dynamic content in
-                                    HTML format, markup language.
-                                    An additional tool used in the implementation was MATERIALIZE, a collection of
-                                    templates for the design of websites .
-                                    this give to the system a way to touch of graphics and make the system not only able
-                                    to respond and conform to specifications but also aesthetically beautiful.<br>
-                                    <br>
-                                </em></p>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="collection-item avatar">
-
-                        <button type="button" class="collapsible">Project made for the course of <b
-                                style=" text-decoration: underline;">Mobile Programming</b> <br>
-                            <a href="https://github.com/LombardoAndrea195/Android_Projects/tree/master/Runner2%20Programming%20Mobile"
-                                class="secondary-content">Repository</a>
-                            <br></button>
-                        <div class="content">
-                            <p> <em><br>
-                                    The main goal of this project during this cours is to develop a mobile application
-                                    for Android made through Android Studio,
-                                    the official Integrated Development Environment (IDE) for Android app
-                                    development.<br>
-                                    This app is made for final mark, and we should develop only one part, that related
-                                    to the description of races. <br>
-                                    At the beginning we should log in in the first activity only with username and
-                                    password,recognized by the app.<br>
-                                    Then acording to Rest Api like post and get we are able to take or send information
-                                    with JSON object to a server(WampServer) which is able to accept request by the
-                                    app,this is doing with a php file.<br>
-                                    The task is to make a booking of a runner for a race.</em><br>
-                                <br>
-                            </p>
-
-                    </li>
-                    <li class="collection-item avatar">
-
-                        <button type="button" class="collapsible">
-                            Project made for the course of <b style=" text-decoration: underline;">Basi di dati</b> <br>
-
-                            <a href="https://github.com/LombardoAndrea195/Progetto_Basi_Project"
-                                class="secondary-content">Repository</a>
-                        </button>
-                        <div class="content"> <br>
-                            <p><em> <br>It' s made with Eclipse and SceneBuilder for the implementation, StarUML for the
-                                    documentation, POSTGRES for the managment of the database,JUNIT fot the testing
-                                    process:
-                                    <br>
-                                    The main goal of this Java project is to build a laptop stand alone application
-                                    which let me import information from CSV files into a database.
-                                    The data collected into CSV files should come up from Istituto Nazionale di
-                                    Astrofisica, infact we have information of different celestial bodies(more
-                                    precisesly Stars and filaments) by more satellites.
-                                    The documentation is inside of this directory and there are:<br>
-                                    -the diagrams Entity-Relationship<br>
-                                    -the logic model(dictionary of data, business rules, class diagram, test case and
-                                    database's dump made on PostgresSQL).<br>
-                                    The application should allow to the user to loggin in with the profiles of
-                                    users(Administrator-User).<br>
-                                    The different of them is about the the type and number of operations(actions) they
-                                    could do.<br>
-                                    The communication between application client and database is made with a JDBC
-                                    approach.<br>
-                                    The patterns used into this project are: for the architecture MVC and for creation
-                                    database and controller we use the pattern Singleton</em> <br>
-
-                            </p>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <br>
-
-                <span>Photo by <a href="https://unsplash.com/@omgitsyeshi">Yeshi Kangrang</a>
-                    on Unsplash</span>
-            </div>
-        </div>
-
-    </section>
-
-    <div class="section-divider section-divider--to-light" aria-hidden="true">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" role="presentation">
-            <path class="section-divider__fill"
-                d="M0,64 C140,132 280,6 430,58 C570,108 690,130 810,95 C930,60 1030,18 1200,54 L1200,120 L0,120 Z">
-            </path>
-            <path class="section-divider__line"
-                d="M0,64 C140,132 280,6 430,58 C570,108 690,130 810,95 C930,60 1030,18 1200,54"></path>
-        </svg>
-    </div>
-
-
-
-    <section id="Capabilities" class="s-works target-section">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom signature-headline" data-split="letters">
-                    <span data-i18n="skills_heading">Knowledge and Soft Skills</span>
-                </h2>
-                <p class="section-desc" data-i18n="skills_desc">Research output, communication strengths and delivery
-                    mindset.</p>
-            </div>
-        </div> <!-- end heading-block -->
-        <div class="row half-bottom capabilities-grid">
-
-            <div class="column large-6 tab-full">
-                <div class="capability-panel publications-panel" data-aos="fade-up">
-                    <p class="panel-eyebrow">Publications</p>
-                    <h3>Research Highlights</h3>
-
-                    <article class="publication-card reveal-on-scroll">
-                        <div class="publication-card__meta">
-                            <span class="publication-year">2025</span>
-                            <span class="publication-icon-wrap">
-                                <picture>
-                                    <source srcset="images/certification/books.webp" type="image/webp">
-                                    <img class="publication-icon" src="images/certification/books.png" width="50"
-                                        height="50" alt="Publication icon" loading="lazy" decoding="async">
-                                </picture>
-                            </span>
-                        </div>
-                        <h4>Supporting Smart Manufacturing in the Space Industry: A Case Study</h4>
-                        <p class="publication-journal">Wiley, Engineering Reports, January 2025</p>
-                        <p class="publication-summary">Industrial and data-driven approach to support smart
-                            manufacturing processes in the space sector.</p>
-                        <a class="publication-link" href="https://lnkd.in/drdqnc2A">Read publication</a>
+                <div class="project-grid" data-project-grid>
+
+                    <article class="project" data-level="msc" data-reveal>
+                        <p class="project__meta"><span class="project__level">MSc</span><span
+                                data-i18n="p1_course">Neural Networks</span></p>
+                        <h3 class="project__title" data-i18n="p1_title">SReLU activations, built from scratch</h3>
+                        <p class="project__desc" data-i18n="p1_desc">Implemented S-shaped Rectified Linear Units and
+                            benchmarked them against ReLU, Leaky ReLU, PReLU and exponential activations across several
+                            convolutional networks.</p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>CNN</li>
+                            <li>Deep learning</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/LucaTomei/NN-Project">Repository</a></li>
+                            <li><a
+                                    href="https://github.com/LucaTomei/NN-Project/blob/main/Neural_Network_Report.pdf">Paper</a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:6773544620665176064/"
+                                    data-i18n="l_presentation">Presentation</a></li>
+                        </ul>
                     </article>
 
-                    <article class="publication-card reveal-on-scroll">
-                        <div class="publication-card__meta">
-                            <span class="publication-year">2022</span>
-                            <span class="publication-icon-wrap">
-                                <picture>
-                                    <source srcset="images/certification/books.webp" type="image/webp">
-                                    <img class="publication-icon" src="images/certification/books.png" width="50"
-                                        height="50" alt="Publication icon" loading="lazy" decoding="async">
-                                </picture>
-                            </span>
-                        </div>
-                        <h4>An industry 4.0 approach to large-scale production of satellite constellations</h4>
-                        <p class="publication-journal">Elsevier, Acta Astronautica, Vol. 192, pp. 276-290</p>
-                        <p class="publication-summary">Composite sandwich panel manufacturing case study for large-scale
-                            satellite constellation production.</p>
-                        <a class="publication-link"
-                            href="https://www.sciencedirect.com/science/article/abs/pii/S0094576521006834">Read
-                            publication</a>
+                    <article class="project" data-level="msc" data-reveal>
+                        <p class="project__meta"><span class="project__level">MSc</span><span
+                                data-i18n="p2_course">Web Information Retrieval</span></p>
+                        <h3 class="project__title" data-i18n="p2_title">Emergency detection from tweets</h3>
+                        <p class="project__desc" data-i18n="p2_desc">Detects emergencies in real time using people as
+                            sensors: tweet preprocessing, TF-IDF vectors, topic clustering and an SVM relevance
+                            classifier.</p>
+                        <ul class="tags">
+                            <li>NLP</li>
+                            <li>TF-IDF</li>
+                            <li>SVM</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/danieledavoli/emergency_detection/">Repository</a></li>
+                            <li><a href="document/Paper.pdf">Paper</a></li>
+                        </ul>
                     </article>
 
-                    <article class="publication-card publication-card--accent reveal-on-scroll">
-                        <div class="publication-card__meta">
-                            <span class="publication-year">Now</span>
-                            <span class="publication-icon-wrap publication-icon-wrap--accent">
-                                <picture>
-                                    <source srcset="images/certification/medal.webp" type="image/webp">
-                                    <img class="publication-icon" src="images/certification/medal.png" width="50"
-                                        height="50" alt="Certification icon" loading="lazy" decoding="async">
-                                </picture>
-                            </span>
-                        </div>
-                        <h4>Professional Certifications</h4>
-                        <p class="publication-journal">Updated badges and certificates portfolio</p>
-                        <p class="publication-summary">Centralized archive of all certifications and continuous learning
-                            milestones.</p>
-                        <a class="publication-link" href="https://www.credly.com/earner/dashboard">Open Credly
-                            profile</a>
+                    <article class="project" data-level="msc" data-reveal>
+                        <p class="project__meta"><span class="project__level">MSc</span><span
+                                data-i18n="p3_course">Mobile &amp; Cloud Computing</span></p>
+                        <h3 class="project__title" data-i18n="p3_title">LibraryApp, a social reading tracker</h3>
+                        <p class="project__desc" data-i18n="p3_desc">Android app to save quotes, track the books you've
+                            read and compare with friends. Firebase auth, Google Books API and a Node.js REST backend on
+                            MongoDB.</p>
+                        <ul class="tags">
+                            <li>Android</li>
+                            <li>Firebase</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/LombardoAndrea195/LibraryApp">Repository</a></li>
+                            <li><a href="https://github.com/LombardoAndrea195/NodejsLibraryApp">Backend</a></li>
+                            <li><a href="https://github.com/LombardoAndrea195/LibraryApp/blob/master/LIBRARY%20APP.pdf"
+                                    data-i18n="l_docs">Documentation</a></li>
+                        </ul>
                     </article>
 
-                    <article class="publication-card reveal-on-scroll">
-                        <div class="publication-card__meta">
-                            <span class="publication-year">Paper</span>
-                            <span class="publication-icon-wrap">
-                                <picture>
-                                    <source srcset="images/certification/books.webp" type="image/webp">
-                                    <img class="publication-icon" src="images/certification/books.png" width="50"
-                                        height="50" alt="Paper icon" loading="lazy" decoding="async">
-                                </picture>
-                            </span>
-                        </div>
-                        <h4>Using Social Media to Enhance Emergency Situation Awareness</h4>
-                        <p class="publication-journal">Technical paper and experiment report</p>
-                        <p class="publication-summary">Work focused on real-time emergency detection from tweets using
-                            preprocessing, TF-IDF, clustering and SVM.</p>
-                        <a class="publication-link" href="document/Paper.pdf">Read full paper</a>
-                    </article>
-
-                    <div class="paper-archive reveal-on-scroll">
-                        <h4>Paper Archive</h4>
-                        <ul class="paper-archive__list">
-                            <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0094576521006834">Acta
-                                    Astronautica paper (2022)</a></li>
-                            <li><a href="https://lnkd.in/drdqnc2A">Engineering Reports paper (2025)</a></li>
-                            <li><a href="document/Paper.pdf">Emergency situation awareness paper</a></li>
-                            <li><a href="https://www.credly.com/earner/dashboard">Certifications profile (Credly)</a>
+                    <article class="project" data-level="msc" data-reveal>
+                        <p class="project__meta"><span class="project__level">MSc</span><span
+                                data-i18n="p4_course">Machine Learning</span></p>
+                        <h3 class="project__title" data-i18n="p4_title">From classic models to transfer learning</h3>
+                        <p class="project__desc" data-i18n="p4_desc">Two homeworks: compiler and optimisation
+                            prediction with classic classifiers, then weather-image classification with a CNN trained
+                            from scratch versus a fine-tuned pre-trained model.</p>
+                        <ul class="tags">
+                            <li>scikit-learn</li>
+                            <li>CNN</li>
+                            <li>Transfer learning</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/LombardoAndrea195/homeworkML">Repository</a></li>
+                            <li><a
+                                    href="https://github.com/LombardoAndrea195/homeworkML/blob/master/1Homework/homework_Machine_Learning.pdf">Report
+                                    1</a></li>
+                            <li><a
+                                    href="https://github.com/LombardoAndrea195/homeworkML/blob/master/ML2/1893440.pdf">Report
+                                    2</a></li>
+                            <li><a
+                                    href="https://github.com/LombardoAndrea195/homeworkML/blob/master/ML2/1893440_code.ipynb">Notebook</a>
+                            </li>
+                            <li><a href="https://drive.google.com/drive/folders/1UzH28Q8xki8_DMYdDgHxi40-CJ800Kaq">Dataset</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
+                    </article>
 
-            <div class="column large-6 tab-full">
-                <div class="capability-panel softskills-panel" data-aos="fade-up">
-                    <p class="panel-eyebrow">Soft Skills</p>
-                    <h3>How I Work With Teams</h3>
-                    <p class="softskills-intro">A people-first mindset focused on delivery quality, ownership and clear
-                        communication.</p>
-
-                    <div class="knowledge-archive reveal-on-scroll">
-                        <article class="knowledge-group">
-                            <h4>Technical Skills</h4>
-                            <ul class="knowledge-list">
-                                <li>Lifecycle of software: analysis, specification of requirements, design,
-                                    implementation, testing.</li>
-                                <li>Capability to design Machine Learning solutions and analyze outcomes from occurrence
-                                    data.</li>
-                                <li>Operating systems: Linux, Unix, Windows.</li>
-                                <li>Algorithm techniques and concepts from courses by G. P. Italiano and S. Leonardi.
-                                </li>
-                                <li>Web applications and protocols: TCP, IP, UDP, HTTP servers (Apache, IIS).</li>
-                                <li>DBMS: PostgreSQL, MySQL, Firebase, MongoDB.</li>
-                                <li>Router protocols: DHCP, NAT, RIP, OSPF.</li>
-                                <li>Network infrastructure concepts: access, telephone and core networks.</li>
-                            </ul>
-                        </article>
-
-                        <article class="knowledge-group">
-                            <h4>Programming Skills</h4>
-                            <ul class="knowledge-list">
-                                <li>Machine Learning techniques: classification, regression, unsupervised learning,
-                                    reinforcement learning, neural network fundamentals.</li>
-                                <li>SOA and Web Services: REST and SOAP.</li>
-                                <li>Development approaches: CMMI, Scrum, Agile, waterfall, iterative.</li>
-                                <li>Microservices architecture and distributed systems mindset.</li>
-                                <li>Web Information Retrieval and NLP algorithms: SVM, Rocchio, KNN.</li>
-                                <li>Web technologies: XML, JSP, HTML.</li>
-                                <li>Query languages: SQL and NoSQL.</li>
-                                <li>Assembler on MIPS architecture.</li>
-                                <li>Mobile programming on Android Studio.</li>
-                                <li>UML and design patterns.</li>
-                                <li>C programming with POSIX.</li>
-                                <li>Python, Jython, Java/JavaFX, JDBC and Servlet-based web development.</li>
-                            </ul>
-                        </article>
-                    </div>
-
-                    <div class="softskills-grid">
-                        <article class="softskill-card reveal-on-scroll">
-                            <h4>Leadership by Example</h4>
-                            <p>Drive initiatives by execution, mentoring and transparent decision-making.</p>
-                        </article>
-                        <article class="softskill-card reveal-on-scroll">
-                            <h4>Strategic Communication</h4>
-                            <p>Translate complex engineering topics into actionable business language.</p>
-                        </article>
-                        <article class="softskill-card reveal-on-scroll">
-                            <h4>Problem Solving</h4>
-                            <p>Break down ambiguity into measurable steps and reproducible solutions.</p>
-                        </article>
-                        <article class="softskill-card reveal-on-scroll">
-                            <h4>Collaboration</h4>
-                            <p>Align cross-functional teams around shared milestones and outcomes.</p>
-                        </article>
-                        <article class="softskill-card reveal-on-scroll">
-                            <h4>Adaptability</h4>
-                            <p>Quickly adjust priorities and architecture choices to evolving contexts.</p>
-                        </article>
-                        <article class="softskill-card reveal-on-scroll">
-                            <h4>Continuous Learning</h4>
-                            <p>Keep improving through feedback loops, experimentation and knowledge sharing.</p>
-                        </article>
-                    </div>
-
-                    <div class="skill-tags reveal-on-scroll">
-                        <span>Ownership</span>
-                        <span>Empathy</span>
-                        <span>Reliability</span>
-                        <span>Critical Thinking</span>
-                        <span>Facilitation</span>
-                        <span>Storytelling</span>
-                    </div>
-                </div>
-            </div>
-
-        </div> <!-- end row -->
-
-
-    </section> <!-- end s-work -->
-
-    <div class="section-divider section-divider--to-dark" aria-hidden="true">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" role="presentation">
-            <path class="section-divider__fill"
-                d="M0,54 C190,18 340,126 510,82 C650,46 760,12 900,42 C1020,66 1110,98 1200,78 L1200,120 L0,120 Z">
-            </path>
-            <path class="section-divider__line"
-                d="M0,54 C190,18 340,126 510,82 C650,46 760,12 900,42 C1020,66 1110,98 1200,78"></path>
-        </svg>
-    </div>
-
-
-    <!-- testimonies
-    ==================================================
-    <section class="s-testimonials">
-
-        <div class="row testimonials" data-aos="fade-up">
-
-            <div class="column large-full testimonials__slider">
-
-                <div class="testimonials__slide">
-                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem.
-                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
-                    Laudantium quia consequatur molestias delectus culpa.</p> -->
-    <!--       <div class="testimonials__info">
-                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Tim Cook</strong>
-                            <span>CEO, Apple</span>
-                        </cite>
-                    </div>
-                </div>  end testimonials__slide -->
-    <!--
-                <div class="testimonials__slide">
-                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                        Quasi voluptas eius distinctio. Atque eos maxime.</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Sundar Pichai</strong>
-                            <span>CEO, Google</span>
-                        </cite>
-                    </div>
-                </div>  end testimonials__slide -->
-    <!--
-                <div class="testimonials__slide">
-                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                    Voluptatem dignissimos ut.</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Satya Nadella</strong>
-                            <span>CEO, Microsoft</span>
-                        </cite>
-                    </div>
-                </div>  end testimonials__slide -->
-
-    </div> <!-- end testimonials__slider -->
-
-    </div> <!-- end testimonials -->
-
-    </section> <!-- end s-testimonials -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading" data-i18n="contact_heading">Get In Touch</h2>
-                <p class="section-desc" data-i18n="contact_desc">Direct channel for focused collaborations.</p>
-            </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-            <div class="column large-full">
-                <div class="contact-shell reveal-on-scroll">
-                    <div class="contact-scanline" aria-hidden="true"></div>
-                    <div class="contact-intro">
-                        <p class="contact-eyebrow" data-i18n="contact_eyebrow">Direct Channel Online</p>
-                        <h3 class="contact-title" data-i18n="contact_title">Build Something Bold</h3>
-                        <p class="contact-copy" data-i18n="contact_copy">
-                            Data, cloud and DevOps delivery with fast execution and clean architecture.
+                    <article class="project" data-level="msc" data-reveal>
+                        <p class="project__meta"><span class="project__level">MSc</span><span
+                                data-i18n="p5_course">Network Infrastructures</span></p>
+                        <h3 class="project__title" data-i18n="p5_title">Netkit network labs</h3>
+                        <p class="project__desc" data-i18n="p5_desc">Three labs configuring LANs and WANs on emulated
+                            Unix hosts: addressing, DHCP, NAT, static routing, OSPF, iptables, SSH, VPN, x509 and DNS.
                         </p>
-                        <div class="contact-primary-actions reveal-on-scroll">
-                            <a class="contact-mail-cta"
-                                href="mailto:l.andrea195@live.it?subject=Portfolio%20Contact&body=Hi%20Andrea%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20discuss%20a%20project."
-                                data-i18n="contact_cta_email">Open
-                                Email Channel</a>
-                            <p class="contact-mail-note" data-i18n="contact_response">Fast response window: ~24h</p>
-                        </div>
-                        <p class="contact-location reveal-on-scroll" data-i18n="contact_location">Rome, Italy · Remote +
-                            Hybrid</p>
-                        <div class="contact-inline-links reveal-on-scroll">
-                            <a href="mailto:l.andrea195@live.it?subject=Quick%20Call"
-                                data-i18n="contact_quick_sync">Quick Sync</a>
-                            <a href="https://github.com/LombardoAndrea195">GitHub</a>
-                            <a href="https://www.linkedin.com/in/andrea-lombardo-/">LinkedIn</a>
-                            <a href="https://www.facebook.com/andrea.lombardo.564">Facebook</a>
-                        </div>
-                    </div>
+                        <ul class="tags">
+                            <li>Networking</li>
+                            <li>Linux</li>
+                            <li>Netkit</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/LombardoAndrea195/Netkit">Repository</a></li>
+                            <li><a href="https://github.com/LombardoAndrea195/Netkit/blob/master/homework1.tar.gz"><span
+                                        data-i18n="l_lab">Lab</span> 1</a></li>
+                            <li><a
+                                    href="https://github.com/LombardoAndrea195/Netkit/blob/master/Homework2-1893440.tar.gz"><span
+                                        data-i18n="l_lab">Lab</span> 2</a></li>
+                            <li><a href="https://github.com/LombardoAndrea195/Netkit/blob/master/lab_3.tar.gz"><span
+                                        data-i18n="l_lab">Lab</span> 3</a></li>
+                            <li><a href="https://github.com/LombardoAndrea195/Netkit/blob/master/NETKIT_LAB.pdf"
+                                    data-i18n="l_notes">Notes</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="project" data-level="msc" data-reveal>
+                        <p class="project__meta"><span class="project__level">MSc</span><span
+                                data-i18n="p6_course">Human-Computer Interaction</span></p>
+                        <h3 class="project__title">ShareYourSport</h3>
+                        <p class="project__desc" data-i18n="p6_desc">Designing an app that connects people through
+                            sport: create and join events, share workouts and launch public challenges. Iterated through
+                            documented design rounds.</p>
+                        <ul class="tags">
+                            <li>UX research</li>
+                            <li>Prototyping</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a
+                                    href="https://github.com/LombardoAndrea195/ShareYourSport/blob/master/Human_Computer_Interaction_Project%20(2).pdf">Report</a>
+                            </li>
+                            <li><a href="https://github.com/LombardoAndrea195/ShareYourSport/blob/master/ShareYourSport.pdf"
+                                    data-i18n="l_presentation">Presentation</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="project" data-level="msc" data-reveal>
+                        <p class="project__meta"><span class="project__level">MSc</span><span
+                                data-i18n="p7_course">Seminars in Advanced Computing</span></p>
+                        <h3 class="project__title" data-i18n="p7_title">Remote Core Locking, explained</h3>
+                        <p class="project__desc" data-i18n="p7_desc">A talk on the RCL paper: moving critical-section
+                            execution to a dedicated server core to cut lock contention and cache misses on multicore
+                            machines.</p>
+                        <ul class="tags">
+                            <li>Concurrency</li>
+                            <li>Multicore</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="document/Seminars.pdf">Slides</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="project" data-level="bsc" data-reveal>
+                        <p class="project__meta"><span class="project__level">BSc</span><span
+                                data-i18n="p8_course">Software Engineering</span></p>
+                        <h3 class="project__title" data-i18n="p8_title">Academic booking platform</h3>
+                        <p class="project__desc" data-i18n="p8_desc">Web and desktop app in Java, built on the BCE
+                            pattern, to book exams, events and rooms. Role-based access, JDBC, Servlets and JUnit tests,
+                            plus a concurrent thread that simulates random bookings.</p>
+                        <ul class="tags">
+                            <li>Java</li>
+                            <li>Servlets</li>
+                            <li>JDBC</li>
+                            <li>JUnit</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/LombardoAndrea195/ISPW">Repository</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="project" data-level="bsc" data-reveal>
+                        <p class="project__meta"><span class="project__level">BSc</span><span
+                                data-i18n="p9_course">Operating Systems</span></p>
+                        <h3 class="project__title" data-i18n="p9_title">Multithreaded booking server in C</h3>
+                        <p class="project__desc" data-i18n="p9_desc">TCP client-server for cinema seat booking over
+                            Berkeley sockets: live seat map, cancellation codes, concurrent clients and file-based
+                            persistence.</p>
+                        <ul class="tags">
+                            <li>C</li>
+                            <li>POSIX</li>
+                            <li>TCP</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/LombardoAndrea195/Sistemi_Operativi_Project">Repository</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="project" data-level="bsc" data-reveal>
+                        <p class="project__meta"><span class="project__level">BSc</span><span
+                                data-i18n="p10_course">Internet &amp; Web Engineering</span></p>
+                        <h3 class="project__title" data-i18n="p10_title">Reliable file transfer over UDP</h3>
+                        <p class="project__desc" data-i18n="p10_desc">C client-server implementing selective repeat on
+                            top of UDP with simulated packet loss, plus list, get and put commands.</p>
+                        <ul class="tags">
+                            <li>C</li>
+                            <li>UDP</li>
+                            <li>Selective repeat</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/LombardoAndrea195/IIW_Project">Repository</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="project" data-level="bsc" data-reveal>
+                        <p class="project__meta"><span class="project__level">BSc</span><span
+                                data-i18n="p11_course">Databases</span></p>
+                        <h3 class="project__title" data-i18n="p11_title">Astrophysics data importer</h3>
+                        <p class="project__desc" data-i18n="p11_desc">JavaFX desktop app that imports INAF star and
+                            filament CSV data into PostgreSQL, with ER modelling, role-based users, MVC and JUnit.</p>
+                        <ul class="tags">
+                            <li>Java</li>
+                            <li>PostgreSQL</li>
+                            <li>MVC</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/LombardoAndrea195/Progetto_Basi_Project">Repository</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="project" data-level="bsc" data-reveal>
+                        <p class="project__meta"><span class="project__level">BSc</span><span
+                                data-i18n="p12_course">Mobile Programming</span></p>
+                        <h3 class="project__title" data-i18n="p12_title">Race booking app for runners</h3>
+                        <p class="project__desc" data-i18n="p12_desc">Android app where runners sign in and book races,
+                            exchanging JSON with a PHP backend through REST calls.</p>
+                        <ul class="tags">
+                            <li>Android</li>
+                            <li>REST</li>
+                            <li>PHP</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a
+                                    href="https://github.com/LombardoAndrea195/Android_Projects/tree/master/Runner2%20Programming%20Mobile">Repository</a>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="column large-full ss-copyright">
-                <span>© Copyright Epitome 2019</span>
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                <span>Photo by <a href="https://unsplash.com/@worthyofelegance">Alex</a>
-                    on Unsplash
+        </section>
 
+        <!-- research ================================================== -->
+        <section class="section research" id="research" aria-labelledby="research-title">
+            <div class="container">
+                <h2 class="section-title" id="research-title" data-reveal data-i18n="research_title">Research &amp;
+                    publications</h2>
 
+                <ol class="pubs">
+                    <li class="pub" data-reveal>
+                        <span class="pub__year">2025</span>
+                        <div class="pub__body">
+                            <h3 class="pub__title"><a href="https://lnkd.in/drdqnc2A">Supporting Smart Manufacturing in
+                                    the Space Industry: A Case Study</a></h3>
+                            <p class="pub__venue">Wiley · Engineering Reports</p>
+                            <p class="pub__desc" data-i18n="pub1_desc">An industrial, data-driven approach to support
+                                smart manufacturing processes in the space sector.</p>
+                        </div>
+                        <span class="pub__arrow" aria-hidden="true">↗</span>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <span class="pub__year">2022</span>
+                        <div class="pub__body">
+                            <h3 class="pub__title"><a
+                                    href="https://www.sciencedirect.com/science/article/abs/pii/S0094576521006834">An
+                                    Industry 4.0 approach to large-scale production of satellite constellations</a></h3>
+                            <p class="pub__venue">Elsevier · Acta Astronautica, vol. 192, pp. 276–290</p>
+                            <p class="pub__desc" data-i18n="pub2_desc">Composite sandwich-panel manufacturing as a case
+                                study for producing satellite constellations at scale.</p>
+                        </div>
+                        <span class="pub__arrow" aria-hidden="true">↗</span>
+                    </li>
+                    <li class="pub" data-reveal>
+                        <span class="pub__year pub__year--word">Paper</span>
+                        <div class="pub__body">
+                            <h3 class="pub__title"><a href="document/Paper.pdf" data-i18n="pub3_title">Using Social Media
+                                    to Enhance Emergency Situation Awareness</a></h3>
+                            <p class="pub__venue" data-i18n="pub3_venue">Technical paper · Sapienza University of Rome
+                            </p>
+                            <p class="pub__desc" data-i18n="pub3_desc">Real-time emergency detection from tweets with
+                                preprocessing, TF-IDF, clustering and SVM.</p>
+                        </div>
+                        <span class="pub__arrow" aria-hidden="true">↗</span>
+                    </li>
+                </ol>
 
+                <div class="certs" data-reveal>
+                    <div class="certs__intro">
+                        <h3 class="certs__title" data-i18n="certs_title">Certifications</h3>
+                        <p class="certs__text" data-i18n="certs_text">19 certifications in cloud, data science and
+                            design thinking, from Microsoft, IBM, AWS, Google Cloud and Stanford.</p>
+                        <a class="link-arrow" href="https://www.credly.com/earner/dashboard"><span
+                                data-i18n="certs_credly">Credly profile</span> <span aria-hidden="true">↗</span></a>
+                    </div>
 
+                    <ul class="cert-featured">
+                        <li class="cert">
+                            <span class="cert__issuer">Microsoft</span>
+                            <span class="cert__name">Power Platform Developer Associate</span>
+                            <span class="cert__year">2021</span>
+                        </li>
+                        <li class="cert">
+                            <span class="cert__issuer">Microsoft</span>
+                            <span class="cert__name">Azure Fundamentals</span>
+                            <span class="cert__year">2022</span>
+                        </li>
+                        <li class="cert">
+                            <span class="cert__issuer">IBM</span>
+                            <span class="cert__name">Enterprise Design Thinking Practitioner</span>
+                            <span class="cert__year">2022</span>
+                        </li>
+                        <li class="cert">
+                            <span class="cert__issuer">Stanford · Coursera</span>
+                            <span class="cert__name">Machine Learning</span>
+                            <span class="cert__year">2021</span>
+                        </li>
+                    </ul>
 
-
-                </span>
+                    <details class="disclosure certs__all">
+                        <summary>
+                            <span><span data-i18n="certs_all">All certifications</span> <span
+                                    class="segmented__count">19</span></span>
+                            <span class="disclosure__icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="disclosure__content">
+                            <div class="cert-years">
+                                <div>
+                                    <h4 class="cert-years__year">2022</h4>
+                                    <ul>
+                                        <li>Microsoft Certified: Azure Fundamentals</li>
+                                        <li>IBM Enterprise Design Thinking Practitioner</li>
+                                        <li>IBM Enterprise Design Thinking: Team Essentials for AI</li>
+                                        <li>HackerRank Problem Solving</li>
+                                        <li>HackerRank Python</li>
+                                        <li>EY Cybersecurity: Information Security Awareness Essentials</li>
+                                        <li>EY Analytics: Data Science</li>
+                                        <li>EY Analytics: Data Visualization</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="cert-years__year">2021</h4>
+                                    <ul>
+                                        <li>Microsoft Certified: Power Platform Developer Associate</li>
+                                        <li>Machine Learning (Stanford, Coursera)</li>
+                                        <li>Intro to Machine Learning (Kaggle)</li>
+                                        <li>Pandas (Kaggle)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="cert-years__year">2020</h4>
+                                    <ul>
+                                        <li>Getting Started with AWS Machine Learning (AWS)</li>
+                                        <li>Managing Machine Learning Projects with Google Cloud</li>
+                                        <li>Databases and SQL for Data Science (IBM)</li>
+                                        <li>Data Science Methodology (IBM)</li>
+                                        <li>Data Science Orientation (IBM)</li>
+                                        <li>Cloud Computing Basics (LearnQuest)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="cert-years__year" data-i18n="certs_more">Also</h4>
+                                    <ul>
+                                        <li><a class="link-arrow"
+                                                href="document/certificate_Agile_Foundations_for_Microsoft_Business_Apps.pdf">Agile
+                                                Foundations for Microsoft Business Apps <span
+                                                    aria-hidden="true">↗</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
             </div>
+        </section>
 
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        <!-- contact ================================================== -->
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact__grid">
+                <div class="contact__copy">
+                    <h2 class="contact__title" id="contact-title" data-reveal data-i18n="contact_title">Let’s talk.
+                    </h2>
+                    <p class="contact__text" data-reveal style="--i:1" data-i18n="contact_text">Open to conversations
+                        about data platforms, cloud infrastructure and DevOps. I usually reply within a day.</p>
+
+                    <div class="email" data-reveal style="--i:2">
+                        <a class="email__link"
+                            href="mailto:l.andrea195@live.it?subject=Portfolio%20contact">l.andrea195@live.it</a>
+                        <button class="email__copy" type="button" data-copy="l.andrea195@live.it">
+                            <span class="email__copy-label" data-i18n="copy">Copy</span>
+                            <span class="email__copy-done" aria-hidden="true" data-i18n="copied">Copied</span>
+                        </button>
+                        <span class="visually-hidden" role="status" aria-live="polite" data-copy-status></span>
+                    </div>
+                </div>
+
+                <div class="contact__side" data-reveal style="--i:3">
+                    <ul class="socials">
+                        <li><a href="https://www.linkedin.com/in/andrea-lombardo-/">LinkedIn <span
+                                    aria-hidden="true">↗</span></a></li>
+                        <li><a href="https://github.com/LombardoAndrea195">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li><a href="https://instagram.com/lombi95">Instagram <span aria-hidden="true">↗</span></a></li>
+                        <li><a href="https://www.facebook.com/andrea.lombardo.564">Facebook <span
+                                    aria-hidden="true">↗</span></a></li>
+                    </ul>
+                    <p class="contact__location" data-i18n="contact_location">Rome, Italy · Remote and hybrid</p>
+                </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© <span data-year>2026</span> Andrea Lombardo</p>
+            <a class="link-arrow" href="#top"><span data-i18n="back_top">Back to top</span> <span
+                    aria-hidden="true">↑</span></a>
         </div>
     </footer>
 
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
-                        title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
-                        title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div><!-- end photoSwipe background -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js" defer></script>
-    <script src="js/plugins.js" defer></script>
     <script src="js/main.js" defer></script>
-
-    <script>
-        (function () {
-            function runDeferredDomEnhancements() {
-                var projectCards = document.querySelectorAll('#works .collection-item.avatar');
-                projectCards.forEach(function (card) {
-                    if (card.querySelector('.project-header')) return;
-
-                    var button = card.querySelector('button.collapsible');
-                    if (!button) return;
-
-                    var repoLink = button.querySelector('a.secondary-content, a.repo-link-top');
-                    var projectHeader = document.createElement('div');
-                    projectHeader.className = 'project-header';
-
-                    card.insertBefore(projectHeader, button);
-                    projectHeader.appendChild(button);
-
-                    if (repoLink) {
-                        if (!repoLink.classList.contains('repo-link-top')) {
-                            repoLink.classList.add('repo-link-top');
-                        }
-                        repoLink.classList.add('secondary-content');
-                        repoLink.textContent = 'Repository';
-                        projectHeader.appendChild(repoLink);
-                    }
-                });
-
-                var projectTitles = document.querySelectorAll('#works .collapsible');
-                projectTitles.forEach(function (titleBtn) {
-                    var normalized = titleBtn.innerHTML;
-                    normalized = normalized.replace(/Project delivered for the course of/gi, 'Course Project:');
-                    normalized = normalized.replace(/Project made for the course of/gi, 'Course Project:');
-                    normalized = normalized.replace(/Homeworks delivered for the course of/gi, 'Course Work:');
-                    normalized = normalized.replace(/Presentation made for the course of/gi, 'Seminar Presentation:');
-                    normalized = normalized.replace(/<br\s*\/?>/gi, ' ');
-                    normalized = normalized.replace(/\s{2,}/g, ' ');
-                    titleBtn.innerHTML = normalized;
-                });
-
-                if (window.refreshSiteLanguageNodes) {
-                    window.refreshSiteLanguageNodes();
-                }
-
-                var coll = document.getElementsByClassName('collapsible');
-                for (var i = 0; i < coll.length; i++) {
-                    var initialCard = coll[i].closest('.collection-item');
-                    var initialContent = initialCard ? initialCard.querySelector('.content') : null;
-                    if (initialContent && initialContent.classList.contains('content')) {
-                        initialContent.style.maxHeight = '0px';
-                        initialContent.style.opacity = '0';
-                    }
-
-                    coll[i].addEventListener('click', function (event) {
-                        if (event.target.closest('a')) return;
-
-                        this.classList.toggle('active');
-                        var card = this.closest('.collection-item');
-                        var content = card ? card.querySelector('.content') : null;
-                        var isOpen = this.classList.contains('active');
-
-                        if (!content || !content.classList.contains('content')) return;
-
-                        if (isOpen) {
-                            if (card) card.classList.add('is-open');
-                            content.style.maxHeight = content.scrollHeight + 'px';
-                            content.style.opacity = '1';
-                        } else {
-                            if (card) card.classList.remove('is-open');
-                            content.style.maxHeight = '0px';
-                            content.style.opacity = '0';
-                        }
-
-                        if (window.applyCurrentSiteLanguage) {
-                            window.applyCurrentSiteLanguage();
-                        }
-                    });
-                }
-
-                var images = document.querySelectorAll('img:not([loading])');
-                images.forEach(function (img) {
-                    img.setAttribute('loading', 'lazy');
-                    img.setAttribute('decoding', 'async');
-                });
-
-                var externalLinks = document.querySelectorAll('a[href^="http"]');
-                externalLinks.forEach(function (link) {
-                    if (!link.rel) {
-                        link.rel = 'noopener noreferrer';
-                    }
-                });
-            }
-
-            function scheduleEnhancements() {
-                if ('requestIdleCallback' in window) {
-                    window.requestIdleCallback(runDeferredDomEnhancements, {
-                        timeout: 1200
-                    });
-                } else {
-                    window.setTimeout(runDeferredDomEnhancements, 100);
-                }
-            }
-
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', scheduleEnhancements, {
-                    once: true
-                });
-            } else {
-                scheduleEnhancements();
-            }
-        })();
-    </script>
 </body>
 
 </html>
