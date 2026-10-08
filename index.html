@@ -9,25 +9,29 @@
     <meta name="description"
         content="Official portfolio of Andrea Lombardo, Data & DevOps Engineer. Projects, skills, publications, certifications and contacts.">
     <meta name="author" content="Andrea Lombardo">
-    <meta name="keywords"
-        content="Andrea Lombardo, Data Engineer, DevOps Engineer, Cloud Engineer, Portfolio, Kubernetes, Azure, Data Science, CI/CD">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://lombardoandrea195.github.io/">
-    <link rel="alternate" hreflang="en" href="https://lombardoandrea195.github.io/">
 
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="profile">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Andrea Lombardo">
     <meta property="og:title" content="Andrea Lombardo | Data & DevOps Engineer Portfolio">
-    <meta property="og:description" content="Discover projects, skills and publications by Andrea Lombardo.">
+    <meta property="og:description"
+        content="Data & DevOps Engineer at Enel Group in Rome. Data platforms, cloud infrastructure, projects and publications.">
     <meta property="og:url" content="https://lombardoandrea195.github.io/">
-    <meta property="og:image" content="https://lombardoandrea195.github.io/android-chrome-512x512.png">
+    <meta property="og:image" content="https://lombardoandrea195.github.io/images/og/work.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Andrea Lombardo, Data & DevOps Engineer in Rome, next to his portrait">
+    <meta property="profile:first_name" content="Andrea">
+    <meta property="profile:last_name" content="Lombardo">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@LombardoAndrea95">
-    <meta name="twitter:creator" content="@LombardoAndrea95">
     <meta name="twitter:title" content="Andrea Lombardo | Data & DevOps Engineer Portfolio">
-    <meta name="twitter:description" content="Portfolio with projects, certifications and professional contacts.">
-    <meta name="twitter:image" content="https://lombardoandrea195.github.io/android-chrome-512x512.png">
+    <meta name="twitter:description"
+        content="Data & DevOps Engineer at Enel Group in Rome. Data platforms, cloud infrastructure, projects and publications.">
+    <meta name="twitter:image" content="https://lombardoandrea195.github.io/images/og/work.jpg">
+    <meta name="twitter:image:alt" content="Andrea Lombardo, Data & DevOps Engineer in Rome, next to his portrait">
 
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#f8f6f1" media="(prefers-color-scheme: light)">
@@ -40,16 +44,10 @@
     <link rel="preload" as="image" href="images/portfolio/andrea-portrait.webp" fetchpriority="high" type="image/webp">
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#c4501f">
-    <link rel="shortcut icon" href="favicon.ico">
-    <meta name="msapplication-TileColor" content="#14161a">
-    <meta name="msapplication-TileImage" content="mstile-144x144.png">
-    <meta name="msapplication-config" content="browserconfig.xml">
 
     <script>
         // Apply stored language before first paint to avoid a flash of the wrong copy.
@@ -64,31 +62,104 @@
             "@context": "https://schema.org",
             "@graph": [
                 {
+                    "@type": "ProfilePage",
+                    "@id": "https://lombardoandrea195.github.io/#profilepage",
+                    "url": "https://lombardoandrea195.github.io/",
+                    "name": "Andrea Lombardo | Data & DevOps Engineer Portfolio",
+                    "inLanguage": "en",
+                    "dateModified": "2026-10-07",
+                    "isPartOf": { "@id": "https://lombardoandrea195.github.io/#website" },
+                    "mainEntity": { "@id": "https://lombardoandrea195.github.io/#person" },
+                    "primaryImageOfPage": "https://lombardoandrea195.github.io/images/og/work.jpg"
+                },
+                {
                     "@type": "Person",
                     "@id": "https://lombardoandrea195.github.io/#person",
                     "name": "Andrea Lombardo",
+                    "givenName": "Andrea",
+                    "familyName": "Lombardo",
                     "url": "https://lombardoandrea195.github.io/",
+                    "email": "mailto:l.andrea195@live.it",
                     "jobTitle": "Data & DevOps Engineer",
-                    "description": "Data & DevOps Engineer focused on cloud, data platforms and software delivery.",
+                    "description": "Data & DevOps Engineer at Enel Group in Rome, building data platforms, cloud infrastructure and delivery pipelines.",
                     "image": "https://lombardoandrea195.github.io/images/portfolio/andrea-portrait.webp",
-                    "worksFor": { "@type": "Organization", "name": "Enel Group" },
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Rome",
+                        "addressCountry": "IT"
+                    },
+                    "worksFor": { "@type": "Organization", "name": "Enel Group", "url": "https://www.enel.com/" },
                     "alumniOf": [
-                        { "@type": "CollegeOrUniversity", "name": "Sapienza University of Rome" },
-                        { "@type": "CollegeOrUniversity", "name": "University of Rome Tor Vergata" }
+                        { "@type": "CollegeOrUniversity", "name": "Sapienza University of Rome", "url": "https://www.uniroma1.it/" },
+                        { "@type": "CollegeOrUniversity", "name": "University of Rome Tor Vergata", "url": "https://web.uniroma2.it/" }
                     ],
+                    "hasCredential": [
+                        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MSc in Computer Engineering", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Sapienza University of Rome" } },
+                        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "BSc in Computer Engineering", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "University of Rome Tor Vergata" } },
+                        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Power Platform Developer Associate", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+                        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Azure Fundamentals", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } }
+                    ],
+                    "knowsLanguage": ["it", "en"],
+                    "knowsAbout": ["Data Engineering", "DevOps", "Cloud Architecture", "Apache Spark", "Python", "FastAPI", "Kubernetes", "AWS", "Azure", "Google Cloud", "CI/CD", "Machine Learning", "LLM", "Retrieval-Augmented Generation", "Smart Manufacturing"],
                     "sameAs": [
                         "https://github.com/LombardoAndrea195",
                         "https://www.linkedin.com/in/andrea-lombardo-/",
-                        "https://www.facebook.com/andrea.lombardo.564"
-                    ],
-                    "knowsAbout": ["Data Engineering", "DevOps", "Cloud Architecture", "Kubernetes", "CI/CD", "Machine Learning"]
+                        "https://www.facebook.com/andrea.lombardo.564",
+                        "https://instagram.com/lombi95",
+                        "https://www.strava.com/athletes/147032805",
+                        "https://open.spotify.com/user/21egco6ecq3cce2bydnghjyby"
+                    ]
+                },
+                {
+                    "@type": "ScholarlyArticle",
+                    "@id": "https://doi.org/10.1002/eng2.13089",
+                    "headline": "Supporting Smart Manufacturing in the Space Industry: A Case Study",
+                    "url": "https://doi.org/10.1002/eng2.13089",
+                    "datePublished": "2025-01",
+                    "isPartOf": { "@type": "Periodical", "name": "Engineering Reports", "publisher": { "@type": "Organization", "name": "Wiley" } },
+                    "author": [
+                        { "@type": "Person", "name": "Ala Arman" },
+                        { "@id": "https://lombardoandrea195.github.io/#person" },
+                        { "@type": "Person", "name": "Flavia Monti" },
+                        { "@type": "Person", "name": "Massimo Mecella" }
+                    ]
+                },
+                {
+                    "@type": "ScholarlyArticle",
+                    "@id": "https://doi.org/10.1016/j.actaastro.2021.12.039",
+                    "headline": "An Industry 4.0 approach to large scale production of satellite constellations. The case study of composite sandwich panel manufacturing",
+                    "url": "https://doi.org/10.1016/j.actaastro.2021.12.039",
+                    "datePublished": "2022-03",
+                    "isPartOf": { "@type": "PublicationVolume", "volumeNumber": "192", "isPartOf": { "@type": "Periodical", "name": "Acta Astronautica", "publisher": { "@type": "Organization", "name": "Elsevier" } } },
+                    "pagination": "276-290",
+                    "author": [
+                        { "@type": "Person", "name": "M. Eugeni" },
+                        { "@type": "Person", "name": "T. Quercia" },
+                        { "@type": "Person", "name": "M. Bernabei" },
+                        { "@type": "Person", "name": "A. Boschetto" },
+                        { "@type": "Person", "name": "F. Costantino" },
+                        { "@type": "Person", "name": "L. Lampani" },
+                        { "@type": "Person", "name": "A. Marchetti Spaccamela" },
+                        { "@id": "https://lombardoandrea195.github.io/#person" },
+                        { "@type": "Person", "name": "M. Mecella" },
+                        { "@type": "Person", "name": "L. Querzoni" },
+                        { "@type": "Person", "name": "R. Usinger" },
+                        { "@type": "Person", "name": "M. Aliprandi" },
+                        { "@type": "Person", "name": "A. Stancu" },
+                        { "@type": "Person", "name": "M.M. Ivagnes" },
+                        { "@type": "Person", "name": "G. Morabito" },
+                        { "@type": "Person", "name": "A. Simoni" },
+                        { "@type": "Person", "name": "A. Brandão" },
+                        { "@type": "Person", "name": "P. Gaudenzi" }
+                    ]
                 },
                 {
                     "@type": "WebSite",
                     "@id": "https://lombardoandrea195.github.io/#website",
                     "url": "https://lombardoandrea195.github.io/",
-                    "name": "Andrea Lombardo Portfolio",
-                    "inLanguage": "en"
+                    "name": "Andrea Lombardo",
+                    "inLanguage": "en",
+                    "publisher": { "@id": "https://lombardoandrea195.github.io/#person" }
                 }
             ]
         }
@@ -167,7 +238,7 @@
 
                 <figure class="hero__media">
                     <div class="hero__frame">
-                        <img src="images/portfolio/andrea-portrait.webp" width="514" height="643"
+                        <img src="images/portfolio/andrea-portrait.webp" width="514" height="642"
                             alt="Andrea Lombardo in a navy suit, mid-conversation at an outdoor event"
                             fetchpriority="high" decoding="async">
                     </div>
@@ -269,8 +340,7 @@
                         <p data-i18n="about_p2">Today I'm growing on both the technical and the management side.</p>
                     </div>
                     <a class="link-arrow about__life" href="life.html" data-reveal style="--i:3">
-                        <span data-i18n="about_life">The other side: travel, food and running</span>
-                        <span aria-hidden="true">→</span>
+                        <span data-i18n="about_life">The other side: travel, food and running</span>&nbsp;<span aria-hidden="true">→</span>
                     </a>
 
                     <ol class="strengths">
@@ -960,7 +1030,7 @@
                     <li class="pub" data-reveal>
                         <span class="pub__year">2025</span>
                         <div class="pub__body">
-                            <h3 class="pub__title"><a href="https://lnkd.in/drdqnc2A">Supporting Smart Manufacturing in
+                            <h3 class="pub__title"><a href="https://doi.org/10.1002/eng2.13089">Supporting Smart Manufacturing in
                                     the Space Industry: A Case Study</a></h3>
                             <p class="pub__venue">Wiley · Engineering Reports</p>
                             <p class="pub__desc" data-i18n="pub1_desc">An industrial, data-driven approach to support
@@ -972,7 +1042,7 @@
                         <span class="pub__year">2022</span>
                         <div class="pub__body">
                             <h3 class="pub__title"><a
-                                    href="https://www.sciencedirect.com/science/article/abs/pii/S0094576521006834">An
+                                    href="https://doi.org/10.1016/j.actaastro.2021.12.039">An
                                     Industry 4.0 approach to large-scale production of satellite constellations</a></h3>
                             <p class="pub__venue">Elsevier · Acta Astronautica, vol. 192, pp. 276–290</p>
                             <p class="pub__desc" data-i18n="pub2_desc">Composite sandwich-panel manufacturing as a case
@@ -1000,7 +1070,7 @@
                         <p class="certs__text" data-i18n="certs_text">19 certifications in cloud, data science and
                             design thinking, from Microsoft, IBM, AWS, Google Cloud and Stanford.</p>
                         <a class="link-arrow" href="https://www.credly.com/earner/dashboard"><span
-                                data-i18n="certs_credly">Credly profile</span> <span aria-hidden="true">↗</span></a>
+                                data-i18n="certs_credly">Credly profile</span>&nbsp;<span aria-hidden="true">↗</span></a>
                     </div>
 
                     <ul class="cert-featured">
@@ -1072,7 +1142,7 @@
                                     <ul>
                                         <li><a class="link-arrow"
                                                 href="document/certificate_Agile_Foundations_for_Microsoft_Business_Apps.pdf">Agile
-                                                Foundations for Microsoft Business Apps <span
+                                                Foundations for Microsoft Business Apps&nbsp;<span
                                                     aria-hidden="true">↗</span></a></li>
                                     </ul>
                                 </div>
@@ -1124,7 +1194,7 @@
         <p class="container footer-mark" aria-hidden="true">Andrea <em>Lombardo</em></p>
         <div class="container site-footer__inner">
             <p>© <span data-year>2026</span> Andrea Lombardo</p>
-            <a class="link-arrow" href="#top"><span data-i18n="back_top">Back to top</span> <span
+            <a class="link-arrow" href="#top"><span data-i18n="back_top">Back to top</span>&nbsp;<span
                     aria-hidden="true">↑</span></a>
         </div>
     </footer>

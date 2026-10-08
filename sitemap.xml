@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lombardoandrea195.github.io/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://lombardoandrea195.github.io/images/portfolio/andrea-portrait.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://lombardoandrea195.github.io/life.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-10-07</lastmod>
   </url>
 </urlset>

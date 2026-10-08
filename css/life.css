@@ -452,6 +452,10 @@
         grid-template-columns: 1fr;
     }
 
+    .run__grid {
+        row-gap: 48px;
+    }
+
     .run__photo {
         position: static;
         max-width: 480px;

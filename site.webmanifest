@@ -1,20 +1,21 @@
 {
-    "name": "AL",
-    "short_name": "AL",
+    "name": "Andrea Lombardo",
+    "short_name": "A. Lombardo",
+    "description": "Portfolio of Andrea Lombardo, Data & DevOps Engineer in Rome.",
     "icons": [
         {
-            "src": "https://lombardoandrea195.github.io/android-chrome-192x192.png",
+            "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://lombardoandrea195.github.io/android-chrome-512x512.png",
+            "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
     "theme_color": "#f8f6f1",
     "background_color": "#f8f6f1",
-    "start_url": "https://lombardoandrea195.github.io/",
-    "display": "standalone"
+    "start_url": "/",
+    "display": "browser"
 }

@@ -632,16 +632,21 @@ html[lang="it"] .lang-toggle__opt:nth-of-type(3) {
     }
 }
 
+/* Inline-block (not flex) so a wrapping label keeps the arrow right after its
+   last word. The arrow is joined with &nbsp; in the markup so it never wraps alone. */
 .link-arrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    display: inline-block;
     font-weight: 500;
     text-decoration: underline;
     text-decoration-color: var(--line-strong);
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
     transition: text-decoration-color 200ms ease;
+}
+
+.link-arrow svg {
+    vertical-align: -2px;
+    margin-right: 2px;
 }
 
 @media (hover: hover) and (pointer: fine) {
